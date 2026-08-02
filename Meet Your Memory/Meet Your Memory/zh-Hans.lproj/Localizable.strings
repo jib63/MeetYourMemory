@@ -41,3 +41,15 @@
 "question.sequence.position"="第%d个位置是什么符号？";
 "question.sequence.count"="%@出现了几次？";
 "question.sequence.reverse"="哪组顺序是原路线的倒序？";
+
+// About and website links
+"ui.about" = "关于";
+"ui.close" = "关闭";
+"about.title" = "关于 Meet Your Memory";
+"about.subtitle" = "实用链接始终以应用当前语言打开。";
+"about.marketing" = "Meet Your Memory 官网";
+"about.marketing.detail" = "了解游戏及六种记忆模式。";
+"about.privacy" = "隐私";
+"about.privacy.detail" = "了解测试结果如何仅保存在设备上。";
+"about.support" = "支持";
+"about.support.detail" = "查看常见问题或联系 Jib Studios。";

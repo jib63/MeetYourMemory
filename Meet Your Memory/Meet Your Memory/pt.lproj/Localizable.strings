@@ -41,3 +41,15 @@
 "question.sequence.position"="Que símbolo estava na posição %d?";
 "question.sequence.count"="Quantas vezes apareceu %@?";
 "question.sequence.reverse"="Que sequência mostra o percurso ao contrário?";
+
+// About and website links
+"ui.about" = "SOBRE";
+"ui.close" = "Fechar";
+"about.title" = "Sobre Meet Your Memory";
+"about.subtitle" = "Links úteis, sempre abertos no idioma da aplicação.";
+"about.marketing" = "Meet Your Memory online";
+"about.marketing.detail" = "Conheça o jogo e os seus seis modos de memória.";
+"about.privacy" = "Privacidade";
+"about.privacy.detail" = "Veja como os resultados ficam no dispositivo.";
+"about.support" = "Suporte";
+"about.support.detail" = "Consulte as perguntas frequentes ou contacte a Jib Studios.";

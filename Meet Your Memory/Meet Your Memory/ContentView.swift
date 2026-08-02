@@ -4,6 +4,7 @@ struct ContentView: View {
     @State private var game: MemoryGame
     @State private var history = MemoryHistoryStore()
     @State private var showsHistory = false
+    @State private var showsAbout = false
 
     init() {
         let game = MemoryGame()
@@ -21,7 +22,12 @@ struct ContentView: View {
             MemoryBackdrop()
             switch game.screen {
             case .home:
-                HomeView(sessionCount: history.sessions.count, onStart: game.startQuickScan, onHistory: { showsHistory = true })
+                HomeView(
+                    sessionCount: history.sessions.count,
+                    onStart: game.startQuickScan,
+                    onHistory: { showsHistory = true },
+                    onAbout: { showsAbout = true }
+                )
                     .transition(.opacity.combined(with: .scale(scale: 0.96)))
             case .playing:
                 ChallengeView(game: game)
@@ -37,6 +43,7 @@ struct ContentView: View {
             if oldValue == .playing, newValue == .results { history.record(game.profile) }
         }
         .sheet(isPresented: $showsHistory) { HistoryView(sessions: history.sessions) }
+        .sheet(isPresented: $showsAbout) { AboutView() }
     }
 }
 
@@ -44,6 +51,7 @@ private struct HomeView: View {
     let sessionCount: Int
     let onStart: () -> Void
     let onHistory: () -> Void
+    let onAbout: () -> Void
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var lensIsAlive = false
 
@@ -55,11 +63,23 @@ private struct HomeView: View {
                         Image(systemName: "brain.head.profile.fill").foregroundStyle(MemoryTheme.aqua)
                         Text(L10n.text("ui.memory.scan"))
                             .font(.system(.caption, design: .monospaced, weight: .black)).tracking(1.5)
+                            .lineLimit(1).minimumScaleFactor(0.65)
                         Spacer()
-                        Text(L10n.text("ui.free"))
-                            .font(.system(.caption2, design: .monospaced, weight: .black))
-                            .padding(.horizontal, 10).padding(.vertical, 6)
-                            .background(.white.opacity(0.12), in: Capsule())
+                        HStack(spacing: 7) {
+                            Text(L10n.text("ui.free"))
+                                .padding(.horizontal, 10).padding(.vertical, 6)
+                                .background(.white.opacity(0.12), in: Capsule())
+                            Button(action: onAbout) {
+                                Label(L10n.text("ui.about"), systemImage: "info.circle.fill")
+                                    .padding(.horizontal, 10).padding(.vertical, 6)
+                                    .background(MemoryTheme.aqua.opacity(0.2), in: Capsule())
+                                    .overlay(Capsule().stroke(MemoryTheme.aqua.opacity(0.45)))
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityHint(L10n.text("about.subtitle"))
+                        }
+                        .font(.system(.caption2, design: .monospaced, weight: .black))
+                        .minimumScaleFactor(0.7)
                     }
                     .foregroundStyle(.white).padding(.top, 18)
 
@@ -123,6 +143,101 @@ private struct HomeView: View {
         }
         .onAppear { lensIsAlive = true }
     }
+}
+
+private struct AboutView: View {
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                MemoryBackdrop()
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 18) {
+                        Image(systemName: "brain.head.profile.fill")
+                            .font(.system(size: 42, weight: .black))
+                            .foregroundStyle(MemoryTheme.aqua)
+                        Text(L10n.text("about.title"))
+                            .font(.system(.largeTitle, design: .rounded, weight: .black))
+                        Text(L10n.text("about.subtitle"))
+                            .font(.system(.body, design: .rounded, weight: .medium))
+                            .foregroundStyle(MemoryTheme.mist)
+                            .fixedSize(horizontal: false, vertical: true)
+
+                        AboutLink(icon: "globe", title: L10n.text("about.marketing"), detail: L10n.text("about.marketing.detail"), color: MemoryTheme.solar, url: AboutLinks.marketing)
+                        AboutLink(icon: "hand.raised.fill", title: L10n.text("about.privacy"), detail: L10n.text("about.privacy.detail"), color: MemoryTheme.violet, url: AboutLinks.privacy)
+                        AboutLink(icon: "questionmark.bubble.fill", title: L10n.text("about.support"), detail: L10n.text("about.support.detail"), color: MemoryTheme.coral, url: AboutLinks.support)
+                    }
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: 620, alignment: .leading)
+                    .padding(24)
+                    .frame(maxWidth: .infinity)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(L10n.text("ui.close")) { dismiss() }
+                        .fontWeight(.bold)
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
+    }
+}
+
+private struct AboutLink: View {
+    let icon: String
+    let title: String
+    let detail: String
+    let color: Color
+    let url: URL
+
+    var body: some View {
+        Link(destination: url) {
+            HStack(spacing: 15) {
+                Image(systemName: icon)
+                    .font(.title2.weight(.black))
+                    .foregroundStyle(color)
+                    .frame(width: 42, height: 42)
+                    .background(color.opacity(0.16), in: RoundedRectangle(cornerRadius: 13))
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(title).font(.system(.headline, design: .rounded, weight: .black))
+                    Text(detail)
+                        .font(.system(.caption, design: .rounded, weight: .medium))
+                        .foregroundStyle(MemoryTheme.mist.opacity(0.72))
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer(minLength: 8)
+                Image(systemName: "arrow.up.right")
+                    .font(.headline.weight(.black))
+                    .foregroundStyle(.white.opacity(0.5))
+            }
+            .padding(16)
+            .background(.white.opacity(0.08), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+            .overlay(RoundedRectangle(cornerRadius: 20).stroke(color.opacity(0.3)))
+        }
+        .buttonStyle(MemoryPressStyle())
+    }
+}
+
+private enum AboutLinks {
+    private static let base = URL(string: "https://meetyourmemory.jibstudios.com")!
+    private static var language: String {
+        let code = (Bundle.main.preferredLocalizations.first ?? "en").lowercased()
+        if code.hasPrefix("fr") { return "fr" }
+        if code.hasPrefix("es") { return "es" }
+        if code.hasPrefix("it") { return "it" }
+        if code.hasPrefix("pt") { return "pt" }
+        if code.hasPrefix("ja") { return "ja" }
+        if code.hasPrefix("zh") { return "zh-Hans" }
+        if code.hasPrefix("hi") { return "hi" }
+        return "en"
+    }
+
+    static var marketing: URL { base.appending(path: language) }
+    static var privacy: URL { base.appending(path: language).appending(path: "privacy.html") }
+    static var support: URL { base.appending(path: language).appending(path: "support.html") }
 }
 
 private struct FeaturePill: View {

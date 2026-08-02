@@ -41,3 +41,15 @@
 "question.sequence.position"="स्थान %d पर कौन-सा चिन्ह था?";
 "question.sequence.count"="%@ कितनी बार दिखाई दिया?";
 "question.sequence.reverse"="कौन-सा क्रम रास्ते को उल्टा दिखाता है?";
+
+// About and website links
+"ui.about" = "जानकारी";
+"ui.close" = "बंद करें";
+"about.title" = "Meet Your Memory के बारे में";
+"about.subtitle" = "उपयोगी लिंक हमेशा ऐप की भाषा में खुलते हैं।";
+"about.marketing" = "Meet Your Memory ऑनलाइन";
+"about.marketing.detail" = "गेम और इसके छह मेमोरी तरीकों को जानें।";
+"about.privacy" = "गोपनीयता";
+"about.privacy.detail" = "जानें कि आपके परिणाम डिवाइस पर ही कैसे रहते हैं।";
+"about.support" = "सहायता";
+"about.support.detail" = "सामान्य प्रश्न पढ़ें या Jib Studios से संपर्क करें।";

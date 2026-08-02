@@ -41,3 +41,15 @@
 "question.sequence.position"="%d番目の記号は？";
 "question.sequence.count"="%@は何回出ましたか？";
 "question.sequence.reverse"="逆順にした並びはどれ？";
+
+// About and website links
+"ui.about" = "このアプリについて";
+"ui.close" = "閉じる";
+"about.title" = "Meet Your Memoryについて";
+"about.subtitle" = "便利なリンクを、アプリと同じ言語で開きます。";
+"about.marketing" = "公式サイト";
+"about.marketing.detail" = "ゲームと6つの記憶モードをご紹介します。";
+"about.privacy" = "プライバシー";
+"about.privacy.detail" = "結果が端末内に保存される仕組みをご確認ください。";
+"about.support" = "サポート";
+"about.support.detail" = "よくある質問を見るか、Jib Studiosにお問い合わせください。";

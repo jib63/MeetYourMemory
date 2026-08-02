@@ -43,3 +43,15 @@
 "question.sequence.position"="Quel symbole était en position %d ?";
 "question.sequence.count"="Combien de fois %@ est-il apparu ?";
 "question.sequence.reverse"="Quelle suite montre le trajet à l’envers ?";
+
+// About and website links
+"ui.about" = "À PROPOS";
+"ui.close" = "Fermer";
+"about.title" = "À propos de Meet Your Memory";
+"about.subtitle" = "Des liens utiles, toujours ouverts dans la langue de l’app.";
+"about.marketing" = "Meet Your Memory en ligne";
+"about.marketing.detail" = "Découvrez le jeu et ses six modes de mémoire.";
+"about.privacy" = "Confidentialité";
+"about.privacy.detail" = "Découvrez pourquoi vos résultats restent sur l’appareil.";
+"about.support" = "Assistance";
+"about.support.detail" = "Consultez la FAQ ou contactez Jib Studios.";

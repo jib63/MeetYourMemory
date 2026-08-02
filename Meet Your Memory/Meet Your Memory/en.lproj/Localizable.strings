@@ -154,3 +154,15 @@
 "question.sequence.position" = "Which symbol was in position %d?";
 "question.sequence.count" = "How many times did %@ appear?";
 "question.sequence.reverse" = "Which sequence shows the route backwards?";
+
+// About and website links
+"ui.about" = "ABOUT";
+"ui.close" = "Close";
+"about.title" = "About Meet Your Memory";
+"about.subtitle" = "Useful links, always opened in your app language.";
+"about.marketing" = "Meet Your Memory online";
+"about.marketing.detail" = "Discover the game and its six memory modes.";
+"about.privacy" = "Privacy";
+"about.privacy.detail" = "See how your results stay on your device.";
+"about.support" = "Support";
+"about.support.detail" = "Read the FAQ or contact Jib Studios.";
