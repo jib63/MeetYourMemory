@@ -15,5 +15,7 @@
 		<string>zh-Hans</string>
 		<string>hi</string>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
