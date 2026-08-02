@@ -342,6 +342,28 @@ final class MemoryHistoryStore {
         guard let data = try? JSONEncoder().encode(sessions) else { return }
         defaults.set(data, forKey: key)
     }
+
+    #if DEBUG
+    func prepareMarketingHistory() {
+        let calendar = Calendar(identifier: .gregorian)
+        let anchor = calendar.date(from: DateComponents(year: 2026, month: 8, day: 2, hour: 9, minute: 41)) ?? .now
+        let samples: [(MemoryCategory, [MemoryCategory: Int], Int)] = [
+            (.visual, [.visual: 2, .words: 1, .sound: 2, .spatial: 1, .association: 2, .sequence: 1], 0),
+            (.association, [.visual: 1, .words: 1, .sound: 1, .spatial: 2, .association: 2, .sequence: 1], -7),
+            (.words, [.visual: 1, .words: 2, .sound: 1, .spatial: 1, .association: 1, .sequence: 2], -16),
+        ]
+        let totals = Dictionary(uniqueKeysWithValues: MemoryCategory.allCases.map { ($0, 2) })
+        sessions = samples.map { primary, scores, dayOffset in
+            let profile = MemoryProfile.build(correct: scores, total: totals)
+            let date = calendar.date(byAdding: .day, value: dayOffset, to: anchor) ?? anchor
+            return MemorySession(date: date, profile: MemoryProfile(
+                primaryCategory: primary,
+                overallPercent: profile.overallPercent,
+                results: profile.results
+            ))
+        }
+    }
+    #endif
 }
 
 @MainActor @Observable
@@ -395,12 +417,10 @@ final class MemoryGame {
     #if DEBUG
     func prepareMarketingScreen(_ name: String) {
         switch name {
-        case "challenge":
-            challenges = MemoryChallengeBank.makeScan()
-            currentIndex = challenges.firstIndex { $0.category == .spatial } ?? 0
-            phase = .answer
-            countdown = 0
-            screen = .playing
+        case "visual": prepareMarketingChallenge(.visual, phase: .study)
+        case "spatial": prepareMarketingChallenge(.spatial, phase: .answer)
+        case "association": prepareMarketingChallenge(.association, phase: .study)
+        case "challenge": prepareMarketingChallenge(.spatial, phase: .answer)
         case "result":
             possibleScores = Dictionary(uniqueKeysWithValues: MemoryCategory.allCases.map { ($0, 2) })
             correctScores = [.visual: 2, .words: 1, .sound: 2, .spatial: 1, .association: 2, .sequence: 1]
@@ -408,6 +428,16 @@ final class MemoryGame {
         default:
             screen = .home
         }
+    }
+
+    private func prepareMarketingChallenge(_ category: MemoryCategory, phase targetPhase: ChallengePhase) {
+        transitionTask?.cancel()
+        challenges = MemoryChallengeBank.makeScan()
+        currentIndex = challenges.firstIndex { $0.category == category } ?? 0
+        phase = targetPhase
+        countdown = targetPhase == .study ? currentChallenge.studySeconds : 0
+        selectedAnswer = nil
+        screen = .playing
     }
     #endif
 

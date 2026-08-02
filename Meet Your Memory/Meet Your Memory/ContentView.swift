@@ -8,13 +8,22 @@ struct ContentView: View {
 
     init() {
         let game = MemoryGame()
+        let history = MemoryHistoryStore()
+        var showHistory = false
         #if DEBUG
         if let marker = ProcessInfo.processInfo.arguments.firstIndex(of: "--marketing-screen"),
            ProcessInfo.processInfo.arguments.indices.contains(marker + 1) {
-            game.prepareMarketingScreen(ProcessInfo.processInfo.arguments[marker + 1])
+            let screen = ProcessInfo.processInfo.arguments[marker + 1]
+            game.prepareMarketingScreen(screen)
+            if screen == "history" {
+                history.prepareMarketingHistory()
+                showHistory = true
+            }
         }
         #endif
         _game = State(initialValue: game)
+        _history = State(initialValue: history)
+        _showsHistory = State(initialValue: showHistory)
     }
 
     var body: some View {
@@ -142,6 +151,7 @@ private struct HomeView: View {
             }.scrollIndicators(.hidden)
         }
         .onAppear { lensIsAlive = true }
+        .accessibilityIdentifier("screen-home")
     }
 }
 
@@ -313,6 +323,7 @@ private struct ChallengeView: View {
             try? await Task.sleep(for: .milliseconds(350)); guard !Task.isCancelled else { return }; playCurrentSound()
         }
         .animation(reduceMotion ? nil : .spring(response: 0.45, dampingFraction: 0.88), value: game.phase)
+        .accessibilityIdentifier("screen-challenge-\(game.currentChallenge.category.rawValue)")
     }
 
     private func playCurrentSound() {
@@ -485,6 +496,7 @@ private struct ResultsView: View {
             }
             .frame(maxWidth: 620).padding(.horizontal, 20).padding(.vertical, 16).frame(maxWidth: .infinity)
         }.scrollIndicators(.hidden)
+            .accessibilityIdentifier("screen-results")
     }
 }
 
@@ -556,6 +568,7 @@ private struct HistoryView: View {
                 }.frame(maxWidth: 620).padding(22).frame(maxWidth: .infinity)
             }.scrollIndicators(.hidden)
         }.preferredColorScheme(.dark)
+            .accessibilityIdentifier("screen-history")
     }
 }
 

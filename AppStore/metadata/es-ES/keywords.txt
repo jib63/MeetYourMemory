@@ -1,0 +1,1 @@
+memoria,test,cerebro,visual,palabras,sonido,espacial,quiz,recordar,juego
