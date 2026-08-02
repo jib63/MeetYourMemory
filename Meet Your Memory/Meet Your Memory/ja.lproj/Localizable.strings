@@ -53,3 +53,5 @@
 "about.privacy.detail" = "結果が端末内に保存される仕組みをご確認ください。";
 "about.support" = "サポート";
 "about.support.detail" = "よくある質問を見るか、Jib Studiosにお問い合わせください。";
+"about.terms" = "利用規約";
+"about.terms.detail" = "Apple標準エンドユーザ使用許諾契約をご確認ください。";

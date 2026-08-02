@@ -18,3 +18,5 @@
 すべて無料で、アカウントは不要です。結果は端末内に保存され、広告トラッカーや分析機能はありません。
 
 本アプリは娯楽目的であり、IQテストや医療評価ではありません。
+
+利用規約（EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

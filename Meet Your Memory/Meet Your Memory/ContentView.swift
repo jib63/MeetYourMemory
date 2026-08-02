@@ -80,6 +80,9 @@ private struct HomeView: View {
                                 .background(.white.opacity(0.12), in: Capsule())
                             Button(action: onAbout) {
                                 Label(L10n.text("ui.about"), systemImage: "info.circle.fill")
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.55)
+                                    .allowsTightening(true)
                                     .padding(.horizontal, 10).padding(.vertical, 6)
                                     .background(MemoryTheme.aqua.opacity(0.2), in: Capsule())
                                     .overlay(Capsule().stroke(MemoryTheme.aqua.opacity(0.45)))
@@ -177,6 +180,7 @@ private struct AboutView: View {
                         AboutLink(icon: "globe", title: L10n.text("about.marketing"), detail: L10n.text("about.marketing.detail"), color: MemoryTheme.solar, url: AboutLinks.marketing)
                         AboutLink(icon: "hand.raised.fill", title: L10n.text("about.privacy"), detail: L10n.text("about.privacy.detail"), color: MemoryTheme.violet, url: AboutLinks.privacy)
                         AboutLink(icon: "questionmark.bubble.fill", title: L10n.text("about.support"), detail: L10n.text("about.support.detail"), color: MemoryTheme.coral, url: AboutLinks.support)
+                        AboutLink(icon: "doc.text.fill", title: L10n.text("about.terms"), detail: L10n.text("about.terms.detail"), color: MemoryTheme.blue, url: AboutLinks.terms)
                     }
                     .foregroundStyle(.white)
                     .frame(maxWidth: 620, alignment: .leading)
@@ -248,6 +252,7 @@ private enum AboutLinks {
     static var marketing: URL { base.appending(path: language) }
     static var privacy: URL { base.appending(path: language).appending(path: "privacy.html") }
     static var support: URL { base.appending(path: language).appending(path: "support.html") }
+    static let terms = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!
 }
 
 private struct FeaturePill: View {
