@@ -1,9 +1,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var game = MemoryGame()
+    @State private var game: MemoryGame
     @State private var history = MemoryHistoryStore()
     @State private var showsHistory = false
+
+    init() {
+        let game = MemoryGame()
+        #if DEBUG
+        if let marker = ProcessInfo.processInfo.arguments.firstIndex(of: "--marketing-screen"),
+           ProcessInfo.processInfo.arguments.indices.contains(marker + 1) {
+            game.prepareMarketingScreen(ProcessInfo.processInfo.arguments[marker + 1])
+        }
+        #endif
+        _game = State(initialValue: game)
+    }
 
     var body: some View {
         ZStack {
@@ -157,8 +168,13 @@ private struct ChallengeView: View {
                             VStack(alignment: .leading, spacing: 2) {
                                 Text(game.phase == .study ? game.currentChallenge.category.studyVerb : L10n.text("ui.recall"))
                                     .font(.system(.caption2, design: .monospaced, weight: .black)).tracking(1.8).foregroundStyle(game.currentChallenge.category.tint)
-                                Text(game.currentChallenge.category.title).font(.system(.headline, design: .rounded, weight: .black)).foregroundStyle(.white)
+                                Text(game.currentChallenge.category.title)
+                                    .font(.system(.headline, design: .rounded, weight: .black))
+                                    .foregroundStyle(.white)
+                                    .lineLimit(nil)
+                                    .fixedSize(horizontal: false, vertical: true)
                             }
+                            .layoutPriority(1)
                             Spacer()
                         }
                         Group {
@@ -272,18 +288,35 @@ private struct AnswerCard: View {
         VStack(spacing: 20) {
             VStack(spacing: 8) {
                 Text(L10n.text("ui.what.stuck")).font(.system(.caption, design: .monospaced, weight: .black)).tracking(2).foregroundStyle(game.currentChallenge.category.tint)
-                Text(game.currentChallenge.question).font(.system(.title2, design: .rounded, weight: .black)).foregroundStyle(.white).multilineTextAlignment(.center)
+                Text(game.currentChallenge.question)
+                    .font(.system(.title2, design: .rounded, weight: .black))
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
             }
             VStack(spacing: 11) {
                 ForEach(Array(game.currentChallenge.options.enumerated()), id: \.offset) { index, option in
                     Button { game.answer(index) } label: {
                         HStack(spacing: 14) {
                             Text(String(UnicodeScalar(65 + index)!)).font(.system(.caption, design: .monospaced, weight: .black)).frame(width: 34, height: 34).background(optionForeground(index).opacity(0.13), in: Circle())
-                            Text(option).font(.system(.headline, design: .rounded, weight: .bold)).multilineTextAlignment(.leading); Spacer()
-                            if game.phase == .feedback, index == game.currentChallenge.correctOption { Image(systemName: "checkmark.circle.fill").font(.title2).foregroundStyle(MemoryTheme.aqua) }
-                            else if game.phase == .feedback, index == game.selectedAnswer { Image(systemName: "xmark.circle.fill").font(.title2).foregroundStyle(MemoryTheme.coral) }
+                            Text(option)
+                                .font(.system(.headline, design: .rounded, weight: .bold))
+                                .multilineTextAlignment(.leading)
+                                .lineLimit(nil)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .layoutPriority(1)
+                            Spacer(minLength: 0)
+                            if game.phase == .feedback, index == game.currentChallenge.correctOption {
+                                Image(systemName: "checkmark.circle.fill").font(.title2).foregroundStyle(MemoryTheme.aqua)
+                            } else if game.phase == .feedback, index == game.selectedAnswer {
+                                Image(systemName: "xmark.circle.fill").font(.title2).foregroundStyle(MemoryTheme.coral)
+                            }
                         }
-                        .foregroundStyle(optionForeground(index)).padding(.horizontal, 16).frame(maxWidth: .infinity, minHeight: 64)
+                        .foregroundStyle(optionForeground(index))
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 14)
+                        .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
                         .background(optionBackground(index), in: RoundedRectangle(cornerRadius: 20)).overlay(RoundedRectangle(cornerRadius: 20).stroke(optionBorder(index), lineWidth: 1.5))
                     }.buttonStyle(MemoryPressStyle()).disabled(game.phase == .feedback)
                 }

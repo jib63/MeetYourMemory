@@ -9,7 +9,9 @@ struct MeetYourMemoryTests {
         #expect(challenges.count == 12)
         #expect(Set(challenges.map(\.signature)).count == 12)
         for category in MemoryCategory.allCases {
-            #expect(challenges.filter { $0.category == category }.count == 2)
+            let categoryChallenges = challenges.filter { $0.category == category }
+            #expect(categoryChallenges.count == 2)
+            #expect(Set(categoryChallenges.map(\.questionFamily)).count == 2)
         }
         for challenge in challenges {
             #expect(challenge.options.count == 4)
@@ -29,6 +31,15 @@ struct MeetYourMemoryTests {
     func challengeVariety() {
         let signatures = Set((0..<30).flatMap { _ in MemoryChallengeBank.makeScan().map(\.signature) })
         #expect(signatures.count > 100)
+    }
+
+    @Test("Repeated scans exercise several question styles in every category")
+    func questionStyleVariety() {
+        let scans = (0..<30).flatMap { _ in MemoryChallengeBank.makeScan() }
+        for category in MemoryCategory.allCases {
+            let families = Set(scans.filter { $0.category == category }.map(\.questionFamily))
+            #expect(families.count >= 3)
+        }
     }
 
     @Test("A visual lead produces the expected score")

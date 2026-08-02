@@ -29,10 +29,10 @@ enum MemorySwatch: String, CaseIterable {
 }
 
 enum MemoryTone: String, CaseIterable {
-    case low, mid, high
+    case bass, low, mid, high
     var title: String { L10n.text("tone.\(rawValue)") }
     var frequency: Double {
-        switch self { case .low: 293.66; case .mid: 440; case .high: 659.25 }
+        switch self { case .bass: 220; case .low: 293.66; case .mid: 440; case .high: 659.25 }
     }
 }
 
@@ -55,6 +55,7 @@ enum MemoryStimulus: Equatable {
 struct MemoryChallenge: Identifiable, Equatable {
     let id: String
     let signature: String
+    let questionFamily: String
     let category: MemoryCategory
     let eyebrow: String
     let title: String
@@ -72,16 +73,20 @@ enum MemoryChallengeBank {
     static func makeScan(avoiding previous: Set<String> = []) -> [MemoryChallenge] {
         var selected: [MemoryChallenge] = []
         var used = Set<String>()
+        var usedFamilies: [MemoryCategory: Set<String>] = [:]
         for category in MemoryCategory.allCases {
             for variant in 0..<questionsPerCategory {
                 var candidate = make(category: category, variant: variant)
                 var attempts = 0
-                while (previous.contains(candidate.signature) || used.contains(candidate.signature)) && attempts < 60 {
+                while (previous.contains(candidate.signature)
+                    || used.contains(candidate.signature)
+                    || usedFamilies[category, default: []].contains(candidate.questionFamily)) && attempts < 60 {
                     candidate = make(category: category, variant: variant)
                     attempts += 1
                 }
                 selected.append(candidate)
                 used.insert(candidate.signature)
+                usedFamilies[category, default: []].insert(candidate.questionFamily)
             }
         }
         return selected.shuffled()
@@ -99,47 +104,120 @@ enum MemoryChallengeBank {
     }
 
     private static func makeVisual(useColours: Bool) -> MemoryChallenge {
+        let style = Int.random(in: 0..<4)
         if useColours {
-            let sequence = Array(MemorySwatch.allCases.shuffled())
-            let target = Int.random(in: 0..<sequence.count)
-            let correct = sequence[target]
+            let sequence = Array(MemorySwatch.allCases.shuffled().prefix(4))
+            let family: String
+            let question: String
+            let correct: MemorySwatch
+            switch style {
+            case 0:
+                let target = Int.random(in: sequence.indices)
+                family = "position"; question = L10n.format("question.position", target + 1); correct = sequence[target]
+            case 1:
+                let target = Int.random(in: 1..<sequence.count)
+                family = "before"; question = L10n.format("question.before.item", sequence[target].title); correct = sequence[target - 1]
+            case 2:
+                let target = Int.random(in: 0..<(sequence.count - 1))
+                family = "after"; question = L10n.format("question.after.item", sequence[target].title); correct = sequence[target + 1]
+            default:
+                family = "missing"; question = L10n.text("question.missing.item"); correct = MemorySwatch.allCases.first { !sequence.contains($0) }!
+            }
             let answers = shuffledAnswers(correct: correct, distractors: MemorySwatch.allCases.filter { $0 != correct })
-            return challenge(signature: "visual-colours-\(sequence.map(\.rawValue).joined(separator: "-"))-\(target)", category: .visual, stimulus: .colors(sequence), question: L10n.format("question.position", target + 1), options: answers.values.map(\.title), correctOption: answers.correctIndex, seconds: 6)
+            return challenge(signature: "visual-colours-\(family)-\(sequence.map(\.rawValue).joined(separator: "-"))-\(correct.rawValue)", family: family, category: .visual, stimulus: .colors(sequence), question: question, options: answers.values.map(\.title), correctOption: answers.correctIndex, seconds: 6)
         }
         let pool = ["🛼", "🍋", "🪩", "🦋", "🎈", "🧩", "🚀", "🌵", "🎸", "🦊", "🍉", "🎨", "🐙", "🛸", "🧁", "🎲"]
         let sequence = Array(pool.shuffled().prefix(5))
-        let target = Int.random(in: 0..<sequence.count)
-        let correct = sequence[target]
+        let family: String
+        let question: String
+        let correct: String
+        switch style {
+        case 0:
+            let target = Int.random(in: sequence.indices)
+            family = "position"; question = L10n.format("question.position", target + 1); correct = sequence[target]
+        case 1:
+            let target = Int.random(in: 1..<sequence.count)
+            family = "before"; question = L10n.format("question.before.item", sequence[target]); correct = sequence[target - 1]
+        case 2:
+            let target = Int.random(in: 0..<(sequence.count - 1))
+            family = "after"; question = L10n.format("question.after.item", sequence[target]); correct = sequence[target + 1]
+        default:
+            family = "missing"; question = L10n.text("question.missing.item"); correct = pool.first { !sequence.contains($0) }!
+        }
         let answers = shuffledAnswers(correct: correct, distractors: pool.filter { !sequence.contains($0) })
-        return challenge(signature: "visual-symbols-\(sequence.joined())-\(target)", category: .visual, stimulus: .symbols(sequence), question: L10n.format("question.position", target + 1), options: answers.values, correctOption: answers.correctIndex, seconds: 6)
+        return challenge(signature: "visual-symbols-\(family)-\(sequence.joined())-\(correct)", family: family, category: .visual, stimulus: .symbols(sequence), question: question, options: answers.values, correctOption: answers.correctIndex, seconds: 6)
     }
 
     private static func makeWords() -> MemoryChallenge {
         let keys = ["cactus", "violin", "comet", "suitcase", "cinnamon", "forest", "lantern", "ocean", "pepper", "castle", "orange", "tiger", "piano", "cloud", "garden", "rocket", "coffee", "island"]
         let chosenKeys = Array(keys.shuffled().prefix(6))
         let words = chosenKeys.map { L10n.text("word.\($0)") }
-        let target = Int.random(in: 0..<(words.count - 1))
-        let correct = words[target + 1]
-        let answers = shuffledAnswers(correct: correct, distractors: words.filter { $0 != correct })
-        return challenge(signature: "words-\(chosenKeys.joined(separator: "-"))-\(target)", category: .words, stimulus: .words(words.map { $0.uppercased() }.joined(separator: "  —  ")), question: L10n.format("question.after.word", words[target]), options: answers.values, correctOption: answers.correctIndex, seconds: 8)
+        let outsideWords = keys.filter { !chosenKeys.contains($0) }.map { L10n.text("word.\($0)") }
+        let style = Int.random(in: 0..<5)
+        let family: String
+        let question: String
+        let correct: String
+        let distractors: [String]
+        switch style {
+        case 0:
+            let target = Int.random(in: 0..<(words.count - 1))
+            family = "after"; question = L10n.format("question.after.word", words[target]); correct = words[target + 1]; distractors = words.filter { $0 != correct }
+        case 1:
+            let target = Int.random(in: 1..<words.count)
+            family = "before"; question = L10n.format("question.before.word", words[target]); correct = words[target - 1]; distractors = words.filter { $0 != correct }
+        case 2:
+            let target = Int.random(in: words.indices)
+            family = "position"; question = L10n.format("question.word.position", target + 1); correct = words[target]; distractors = words.filter { $0 != correct }
+        case 3:
+            family = "missing"; question = L10n.text("question.missing.word"); correct = outsideWords.randomElement()!; distractors = words
+        default:
+            family = "present"; question = L10n.text("question.present.word"); correct = words.randomElement()!; distractors = outsideWords
+        }
+        let answers = shuffledAnswers(correct: correct, distractors: distractors)
+        return challenge(signature: "words-\(family)-\(chosenKeys.joined(separator: "-"))-\(correct)", family: family, category: .words, stimulus: .words(words.map { $0.uppercased() }.joined(separator: "  —  ")), question: question, options: answers.values, correctOption: answers.correctIndex, seconds: 8)
     }
 
     private static func makeSound() -> MemoryChallenge {
         var tones = (0..<5).map { _ in MemoryTone.allCases.randomElement()! }
         if Set(tones.map(\.rawValue)).count == 1 { tones[2] = tones[0] == .high ? .low : .high }
-        let answers = shuffledAnswers(correct: tones, distractors: sequenceDistractors(for: tones, pool: MemoryTone.allCases))
-        return challenge(signature: "sound-\(tones.map(\.rawValue).joined(separator: "-"))", category: .sound, stimulus: .tones(tones), question: L10n.text("question.sound.sequence"), options: answers.values.map { $0.map { $0.title.uppercased() }.joined(separator: " · ") }, correctOption: answers.correctIndex, seconds: 8)
+        let style = Int.random(in: 0..<4)
+        if style == 0 {
+            let answers = shuffledAnswers(correct: tones, distractors: sequenceDistractors(for: tones, pool: MemoryTone.allCases))
+            return challenge(signature: "sound-sequence-\(tones.map(\.rawValue).joined(separator: "-"))", family: "sequence", category: .sound, stimulus: .tones(tones), question: L10n.text("question.sound.sequence"), options: answers.values.map { $0.map { $0.title.uppercased() }.joined(separator: " · ") }, correctOption: answers.correctIndex, seconds: 8)
+        }
+        if style == 3 {
+            let target = MemoryTone.allCases.randomElement()!
+            let count = tones.filter { $0 == target }.count
+            let answers = shuffledAnswers(correct: count, distractors: Array(0...5).filter { $0 != count })
+            return challenge(signature: "sound-count-\(target.rawValue)-\(tones.map(\.rawValue).joined(separator: "-"))", family: "count", category: .sound, stimulus: .tones(tones), question: L10n.format("question.sound.count", target.title), options: answers.values.map(String.init), correctOption: answers.correctIndex, seconds: 8)
+        }
+        let target = style == 1 ? 0 : tones.count - 1
+        let family = style == 1 ? "first" : "last"
+        let question = L10n.text(style == 1 ? "question.sound.first" : "question.sound.last")
+        let answers = shuffledAnswers(correct: tones[target], distractors: MemoryTone.allCases.filter { $0 != tones[target] })
+        return challenge(signature: "sound-\(family)-\(tones.map(\.rawValue).joined(separator: "-"))", family: family, category: .sound, stimulus: .tones(tones), question: question, options: answers.values.map(\.title), correctOption: answers.correctIndex, seconds: 8)
     }
 
     private static func makeSpatial() -> MemoryChallenge {
         let cells = Array((0..<9).shuffled().prefix(3)).sorted()
+        let style = Int.random(in: 0..<3)
+        if style == 1 {
+            let correct = cells.randomElement()!
+            let answers = shuffledAnswers(correct: correct, distractors: (0..<9).filter { !cells.contains($0) })
+            return challenge(signature: "spatial-lit-\(cells.map(String.init).joined(separator: "-"))-\(correct)", family: "lit", category: .spatial, stimulus: .grid(cells), question: L10n.text("question.spatial.lit"), options: answers.values.map { L10n.text("grid.\($0)") }, correctOption: answers.correctIndex, seconds: 7)
+        }
+        if style == 2 {
+            let correct = (0..<9).filter { !cells.contains($0) }.randomElement()!
+            let answers = shuffledAnswers(correct: correct, distractors: cells)
+            return challenge(signature: "spatial-dark-\(cells.map(String.init).joined(separator: "-"))-\(correct)", family: "dark", category: .spatial, stimulus: .grid(cells), question: L10n.text("question.spatial.dark"), options: answers.values.map { L10n.text("grid.\($0)") }, correctOption: answers.correctIndex, seconds: 7)
+        }
         var alternatives: [[Int]] = []
         while alternatives.count < 3 {
             let candidate = Array((0..<9).shuffled().prefix(3)).sorted()
             if candidate != cells && !alternatives.contains(candidate) { alternatives.append(candidate) }
         }
         let answers = shuffledAnswers(correct: cells, distractors: alternatives)
-        return challenge(signature: "spatial-\(cells.map(String.init).joined(separator: "-"))", category: .spatial, stimulus: .grid(cells), question: L10n.text("question.spatial"), options: answers.values.map { $0.map { L10n.text("grid.\($0)") }.joined(separator: " · ") }, correctOption: answers.correctIndex, seconds: 7)
+        return challenge(signature: "spatial-pattern-\(cells.map(String.init).joined(separator: "-"))", family: "pattern", category: .spatial, stimulus: .grid(cells), question: L10n.text("question.spatial"), options: answers.values.map { $0.map { L10n.text("grid.\($0)") }.joined(separator: " · ") }, correctOption: answers.correctIndex, seconds: 7)
     }
 
     private static func makeAssociation() -> MemoryChallenge {
@@ -147,22 +225,49 @@ enum MemoryChallengeBank {
         let wordKeys = Array(["mint", "velvet", "tuesday", "apricot", "friday", "mango", "opera", "tokyo", "marble", "summer", "violet", "river"].shuffled().prefix(4))
         let words = wordKeys.map { L10n.text("pair.\($0)") }
         let pairs = zip(symbols, words).map { MemoryPair(symbol: $0.0, word: $0.1.uppercased()) }
-        let target = Int.random(in: 0..<pairs.count)
-        let correct = words[target]
-        let answers = shuffledAnswers(correct: correct, distractors: words.filter { $0 != correct })
-        return challenge(signature: "association-\(symbols.joined())-\(wordKeys.joined(separator: "-"))-\(target)", category: .association, stimulus: .pairs(pairs), question: L10n.format("question.paired", symbols[target]), options: answers.values, correctOption: answers.correctIndex, seconds: 9)
+        let target = Int.random(in: pairs.indices)
+        let style = Int.random(in: 0..<3)
+        if style == 1 {
+            let answers = shuffledAnswers(correct: symbols[target], distractors: symbols.filter { $0 != symbols[target] })
+            return challenge(signature: "association-symbol-\(symbols.joined())-\(wordKeys.joined(separator: "-"))-\(target)", family: "symbol", category: .association, stimulus: .pairs(pairs), question: L10n.format("question.symbol.paired", words[target]), options: answers.values, correctOption: answers.correctIndex, seconds: 9)
+        }
+        if style == 2 {
+            let correct = "\(symbols[target]) — \(words[target])"
+            let distractors = pairs.indices.filter { $0 != target }.map { index in "\(symbols[index]) — \(words[(index + 1) % words.count])" }
+            let answers = shuffledAnswers(correct: correct, distractors: distractors)
+            return challenge(signature: "association-pair-\(symbols.joined())-\(wordKeys.joined(separator: "-"))-\(target)", family: "pair", category: .association, stimulus: .pairs(pairs), question: L10n.text("question.pair.present"), options: answers.values, correctOption: answers.correctIndex, seconds: 9)
+        }
+        let answers = shuffledAnswers(correct: words[target], distractors: words.filter { $0 != words[target] })
+        return challenge(signature: "association-word-\(symbols.joined())-\(wordKeys.joined(separator: "-"))-\(target)", family: "word", category: .association, stimulus: .pairs(pairs), question: L10n.format("question.paired", symbols[target]), options: answers.values, correctOption: answers.correctIndex, seconds: 9)
     }
 
     private static func makeSequence(useArrows: Bool) -> MemoryChallenge {
         let pool = useArrows ? ["↑", "→", "↓", "←", "↗︎", "↙︎"] : ["●", "▲", "■", "◆", "★", "✚"]
         var sequence = (0..<5).map { _ in pool.randomElement()! }
         if Set(sequence).count == 1 { sequence[2] = pool.first { $0 != sequence[0] }! }
+        let style = Int.random(in: 0..<4)
+        if style == 1 {
+            let target = Int.random(in: sequence.indices)
+            let answers = shuffledAnswers(correct: sequence[target], distractors: pool.filter { $0 != sequence[target] })
+            return challenge(signature: "sequence-position-\(target)-\(sequence.joined())", family: "position", category: .sequence, stimulus: .sequence(sequence), question: L10n.format("question.sequence.position", target + 1), options: answers.values, correctOption: answers.correctIndex, seconds: 7)
+        }
+        if style == 2 {
+            let target = pool.randomElement()!
+            let count = sequence.filter { $0 == target }.count
+            let answers = shuffledAnswers(correct: count, distractors: Array(0...5).filter { $0 != count })
+            return challenge(signature: "sequence-count-\(target)-\(sequence.joined())", family: "count", category: .sequence, stimulus: .sequence(sequence), question: L10n.format("question.sequence.count", target), options: answers.values.map(String.init), correctOption: answers.correctIndex, seconds: 7)
+        }
+        if style == 3 {
+            let reversed = Array(sequence.reversed())
+            let answers = shuffledAnswers(correct: reversed, distractors: sequenceDistractors(for: reversed, pool: pool))
+            return challenge(signature: "sequence-reverse-\(sequence.joined())", family: "reverse", category: .sequence, stimulus: .sequence(sequence), question: L10n.text("question.sequence.reverse"), options: answers.values.map { $0.joined(separator: "  ") }, correctOption: answers.correctIndex, seconds: 7)
+        }
         let answers = shuffledAnswers(correct: sequence, distractors: sequenceDistractors(for: sequence, pool: pool))
-        return challenge(signature: "sequence-\(sequence.joined())", category: .sequence, stimulus: .sequence(sequence), question: L10n.text("question.sequence"), options: answers.values.map { $0.joined(separator: "  ") }, correctOption: answers.correctIndex, seconds: 7)
+        return challenge(signature: "sequence-exact-\(sequence.joined())", family: "exact", category: .sequence, stimulus: .sequence(sequence), question: L10n.text("question.sequence"), options: answers.values.map { $0.joined(separator: "  ") }, correctOption: answers.correctIndex, seconds: 7)
     }
 
-    private static func challenge(signature: String, category: MemoryCategory, stimulus: MemoryStimulus, question: String, options: [String], correctOption: Int, seconds: Int) -> MemoryChallenge {
-        MemoryChallenge(id: signature, signature: signature, category: category, eyebrow: L10n.text("challenge.\(category.rawValue).eyebrow"), title: L10n.text("challenge.\(category.rawValue).title"), instruction: L10n.text("challenge.\(category.rawValue).instruction"), stimulus: stimulus, question: question, options: options, correctOption: correctOption, studySeconds: seconds)
+    private static func challenge(signature: String, family: String, category: MemoryCategory, stimulus: MemoryStimulus, question: String, options: [String], correctOption: Int, seconds: Int) -> MemoryChallenge {
+        MemoryChallenge(id: signature, signature: signature, questionFamily: family, category: category, eyebrow: L10n.text("challenge.\(category.rawValue).eyebrow"), title: L10n.text("challenge.\(category.rawValue).title"), instruction: L10n.text("challenge.\(category.rawValue).instruction"), stimulus: stimulus, question: question, options: options, correctOption: correctOption, studySeconds: seconds)
     }
 
     private static func shuffledAnswers<T: Equatable>(correct: T, distractors: [T]) -> (values: [T], correctIndex: Int) {
@@ -286,6 +391,25 @@ final class MemoryGame {
     }
 
     func goHome() { transitionTask?.cancel(); screen = .home }
+
+    #if DEBUG
+    func prepareMarketingScreen(_ name: String) {
+        switch name {
+        case "challenge":
+            challenges = MemoryChallengeBank.makeScan()
+            currentIndex = challenges.firstIndex { $0.category == .spatial } ?? 0
+            phase = .answer
+            countdown = 0
+            screen = .playing
+        case "result":
+            possibleScores = Dictionary(uniqueKeysWithValues: MemoryCategory.allCases.map { ($0, 2) })
+            correctScores = [.visual: 2, .words: 1, .sound: 2, .spatial: 1, .association: 2, .sequence: 1]
+            screen = .results
+        default:
+            screen = .home
+        }
+    }
+    #endif
 
     private func beginStudy() {
         transitionTask?.cancel(); phase = .study; countdown = currentChallenge.studySeconds
