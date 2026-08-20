@@ -631,7 +631,7 @@ private struct PortfolioApp: Identifiable {
     let tint: Color
     let url: URL
     static var rekko: PortfolioApp { .init(id: "rekko", name: "Rekko", tagline: L10n.text("promo.rekko"), icon: "play.rectangle.on.rectangle.fill", tint: MemoryTheme.violet, url: URL(string: "https://apps.apple.com/app/id6774924405")!) }
-    static var soundLibrary: PortfolioApp { .init(id: "sound", name: "My Sound Library", tagline: L10n.text("promo.sound"), icon: "waveform", tint: MemoryTheme.coral, url: URL(string: "https://apps.apple.com/app/my-sound-library/id6771492676")!) }
+    static var soundLibrary: PortfolioApp { .init(id: "sound", name: "Ekkos", tagline: L10n.text("promo.sound"), icon: "waveform", tint: MemoryTheme.coral, url: URL(string: "https://apps.apple.com/app/ekkoes/id6771492676")!) }
     static var reliquum: PortfolioApp { .init(id: "reliquum", name: "Reliquum", tagline: L10n.text("promo.reliquum"), icon: "envelope.badge.fill", tint: MemoryTheme.solar, url: URL(string: "https://apps.apple.com/app/id6769756899")!) }
     static func ordered(for category: MemoryCategory) -> [PortfolioApp] {
         switch category { case .sound, .visual, .spatial: [soundLibrary, reliquum, rekko]; case .words, .sequence: [reliquum, rekko, soundLibrary]; case .association: [rekko, reliquum, soundLibrary] }
