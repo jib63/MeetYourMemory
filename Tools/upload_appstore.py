@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# Copyright (c) 2026 Jean-Baptiste Meyer
+# SPDX-License-Identifier: MIT
+
 """
 upload_appstore.py — push the per-locale metadata and screenshots to
 App Store Connect via the public REST API.

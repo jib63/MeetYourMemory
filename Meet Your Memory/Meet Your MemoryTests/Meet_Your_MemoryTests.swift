@@ -1,3 +1,6 @@
+// Copyright (c) 2026 Jean-Baptiste Meyer
+// SPDX-License-Identifier: MIT
+
 import Foundation
 import Testing
 @testable import Meet_Your_Memory

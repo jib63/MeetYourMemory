@@ -21,3 +21,7 @@ Meet Your Memory is a free, playful iOS memory quiz built with SwiftUI. A five-m
 Open `Meet Your Memory/Meet Your Memory.xcodeproj` and run the `Meet Your Memory` scheme.
 
 The experience is intended for entertainment and is not a medical or learning-style assessment.
+
+## License
+
+Meet Your Memory is available under the [MIT License](LICENSE).

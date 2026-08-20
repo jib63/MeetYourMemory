@@ -1,6 +1,18 @@
 .DS_Store
 .claude/
 
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+Secrets.xcconfig
+GoogleService-Info.plist
+
 # Xcode user data
 xcuserdata/
 *.xcuserstate
