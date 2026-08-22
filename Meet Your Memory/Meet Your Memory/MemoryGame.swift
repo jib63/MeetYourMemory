@@ -4,7 +4,7 @@
 import Foundation
 import Observation
 
-enum GameScreen: Equatable { case home, playing, results }
+enum GameScreen: Equatable { case home, playing, results, focusResults }
 enum ChallengePhase: Equatable { case study, answer, feedback }
 
 enum MemoryCategory: String, CaseIterable, Identifiable, Codable {
@@ -72,6 +72,7 @@ struct MemoryChallenge: Identifiable, Equatable {
 
 enum MemoryChallengeBank {
     static let questionsPerCategory = 2
+    static let focusedChallengeCount = 3
 
     static func makeScan(avoiding previous: Set<String> = []) -> [MemoryChallenge] {
         var selected: [MemoryChallenge] = []
@@ -91,6 +92,24 @@ enum MemoryChallengeBank {
                 used.insert(candidate.signature)
                 usedFamilies[category, default: []].insert(candidate.questionFamily)
             }
+        }
+        return selected.shuffled()
+    }
+
+    static func makeFocusedPractice(for category: MemoryCategory, avoiding previous: Set<String> = []) -> [MemoryChallenge] {
+        var selected: [MemoryChallenge] = []
+        var usedFamilies = Set<String>()
+        for variant in 0..<focusedChallengeCount {
+            var candidate = make(category: category, variant: variant)
+            var attempts = 0
+            while (previous.contains(candidate.signature)
+                || selected.contains(where: { $0.signature == candidate.signature })
+                || usedFamilies.contains(candidate.questionFamily)) && attempts < 60 {
+                candidate = make(category: category, variant: variant)
+                attempts += 1
+            }
+            selected.append(candidate)
+            usedFamilies.insert(candidate.questionFamily)
         }
         return selected.shuffled()
     }
@@ -306,6 +325,12 @@ struct MemoryProfile: Equatable {
     var title: String { primaryCategory.profileTitle }
     var blurb: String { primaryCategory.profileBlurb }
     var shareText: String { L10n.format("share.profile", title, primaryCategory.title.lowercased(), overallPercent) }
+    var focusCategory: MemoryCategory {
+        results.enumerated().min { lhs, rhs in
+            if lhs.element.ratio == rhs.element.ratio { return lhs.offset < rhs.offset }
+            return lhs.element.ratio < rhs.element.ratio
+        }?.element.category ?? .visual
+    }
 
     static func build(correct: [MemoryCategory: Int], total: [MemoryCategory: Int]) -> MemoryProfile {
         let results = MemoryCategory.allCases.map { MemoryCategoryResult(category: $0, correct: correct[$0, default: 0], total: total[$0, default: 0]) }
@@ -380,19 +405,39 @@ final class MemoryGame {
     private(set) var challenges = MemoryChallengeBank.makeScan()
     private(set) var correctScores: [MemoryCategory: Int] = [:]
     private(set) var possibleScores: [MemoryCategory: Int] = [:]
+    private(set) var sourceProfile: MemoryProfile?
+    private(set) var focusedCategory: MemoryCategory?
     @ObservationIgnored private var previousSignatures = Set<String>()
     @ObservationIgnored private var transitionTask: Task<Void, Never>?
     var currentChallenge: MemoryChallenge { challenges[currentIndex] }
     var challengeCount: Int { challenges.count }
     var progress: Double { Double(currentIndex + 1) / Double(max(challenges.count, 1)) }
     var profile: MemoryProfile { MemoryProfile.build(correct: correctScores, total: possibleScores) }
+    var scanProfile: MemoryProfile { sourceProfile ?? profile }
+    var focusedCorrectCount: Int { focusedCategory.map { correctScores[$0, default: 0] } ?? 0 }
 
     func startQuickScan() {
         transitionTask?.cancel()
+        sourceProfile = nil
+        focusedCategory = nil
         challenges = MemoryChallengeBank.makeScan(avoiding: previousSignatures)
         previousSignatures = Set(challenges.map(\.signature))
         currentIndex = 0; selectedAnswer = nil; lastAnswerWasCorrect = false; correctScores = [:]
         possibleScores = Dictionary(grouping: challenges, by: \.category).mapValues(\.count)
+        screen = .playing
+        beginStudy()
+    }
+
+    func startFocusedPractice() {
+        transitionTask?.cancel()
+        let source = sourceProfile ?? profile
+        let category = focusedCategory ?? source.focusCategory
+        sourceProfile = source
+        focusedCategory = category
+        challenges = MemoryChallengeBank.makeFocusedPractice(for: category, avoiding: previousSignatures)
+        previousSignatures = Set(challenges.map(\.signature))
+        currentIndex = 0; selectedAnswer = nil; lastAnswerWasCorrect = false; correctScores = [:]
+        possibleScores = [category: challenges.count]
         screen = .playing
         beginStudy()
     }
@@ -410,12 +455,13 @@ final class MemoryGame {
         transitionTask = Task { [weak self] in
             try? await Task.sleep(for: .milliseconds(850))
             guard !Task.isCancelled, let self else { return }
-            if self.currentIndex == self.challenges.count - 1 { self.screen = .results }
+            if self.currentIndex == self.challenges.count - 1 { self.screen = self.focusedCategory == nil ? .results : .focusResults }
             else { self.currentIndex += 1; self.selectedAnswer = nil; self.lastAnswerWasCorrect = false; self.beginStudy() }
         }
     }
 
     func goHome() { transitionTask?.cancel(); screen = .home }
+    func returnToScanResults() { transitionTask?.cancel(); screen = .results }
 
     #if DEBUG
     func prepareMarketingScreen(_ name: String) {
@@ -428,6 +474,17 @@ final class MemoryGame {
             possibleScores = Dictionary(uniqueKeysWithValues: MemoryCategory.allCases.map { ($0, 2) })
             correctScores = [.visual: 2, .words: 1, .sound: 2, .spatial: 1, .association: 2, .sequence: 1]
             screen = .results
+        case "focus-result":
+            let totals = Dictionary(uniqueKeysWithValues: MemoryCategory.allCases.map { ($0, 2) })
+            sourceProfile = MemoryProfile.build(
+                correct: [.visual: 2, .words: 1, .sound: 2, .spatial: 1, .association: 2, .sequence: 1],
+                total: totals
+            )
+            focusedCategory = .words
+            challenges = MemoryChallengeBank.makeFocusedPractice(for: .words)
+            correctScores = [.words: 2]
+            possibleScores = [.words: challenges.count]
+            screen = .focusResults
         default:
             screen = .home
         }

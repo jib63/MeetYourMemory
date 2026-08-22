@@ -30,6 +30,33 @@ struct MeetYourMemoryTests {
         #expect(Set(first.map(\.signature)).isDisjoint(with: Set(second.map(\.signature))))
     }
 
+    @Test("Focused practice contains three varied challenges from one category")
+    func focusedPracticeIsTargeted() {
+        for category in MemoryCategory.allCases {
+            let challenges = MemoryChallengeBank.makeFocusedPractice(for: category)
+            #expect(challenges.count == MemoryChallengeBank.focusedChallengeCount)
+            #expect(challenges.allSatisfy { $0.category == category })
+            #expect(Set(challenges.map(\.signature)).count == MemoryChallengeBank.focusedChallengeCount)
+            #expect(Set(challenges.map(\.questionFamily)).count == MemoryChallengeBank.focusedChallengeCount)
+        }
+    }
+
+    @MainActor
+    @Test("Starting focused practice preserves the scan and targets its weakest category")
+    func focusedPracticeFlow() {
+        let game = MemoryGame()
+        game.prepareMarketingScreen("result")
+        let scanProfile = game.profile
+
+        game.startFocusedPractice()
+
+        #expect(game.screen == .playing)
+        #expect(game.focusedCategory == scanProfile.focusCategory)
+        #expect(game.scanProfile == scanProfile)
+        #expect(game.challenges.count == MemoryChallengeBank.focusedChallengeCount)
+        #expect(game.challenges.allSatisfy { $0.category == scanProfile.focusCategory })
+    }
+
     @Test("Procedural generation creates a large variety")
     func challengeVariety() {
         let signatures = Set((0..<30).flatMap { _ in MemoryChallengeBank.makeScan().map(\.signature) })
@@ -52,6 +79,7 @@ struct MeetYourMemoryTests {
         let profile = MemoryProfile.build(correct: correct, total: total)
         #expect(profile.primaryCategory == .visual)
         #expect(profile.overallPercent == 42)
+        #expect(profile.focusCategory == .sound)
     }
 
     @MainActor

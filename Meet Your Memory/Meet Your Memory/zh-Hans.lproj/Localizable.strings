@@ -56,3 +56,14 @@
 "about.terms" = "使用条款";
 "about.terms.detail" = "查看 Apple 标准最终用户许可协议。";
 "ui.memory.word" = "记忆。";
+
+// 专项训练
+"focus.eyebrow" = "下一步";
+"focus.title" = "强化%@";
+"focus.body" = "针对仍可提升的记忆模式，完成3项快速挑战。";
+"focus.start" = "开始3项挑战";
+"focus.result.eyebrow" = "专项训练完成";
+"focus.result.title" = "%@训练完成";
+"focus.result.body" = "你记住了%d项，共%d项。每次练习都会帮助这种记忆模式更加牢固。";
+"focus.retry" = "再试一次";
+"focus.back" = "返回记忆地图";

@@ -169,3 +169,14 @@
 "about.terms" = "Terms of Use";
 "about.terms.detail" = "Read Apple’s Standard End User License Agreement.";
 "ui.memory.word" = "Memory.";
+
+// Focused practice
+"focus.eyebrow" = "YOUR NEXT MOVE";
+"focus.title" = "Sharpen %@";
+"focus.body" = "Three quick challenges, tuned to the memory mode that could use another pass.";
+"focus.start" = "TRY 3 CHALLENGES";
+"focus.result.eyebrow" = "FOCUS COMPLETE";
+"focus.result.title" = "%@ boost complete";
+"focus.result.body" = "You remembered %d of %d. Each pass gives this memory mode another chance to stick.";
+"focus.retry" = "TRY AGAIN";
+"focus.back" = "BACK TO MEMORY MAP";

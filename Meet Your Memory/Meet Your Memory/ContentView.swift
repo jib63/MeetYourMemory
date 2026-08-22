@@ -45,8 +45,18 @@ struct ContentView: View {
                 ChallengeView(game: game)
                     .transition(.move(edge: .trailing).combined(with: .opacity))
             case .results:
-                ResultsView(profile: game.profile, onReplay: game.startQuickScan, onHome: game.goHome, onHistory: { showsHistory = true })
+                ResultsView(profile: game.scanProfile, onFocus: game.startFocusedPractice, onReplay: game.startQuickScan, onHome: game.goHome, onHistory: { showsHistory = true })
                     .transition(.scale(scale: 0.94).combined(with: .opacity))
+            case .focusResults:
+                FocusResultsView(
+                    category: game.focusedCategory ?? game.scanProfile.focusCategory,
+                    correct: game.focusedCorrectCount,
+                    total: game.challengeCount,
+                    onRetry: game.startFocusedPractice,
+                    onBack: game.returnToScanResults,
+                    onHome: game.goHome
+                )
+                .transition(.scale(scale: 0.94).combined(with: .opacity))
             }
         }
         .preferredColorScheme(.dark)
@@ -483,6 +493,7 @@ private struct AnswerCard: View {
 
 private struct ResultsView: View {
     let profile: MemoryProfile
+    let onFocus: () -> Void
     let onReplay: () -> Void
     let onHome: () -> Void
     let onHistory: () -> Void
@@ -495,6 +506,7 @@ private struct ResultsView: View {
                 }
                 ProfileHero(profile: profile)
                 BreakdownCard(results: profile.results)
+                FocusPracticeCard(category: profile.focusCategory, onStart: onFocus)
                 HStack(spacing: 12) {
                     ShareLink(item: profile.shareText) { Label(L10n.text("ui.share"), systemImage: "square.and.arrow.up").frame(maxWidth: .infinity) }.buttonStyle(MemorySecondaryButtonStyle(dark: true))
                     Button(action: onReplay) { Label(L10n.text("ui.replay"), systemImage: "arrow.clockwise").frame(maxWidth: .infinity) }.buttonStyle(MemoryPrimaryButtonStyle())
@@ -506,6 +518,124 @@ private struct ResultsView: View {
             .frame(maxWidth: 620).padding(.horizontal, 20).padding(.vertical, 16).frame(maxWidth: .infinity)
         }.scrollIndicators(.hidden)
             .accessibilityIdentifier("screen-results")
+    }
+}
+
+private struct FocusPracticeCard: View {
+    let category: MemoryCategory
+    let onStart: () -> Void
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var pulses = false
+
+    var body: some View {
+        VStack(spacing: 18) {
+            ZStack {
+                ForEach(0..<3, id: \.self) { index in
+                    Circle()
+                        .stroke(category.tint.opacity(0.42 - Double(index) * 0.09), lineWidth: 2)
+                        .frame(width: CGFloat(74 + index * 28), height: CGFloat(74 + index * 28))
+                        .scaleEffect(pulses ? 1.07 : 0.93)
+                        .animation(
+                            reduceMotion ? nil : .easeInOut(duration: 1.35).repeatForever(autoreverses: true).delay(Double(index) * 0.14),
+                            value: pulses
+                        )
+                }
+                Circle().fill(category.tint).frame(width: 66, height: 66)
+                Image(systemName: category.icon).font(.system(size: 29, weight: .black)).foregroundStyle(MemoryTheme.ink)
+            }
+            .frame(height: 136)
+            .accessibilityHidden(true)
+
+            VStack(spacing: 7) {
+                Text(L10n.text("focus.eyebrow"))
+                    .font(.system(.caption, design: .monospaced, weight: .black)).tracking(1.8).foregroundStyle(category.tint)
+                Text(L10n.format("focus.title", category.title))
+                    .font(.system(.title2, design: .rounded, weight: .black)).foregroundStyle(.white).multilineTextAlignment(.center)
+                Text(L10n.text("focus.body"))
+                    .font(.system(.subheadline, design: .rounded, weight: .medium)).foregroundStyle(.white.opacity(0.64)).multilineTextAlignment(.center)
+            }
+
+            HStack(spacing: 8) {
+                ForEach(1...MemoryChallengeBank.focusedChallengeCount, id: \.self) { index in
+                    Text("\(index)")
+                        .font(.system(.caption2, design: .monospaced, weight: .black))
+                        .foregroundStyle(category.tint)
+                        .frame(width: 28, height: 28)
+                        .background(category.tint.opacity(0.13), in: Circle())
+                }
+            }
+            .accessibilityHidden(true)
+
+            Button(action: onStart) {
+                Label(L10n.text("focus.start"), systemImage: "scope").frame(maxWidth: .infinity)
+            }
+            .buttonStyle(MemoryPrimaryButtonStyle())
+        }
+        .padding(24)
+        .background(MemoryTheme.inkSoft.opacity(0.96), in: RoundedRectangle(cornerRadius: 30))
+        .overlay(RoundedRectangle(cornerRadius: 30).stroke(category.tint.opacity(0.48)))
+        .shadow(color: category.tint.opacity(0.16), radius: 24, y: 12)
+        .onAppear { pulses = !reduceMotion }
+    }
+}
+
+private struct FocusResultsView: View {
+    let category: MemoryCategory
+    let correct: Int
+    let total: Int
+    let onRetry: () -> Void
+    let onBack: () -> Void
+    let onHome: () -> Void
+
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 22) {
+                HStack {
+                    Button(action: onHome) {
+                        Image(systemName: "xmark").font(.headline.weight(.black)).frame(width: 42, height: 42).background(.white.opacity(0.1), in: Circle())
+                    }
+                    .foregroundStyle(.white)
+                    Spacer()
+                    Text(L10n.text("focus.result.eyebrow"))
+                        .font(.system(.caption, design: .monospaced, weight: .black)).tracking(1.7).foregroundStyle(.white.opacity(0.72))
+                    Spacer()
+                    Color.clear.frame(width: 42, height: 42)
+                }
+
+                VStack(spacing: 20) {
+                    ZStack {
+                        Circle().fill(.white.opacity(0.3)).frame(width: 136, height: 136)
+                        Circle().stroke(MemoryTheme.ink.opacity(0.16), style: StrokeStyle(lineWidth: 3, dash: [4, 8])).frame(width: 164, height: 164)
+                        Image(systemName: category.icon).font(.system(size: 58, weight: .black)).foregroundStyle(MemoryTheme.ink)
+                    }
+                    VStack(spacing: 8) {
+                        Text(L10n.format("focus.result.title", category.title))
+                            .font(.system(.title2, design: .rounded, weight: .black)).foregroundStyle(MemoryTheme.ink).multilineTextAlignment(.center)
+                        Text("\(correct) / \(total)")
+                            .font(.system(size: 54, weight: .black, design: .rounded)).tracking(-2).foregroundStyle(MemoryTheme.ink)
+                        Text(L10n.format("focus.result.body", correct, total))
+                            .font(.system(.body, design: .rounded, weight: .semibold)).foregroundStyle(MemoryTheme.ink.opacity(0.68)).multilineTextAlignment(.center)
+                    }
+                }
+                .padding(28).frame(maxWidth: .infinity)
+                .background(LinearGradient(colors: [MemoryTheme.paper, category.tint], startPoint: .topLeading, endPoint: .bottomTrailing), in: RoundedRectangle(cornerRadius: 34))
+                .overlay(RoundedRectangle(cornerRadius: 34).stroke(.white.opacity(0.6)))
+                .shadow(color: category.tint.opacity(0.33), radius: 34, y: 16)
+
+                Button(action: onRetry) {
+                    Label(L10n.text("focus.retry"), systemImage: "arrow.clockwise").frame(maxWidth: .infinity)
+                }
+                .buttonStyle(MemoryPrimaryButtonStyle())
+
+                Button(action: onBack) {
+                    Label(L10n.text("focus.back"), systemImage: "chart.bar.xaxis").frame(maxWidth: .infinity)
+                }
+                .buttonStyle(MemorySecondaryButtonStyle(dark: true))
+            }
+            .frame(maxWidth: 620).padding(.horizontal, 20).padding(.vertical, 16).frame(maxWidth: .infinity)
+        }
+        .scrollIndicators(.hidden)
+        .accessibilityIdentifier("screen-focus-results")
     }
 }
 

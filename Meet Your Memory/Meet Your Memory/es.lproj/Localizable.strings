@@ -56,3 +56,14 @@
 "about.terms" = "Condiciones de uso";
 "about.terms.detail" = "Consulta el contrato de licencia de usuario final estándar de Apple.";
 "ui.memory.word" = "Memoria.";
+
+// Práctica dirigida
+"focus.eyebrow" = "TU SIGUIENTE PASO";
+"focus.title" = "Refuerza: %@";
+"focus.body" = "Tres retos rápidos, adaptados al tipo de memoria que merece otro intento.";
+"focus.start" = "PROBAR 3 RETOS";
+"focus.result.eyebrow" = "PRÁCTICA COMPLETADA";
+"focus.result.title" = "Práctica de %@ completada";
+"focus.result.body" = "Has recordado %d de %d. Cada intento ayuda a afianzar este tipo de memoria.";
+"focus.retry" = "VOLVER A INTENTARLO";
+"focus.back" = "VOLVER AL MAPA";

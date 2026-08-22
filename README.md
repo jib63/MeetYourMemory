@@ -7,9 +7,10 @@ Meet Your Memory is a free, playful iOS memory quiz built with SwiftUI. A five-m
 - Twelve procedurally generated challenges per scan
 - Fresh questions on replay, with the previous set actively avoided
 - Six-part memory profile and shareable result
+- Focused three-challenge practice for the memory mode that needs another pass
 - Private on-device history for up to 60 sessions
 - Local audio-tone generation with no network dependency
-- Contextual discovery cards for Rekko, My Sound Library, and Reliquum
+- Contextual discovery cards for Rekko, Ekkos, and Reliquum
 - English, French, Spanish, Italian, Portuguese, Japanese, Simplified Chinese, and Hindi localizations
 - Reduced-motion support and responsive iPhone/iPad layouts
 

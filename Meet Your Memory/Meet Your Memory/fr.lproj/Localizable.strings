@@ -58,3 +58,14 @@
 "about.terms" = "Conditions d’utilisation";
 "about.terms.detail" = "Consultez le contrat de licence utilisateur final standard d’Apple.";
 "ui.memory.word" = "Mémoire.";
+
+// Entraînement ciblé
+"focus.eyebrow" = "PROCHAINE ÉTAPE";
+"focus.title" = "Renforcez : %@";
+"focus.body" = "Trois défis rapides, adaptés à la forme de mémoire qui mérite un nouvel essai.";
+"focus.start" = "ESSAYER 3 DÉFIS";
+"focus.result.eyebrow" = "ENTRAÎNEMENT TERMINÉ";
+"focus.result.title" = "Session terminée : %@";
+"focus.result.body" = "Vous avez réussi %d défis sur %d. Chaque essai aide ce type de mémoire à mieux s’ancrer.";
+"focus.retry" = "RECOMMENCER";
+"focus.back" = "RETOUR À LA CARTE";

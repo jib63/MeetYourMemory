@@ -56,3 +56,14 @@
 "about.terms" = "利用規約";
 "about.terms.detail" = "Apple標準エンドユーザ使用許諾契約をご確認ください。";
 "ui.memory.word" = "記憶。";
+
+// 集中トレーニング
+"focus.eyebrow" = "次のステップ";
+"focus.title" = "%@を鍛えよう";
+"focus.body" = "もう一度取り組みたい記憶モードに合わせた、3つの短いチャレンジです。";
+"focus.start" = "3問に挑戦";
+"focus.result.eyebrow" = "集中トレーニング完了";
+"focus.result.title" = "%@トレーニング完了";
+"focus.result.body" = "%d問中%d問を覚えていました。繰り返すほど、この記憶モードが定着していきます。";
+"focus.retry" = "もう一度";
+"focus.back" = "メモリーマップに戻る";
