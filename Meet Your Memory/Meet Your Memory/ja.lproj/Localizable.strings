@@ -22,7 +22,8 @@
 "ui.disclaimer.short"="楽しいスナップショットであり、医療・学習スタイルの診断ではありません。回答はこの端末に保存されます。"; "ui.leave.scan"="スキャンを終了"; "ui.recall"="思い出す"; "ui.play.again"="もう一度聴く"; "ui.got.it"="覚えた！"; "ui.listen.pitch"="高さと順番を聴こう"; "ui.what.stuck"="何が残った？"; "ui.feedback.correct"="記憶がピタリ！"; "ui.feedback.wrong"="今回は逃げちゃった。"; "ui.choose.answer"="覚えている答えを選ぼう。戻ることはできません。";
 "ui.memory.map"="あなたのメモリーマップ"; "ui.share"="共有"; "ui.replay"="新しいスキャン"; "ui.view.history"="過去の結果を見る"; "ui.you.are"="あなたは"; "ui.memory.spark"="メモリースパーク"; "ui.memory.mix"="記憶のミックス"; "ui.mix.subtitle"="心はひとつの型だけではありません。"; "ui.disclaimer.long"="これは1回の楽しいスナップショットで、医療診断ではありません。記憶は注意、慣れ、休息、状況によって変わります。";
 "history.eyebrow"="あなたのタイムライン"; "history.title"="記憶の履歴"; "history.subtitle"="スキャンはこの端末だけに保存され、記憶のミックスの変化を振り返れます。"; "history.empty.title"="まだ結果がありません"; "history.empty.body"="最初のスキャンを完了すると、ここにメモリーマップが表示されます。"; "history.latest"="最新";
-"promo.eyebrow"="思い出に居場所を"; "promo.title"="Jib Studiosの3つのアプリ"; "promo.match"="おすすめ"; "promo.rekko"="友だちがおすすめした作品を覚えておこう。"; "promo.sound"="大切な場所の音を覚えておこう。"; "promo.reliquum"="過去の自分を覚え、未来の自分へ伝えよう。";
+"promo.eyebrow"="思い出に居場所を"; "promo.title" = "Jib Studiosの4つのアプリ"; "promo.match"="おすすめ"; "promo.rekko"="友だちがおすすめした作品を覚えておこう。"; "promo.sound"="大切な場所の音を覚えておこう。"; "promo.reliquum"="過去の自分を覚え、未来の自分へ伝えよう。";"promo.pixworld" = "訪れた場所を記録しよう";
+
 "tone.bass"="重低音";
 "question.before.item"="%@のすぐ前にあったものは？";
 "question.after.item"="%@のすぐ後にあったものは？";
