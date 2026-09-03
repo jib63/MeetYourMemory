@@ -131,11 +131,13 @@
 "history.empty.body" = "Finish your first scan and its memory map will appear here.";
 "history.latest" = "LATEST";
 "promo.eyebrow" = "GIVE YOUR MEMORIES SOMEWHERE TO LIVE";
-"promo.title" = "Three apps from Jib Studios";
+"promo.title" = "Four apps from Jib Studios";
 "promo.match" = "YOUR MATCH";
 "promo.rekko" = "Remember what friends said was worth watching.";
 "promo.sound" = "Remember how the places that matter sounded.";
 "promo.reliquum" = "Remember who you were — and tell your future self.";
+"promo.pixworld" = "Remember the places you visit";
+
 "tone.bass" = "Bass";
 "question.before.item" = "What came immediately before %@?";
 "question.after.item" = "What came immediately after %@?";

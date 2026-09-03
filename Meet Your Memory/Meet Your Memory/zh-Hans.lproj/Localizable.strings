@@ -22,7 +22,7 @@
 "ui.disclaimer.short"="这是轻松有趣的快照，不是医学或学习风格评估。你的答案只保存在本设备。"; "ui.leave.scan"="退出记忆扫描"; "ui.recall"="回忆"; "ui.play.again"="再次播放"; "ui.got.it"="我记住了"; "ui.listen.pitch"="聆听音高和顺序"; "ui.what.stuck"="你记住了什么？"; "ui.feedback.correct"="记忆准确命中！"; "ui.feedback.wrong"="这次它溜走了。"; "ui.choose.answer"="选择你记得的答案——不能返回。";
 "ui.memory.map"="你的记忆地图"; "ui.share"="分享"; "ui.replay"="全新扫描"; "ui.view.history"="查看历史结果"; "ui.you.are"="你是"; "ui.memory.spark"="记忆火花"; "ui.memory.mix"="你的记忆组合"; "ui.mix.subtitle"="一个标签无法定义你的大脑。"; "ui.disclaimer.long"="这只是一次轻松有趣的快照，并非医学评估。记忆会随注意力、熟悉度、休息和情境而变化。";
 "history.eyebrow"="你的时间线"; "history.title"="记忆历史"; "history.subtitle"="每次扫描都只保存在本设备，让你看到记忆组合如何随时间变化。"; "history.empty.title"="还没有扫描"; "history.empty.body"="完成第一次扫描后，记忆地图会出现在这里。"; "history.latest"="最新";
-"promo.eyebrow"="给回忆一个归宿"; "promo.title"="Jib Studios 的三款应用"; "promo.match"="适合你"; "promo.rekko"="记住朋友推荐的精彩内容。"; "promo.sound"="留住重要地点的声音。"; "promo.reliquum"="记住曾经的自己，并告诉未来的你。";
+"promo.eyebrow"="给回忆一个归宿"; "promo.title"="Jib Studios 的三款应四 "; "promo.match"="适合你"; "promo.rekko"="记住朋友推荐的精彩内容。"; "promo.sound"="留住重要地点的声音。"; "promo.reliquum"="记住曾经的自己，并告诉未来的你。";"promo.pixworld" = "记住你去过的地方";
 "tone.bass"="超低音";
 "question.before.item"="紧挨在%@之前的是什么？";
 "question.after.item"="紧挨在%@之后的是什么？";

@@ -1,1 +1,1 @@
-My Sound Library ahora se llama Ekkos. Esta actualización también añade una práctica dirigida de tres retos para reforzar el tipo de memoria que merece otro intento.
+Te presentamos PixWorld, una nueva aplicación para coleccionar Pixel Arts en tu ciudad.
