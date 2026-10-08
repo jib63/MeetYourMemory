@@ -8,6 +8,9 @@ struct ContentView: View {
     @State private var history = MemoryHistoryStore()
     @State private var showsHistory = false
     @State private var showsAbout = false
+    #if DEBUG
+    @State private var nativeCaptureFixtureStarted = false
+    #endif
 
     init() {
         let game = MemoryGame()
@@ -22,6 +25,16 @@ struct ContentView: View {
                 history.prepareMarketingHistory()
                 showHistory = true
             }
+        }
+        if !ProcessInfo.processInfo.arguments.contains("--marketing-native-capture"),
+           ProcessInfo.processInfo.arguments.contains("--duo-ui-testing"),
+           let marker = ProcessInfo.processInfo.arguments.firstIndex(of: "--duo-test-game"),
+           ProcessInfo.processInfo.arguments.indices.contains(marker + 1) {
+            if let adaptiveGame = DuoGame(rawValue: ProcessInfo.processInfo.arguments[marker + 1]) {
+                game.startAdaptiveUITest(adaptiveGame)
+            }
+        } else if ProcessInfo.processInfo.arguments.contains("--duo-test-regular-then-expanded") {
+            game.startRegularThenExpandedUITest()
         }
         #endif
         _game = State(initialValue: game)
@@ -66,6 +79,36 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showsHistory) { HistoryView(sessions: history.sessions) }
         .sheet(isPresented: $showsAbout) { AboutView() }
+        .background {
+            AdaptiveDisplayObserver { context in
+                game.updateAdaptiveContext(context)
+                #if DEBUG
+                // Native captures wait for the real display report before
+                // starting a fixture, so launch-time hinge updates do not
+                // interrupt a round that has already begun.
+                let arguments = ProcessInfo.processInfo.arguments
+                if arguments.contains("--marketing-native-capture"),
+                   !nativeCaptureFixtureStarted,
+                   let marker = arguments.firstIndex(of: "--duo-test-game"),
+                   arguments.indices.contains(marker + 1),
+                   let fixture = DuoGame(rawValue: arguments[marker + 1]),
+                   context.mode == (fixture.availability == .expanded ? .expanded : .folded) {
+                    nativeCaptureFixtureStarted = true
+                    game.startAdaptiveUITest(fixture)
+                    game.updateAdaptiveContext(context)
+                }
+                if ProcessInfo.processInfo.arguments.contains("--marketing-native-capture"),
+                   let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                    let report: [String: Any] = ["pose": context.pose.rawValue,
+                        "mode": context.mode == .expanded ? "expanded" : context.mode == .folded ? "folded" : "compact",
+                        "expanded": context.isExpanded]
+                    if let data = try? JSONSerialization.data(withJSONObject: report, options: [.sortedKeys]) {
+                        try? data.write(to: directory.appending(path: "marketing-display-context.json"), options: .atomic)
+                    }
+                }
+                #endif
+            }
+        }
     }
 }
 
@@ -140,6 +183,7 @@ private struct HomeView: View {
                             .shadow(color: MemoryTheme.solar.opacity(0.35), radius: 24, y: 10)
                         }
                         .buttonStyle(MemoryPressStyle())
+                        .accessibilityIdentifier("start-memory-scan")
 
                         if sessionCount > 0 {
                             Button(action: onHistory) {
@@ -164,7 +208,8 @@ private struct HomeView: View {
                             .foregroundStyle(MemoryTheme.mist.opacity(0.68)).padding(.bottom, 28)
                     }
                 }
-                .frame(maxWidth: 620).padding(.horizontal, 24).frame(maxWidth: .infinity)
+                .frame(maxWidth: 620)
+                .padding(.horizontal, 24).frame(maxWidth: .infinity)
             }.scrollIndicators(.hidden)
         }
         .onAppear { lensIsAlive = true }
@@ -295,58 +340,87 @@ private struct ChallengeView: View {
                         }.foregroundStyle(.white).accessibilityLabel(L10n.text("ui.leave.scan"))
                         Spacer()
                         Text("\(game.currentIndex + 1) / \(game.challengeCount)").font(.system(.caption, design: .monospaced, weight: .black)).foregroundStyle(.white.opacity(0.76))
+                            .accessibilityIdentifier("scan-position")
                     }
                     GeometryReader { geometry in
                         ZStack(alignment: .leading) {
                             Capsule().fill(.white.opacity(0.11))
-                            Capsule().fill(game.currentChallenge.category.tint).frame(width: geometry.size.width * game.progress)
+                                .accessibilityElement()
+                                .accessibilityIdentifier(challengeIdentifier)
+                            Capsule().fill(game.currentStep.category.tint).frame(width: geometry.size.width * game.progress)
                         }
                     }.frame(height: 7)
                 }.padding(.horizontal, 20).padding(.top, 12)
 
-                ScrollView {
-                    VStack(spacing: 18) {
-                        HStack(spacing: 12) {
-                            Image(systemName: game.currentChallenge.category.icon).font(.title3.weight(.black)).foregroundStyle(MemoryTheme.ink)
-                                .frame(width: 44, height: 44).background(game.currentChallenge.category.tint, in: RoundedRectangle(cornerRadius: 14))
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text(game.phase == .study ? game.currentChallenge.category.studyVerb : L10n.text("ui.recall"))
-                                    .font(.system(.caption2, design: .monospaced, weight: .black)).tracking(1.8).foregroundStyle(game.currentChallenge.category.tint)
-                                Text(game.currentChallenge.category.title)
-                                    .font(.system(.headline, design: .rounded, weight: .black))
-                                    .foregroundStyle(.white)
-                                    .lineLimit(nil)
-                                    .fixedSize(horizontal: false, vertical: true)
+                switch game.currentStep {
+                case let .regular(challenge):
+                    ScrollView {
+                        VStack(spacing: 18) {
+                            challengeHeading(category: challenge.category, title: challenge.category.title)
+                            Group {
+                                switch game.phase {
+                                case .study:
+                                    StudyCard(challenge: challenge, countdown: game.countdown, onReady: game.revealAnswers, onReplaySound: playCurrentSound)
+                                case .answer, .feedback: AnswerCard(game: game, challenge: challenge)
+                                }
                             }
-                            .layoutPriority(1)
-                            Spacer()
+                            .id("\(challenge.id)-\(game.phase)")
+                            .transition(.opacity.combined(with: .scale(scale: 0.97)))
+                            Spacer(minLength: 16)
                         }
-                        Group {
-                            switch game.phase {
-                            case .study:
-                                StudyCard(challenge: game.currentChallenge, countdown: game.countdown, onReady: game.revealAnswers, onReplaySound: playCurrentSound)
-                            case .answer, .feedback: AnswerCard(game: game)
-                            }
-                        }
-                        .id("\(game.currentChallenge.id)-\(game.phase)")
-                        .transition(.opacity.combined(with: .scale(scale: 0.97)))
-                        Spacer(minLength: 16)
+                        .frame(maxWidth: 620).padding(.horizontal, 20).padding(.top, 18)
+                        .frame(maxWidth: .infinity, minHeight: proxy.size.height - 86)
+                    }.scrollIndicators(.hidden)
+                case let .adaptive(adaptiveGame):
+                    VStack(spacing: 12) {
+                        challengeHeading(category: adaptiveGame.memoryCategory, title: adaptiveGame.title)
+                        AdaptiveScanChallengeView(
+                            game: adaptiveGame,
+                            context: game.adaptiveContext,
+                            onComplete: { game.completeAdaptiveStep($0, for: adaptiveGame) },
+                            onReplace: { game.replaceAdaptiveStep(for: adaptiveGame) },
+                            onTestingContextChange: game.updateAdaptiveContext
+                        )
+                        .id("\(game.currentIndex)-\(adaptiveGame.rawValue)")
                     }
-                    .frame(maxWidth: 620).padding(.horizontal, 20).padding(.top, 18)
-                    .frame(maxWidth: .infinity, minHeight: proxy.size.height - 86)
-                }.scrollIndicators(.hidden)
+                    .padding(.horizontal, 20).padding(.top, 12).padding(.bottom, 8)
+                }
             }
         }
-        .task(id: "\(game.currentChallenge.id)-\(game.phase)") {
-            guard game.phase == .study, case .tones = game.currentChallenge.stimulus else { return }
+        .task(id: game.currentStep) {
+            guard game.phase == .study,
+                  case let .regular(challenge) = game.currentStep,
+                  case .tones = challenge.stimulus else { return }
             try? await Task.sleep(for: .milliseconds(350)); guard !Task.isCancelled else { return }; playCurrentSound()
         }
         .animation(reduceMotion ? nil : .spring(response: 0.45, dampingFraction: 0.88), value: game.phase)
-        .accessibilityIdentifier("screen-challenge-\(game.currentChallenge.category.rawValue)")
+    }
+
+    private func challengeHeading(category: MemoryCategory, title: String) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: category.icon).font(.title3.weight(.black)).foregroundStyle(MemoryTheme.ink)
+                .frame(width: 44, height: 44).background(category.tint, in: RoundedRectangle(cornerRadius: 14))
+            VStack(alignment: .leading, spacing: 2) {
+                Text(game.currentAdaptiveGame == nil && game.phase != .study ? L10n.text("ui.recall") : category.studyVerb)
+                    .font(.system(.caption2, design: .monospaced, weight: .black)).tracking(1.8).foregroundStyle(category.tint)
+                Text(title).font(.system(.headline, design: .rounded, weight: .black)).foregroundStyle(.white)
+                    .lineLimit(nil).fixedSize(horizontal: false, vertical: true)
+            }
+            .layoutPriority(1)
+            Spacer()
+        }
+    }
+
+    private var challengeIdentifier: String {
+        switch game.currentStep {
+        case let .regular(challenge): "screen-challenge-\(challenge.category.rawValue)"
+        case let .adaptive(adaptiveGame): "screen-challenge-adaptive-\(adaptiveGame.rawValue)"
+        }
     }
 
     private func playCurrentSound() {
-        if case let .tones(tones) = game.currentChallenge.stimulus { tonePlayer.play(tones) }
+        if case let .regular(challenge) = game.currentStep,
+           case let .tones(tones) = challenge.stimulus { tonePlayer.play(tones) }
     }
 }
 
@@ -374,7 +448,9 @@ private struct StudyCard: View {
                 if case .tones = challenge.stimulus {
                     Button(action: onReplaySound) { Label(L10n.text("ui.play.again"), systemImage: "speaker.wave.2.fill").frame(maxWidth: .infinity) }.buttonStyle(MemorySecondaryButtonStyle())
                 } else {
-                    Button(action: onReady) { Text(L10n.text("ui.got.it")).frame(maxWidth: .infinity) }.buttonStyle(MemorySecondaryButtonStyle())
+                    Button(action: onReady) { Text(L10n.text("ui.got.it")).frame(maxWidth: .infinity) }
+                        .buttonStyle(MemorySecondaryButtonStyle())
+                        .accessibilityIdentifier("regular-ready")
                 }
             }
         }
@@ -429,11 +505,12 @@ private struct StimulusView: View {
 
 private struct AnswerCard: View {
     @Bindable var game: MemoryGame
+    let challenge: MemoryChallenge
     var body: some View {
         VStack(spacing: 20) {
             VStack(spacing: 8) {
-                Text(L10n.text("ui.what.stuck")).font(.system(.caption, design: .monospaced, weight: .black)).tracking(2).foregroundStyle(game.currentChallenge.category.tint)
-                Text(game.currentChallenge.question)
+                Text(L10n.text("ui.what.stuck")).font(.system(.caption, design: .monospaced, weight: .black)).tracking(2).foregroundStyle(challenge.category.tint)
+                Text(challenge.question)
                     .font(.system(.title2, design: .rounded, weight: .black))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
@@ -441,7 +518,7 @@ private struct AnswerCard: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
             VStack(spacing: 11) {
-                ForEach(Array(game.currentChallenge.options.enumerated()), id: \.offset) { index, option in
+                ForEach(Array(challenge.options.enumerated()), id: \.offset) { index, option in
                     Button { game.answer(index) } label: {
                         HStack(spacing: 14) {
                             Text(String(UnicodeScalar(65 + index)!)).font(.system(.caption, design: .monospaced, weight: .black)).frame(width: 34, height: 34).background(optionForeground(index).opacity(0.13), in: Circle())
@@ -452,7 +529,7 @@ private struct AnswerCard: View {
                                 .fixedSize(horizontal: false, vertical: true)
                                 .layoutPriority(1)
                             Spacer(minLength: 0)
-                            if game.phase == .feedback, index == game.currentChallenge.correctOption {
+                            if game.phase == .feedback, index == challenge.correctOption {
                                 Image(systemName: "checkmark.circle.fill").font(.title2).foregroundStyle(MemoryTheme.aqua)
                             } else if game.phase == .feedback, index == game.selectedAnswer {
                                 Image(systemName: "xmark.circle.fill").font(.title2).foregroundStyle(MemoryTheme.coral)
@@ -464,6 +541,7 @@ private struct AnswerCard: View {
                         .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
                         .background(optionBackground(index), in: RoundedRectangle(cornerRadius: 20)).overlay(RoundedRectangle(cornerRadius: 20).stroke(optionBorder(index), lineWidth: 1.5))
                     }.buttonStyle(MemoryPressStyle()).disabled(game.phase == .feedback)
+                        .accessibilityIdentifier("regular-option-\(index)")
                 }
             }
             if game.phase == .feedback {
@@ -474,18 +552,18 @@ private struct AnswerCard: View {
             }
         }
         .padding(22).background(MemoryTheme.inkSoft.opacity(0.96), in: RoundedRectangle(cornerRadius: 32))
-        .overlay(RoundedRectangle(cornerRadius: 32).stroke(game.currentChallenge.category.tint.opacity(0.5))).shadow(color: .black.opacity(0.28), radius: 28, y: 15)
+        .overlay(RoundedRectangle(cornerRadius: 32).stroke(challenge.category.tint.opacity(0.5))).shadow(color: .black.opacity(0.28), radius: 28, y: 15)
     }
-    private func optionForeground(_ index: Int) -> Color { game.phase == .feedback && index == game.currentChallenge.correctOption ? MemoryTheme.ink : .white }
+    private func optionForeground(_ index: Int) -> Color { game.phase == .feedback && index == challenge.correctOption ? MemoryTheme.ink : .white }
     private func optionBackground(_ index: Int) -> Color {
         guard game.phase == .feedback else { return .white.opacity(0.075) }
-        if index == game.currentChallenge.correctOption { return MemoryTheme.aqua }
+        if index == challenge.correctOption { return MemoryTheme.aqua }
         if index == game.selectedAnswer { return MemoryTheme.coral.opacity(0.28) }
         return .white.opacity(0.045)
     }
     private func optionBorder(_ index: Int) -> Color {
         guard game.phase == .feedback else { return .white.opacity(0.13) }
-        if index == game.currentChallenge.correctOption { return MemoryTheme.aqua }
+        if index == challenge.correctOption { return MemoryTheme.aqua }
         if index == game.selectedAnswer { return MemoryTheme.coral }
         return .clear
     }

@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "app": "meet-your-memory",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "transportUsed": "App Store Connect API 4.5.1",
+  "reviewSubmitted": false,
+  "assets": [
+    {
+      "id": "header-still",
+      "assetKey": "b63269c66a4f01b8d59b8ead66ea42590720f1ed7ec9654d74aa38bdccf9495c",
+      "locale": "en-US",
+      "profile": "header-image",
+      "sha256": "97f707e048ea430e018163d018692e8326418a86a99d55916652050f5a2acdec",
+      "remoteAssetId": "a2000019-519a-88ba-8020-9eee289c0d6c",
+      "remoteName": "meet-your-memory-header-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "1b4e9f8d435552f6ca227033a5d1fe0757a029aaa9ecb70f216bd2df39fa69cf",
+      "locale": "en-US",
+      "profile": "search-image",
+      "sha256": "b094fc07ec028bda180f7f8ec58e1a771de02884d2cd7fc1dcdbcf483eed6b47",
+      "remoteAssetId": "74400019-519a-88ba-8012-11a862a48ca3",
+      "remoteName": "meet-your-memory-search-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "aa23aa67a1e5dcc4b0c2058cf44d32fda75d48e1935ae8d0bbb98ff6ee697618",
+      "locale": "fr-FR",
+      "profile": "header-image",
+      "sha256": "2c78c9d63c56514fc93d0ed7620250d3b2217d487c0b40c3942747a75e2439de",
+      "remoteAssetId": "56400019-519a-88ba-801d-b8252efc3cb2",
+      "remoteName": "meet-your-memory-header-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "063aa2ef8a05bcb497d881952eb10469e7d28f1bf46e31cf0094c018a338c293",
+      "locale": "fr-FR",
+      "profile": "search-image",
+      "sha256": "facd0f7e8eb6d03593f79c73911de63cce3827537a323e9e5864119fda2ffa54",
+      "remoteAssetId": "6b800019-519a-88ba-8038-3450511b2013",
+      "remoteName": "meet-your-memory-search-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "a6e267150a38819c2c7415d9cb191a593b07235afd23f97b1b6e69ce6c2caf1b",
+      "locale": "it",
+      "profile": "header-image",
+      "sha256": "1760354379330061fffe1404d2d7c07a97729352b9a95942540c1afa93cee5c4",
+      "remoteAssetId": "56c00019-519a-88ba-8015-846513fa22ff",
+      "remoteName": "meet-your-memory-header-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "57bdda68cc65e9fd682ca49d0898a10262ca0ee9a6c6cbb08d72ca084dd75949",
+      "locale": "it",
+      "profile": "search-image",
+      "sha256": "d2416d954e0fcfdb9ce6b83cd9cc9278b1c65ec19d77bc4440060fd027ad1b50",
+      "remoteAssetId": "95000019-519a-88ba-800a-38d0e3d12f38",
+      "remoteName": "meet-your-memory-search-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "859e1bb3cc5032e86060459d51ec7e52d8cf31b6bf03d674011b9387b1065cef",
+      "locale": "es-ES",
+      "profile": "header-image",
+      "sha256": "c2b23f25ea524f5c5a96258bfd4bde13fb7d89c46ae165f5fbd4a040f6cdcbea",
+      "remoteAssetId": "dc400019-519a-88ba-800f-91fa64d55732",
+      "remoteName": "meet-your-memory-header-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "e04a991d77cc17fab7c43a097c9f44286ac5d59fa1c8cb37ec118a8002c7bf70",
+      "locale": "es-ES",
+      "profile": "search-image",
+      "sha256": "7bfb5adf725f1a292bbd0aba9d4f92271f3d73d892a7c697e8fa9ef2bc6c230d",
+      "remoteAssetId": "16c00019-519a-88ba-8005-1ae6e3ecc86c",
+      "remoteName": "meet-your-memory-search-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "5743daf1c1a3015377291167c7be60514150730b695bc73e2f1b636c4ca0e14a",
+      "locale": "pt-PT",
+      "profile": "header-image",
+      "sha256": "0c8e7470a6055efeffa848341feadd457ddcbc039aa4f435cd4fa30430aea723",
+      "remoteAssetId": "3c000019-519a-88ba-8011-c2e709dd9787",
+      "remoteName": "meet-your-memory-header-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "348372d3d158e7d675ab8c2c5f14be2f1ed85ec0f0bf3adc0b44fdc443f9f30e",
+      "locale": "pt-PT",
+      "profile": "search-image",
+      "sha256": "d91247f6c337f82ba915cdd5a7025cc2811855fe649a466a460f212e5fe96e07",
+      "remoteAssetId": "9e000019-519a-88ba-801f-1b2d0106995c",
+      "remoteName": "meet-your-memory-search-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "bbb6f7f1b5c3d8a6d9280c48cf0e6c09a96774f174347260c7d49b817a2e25e2",
+      "locale": "ja",
+      "profile": "header-image",
+      "sha256": "976ebb6a22aa8a5d11b73b0300b1ddb1ada84ccf10f20a8cb6093ab189772569",
+      "remoteAssetId": "be800019-519a-88ba-8029-3c64f2ff979e",
+      "remoteName": "meet-your-memory-header-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "a2d23fe52463ea1011e34686a37b27d1abee9215ec577d896713d9c55b39cdaa",
+      "locale": "ja",
+      "profile": "search-image",
+      "sha256": "469b61a2e44ae2ba464c69ed58fbd8deac454192e8c1e4d64d0af2564d3067f4",
+      "remoteAssetId": "96400019-519a-88ba-801e-49177894bd6d",
+      "remoteName": "meet-your-memory-search-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "4995b0a65fadd5b41bd28690f12b5af93d869ea83e5823fb7c5978bcb7be0c73",
+      "locale": "zh-Hans",
+      "profile": "header-image",
+      "sha256": "192f83207925c57c954a58657c9a5e6c6d947755e89cfa8f720fc66177b21216",
+      "remoteAssetId": "10000019-519a-88ba-8006-12285b8de1e5",
+      "remoteName": "meet-your-memory-header-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "c2f08d76b5ac170885d22e62fe80de39bce3bb13bb2b93f037d6e3e876a34780",
+      "locale": "zh-Hans",
+      "profile": "search-image",
+      "sha256": "22f660c5aef776b5d7716e30c660065d525f743851300995cdc106e837329beb",
+      "remoteAssetId": "36c00019-519a-88ba-8025-5f48492d0222",
+      "remoteName": "meet-your-memory-search-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "header-still",
+      "assetKey": "c2bdde920199ad5b9fbde2c6e5b2b2da0ec96dfe58c5b4e12b5ff3290f0ef524",
+      "locale": "hi",
+      "profile": "header-image",
+      "sha256": "a64e272ca6fdfe06d8c27a3e6722c73d6a5e1b25a1c183854eb0eaf9e8c325f0",
+      "remoteAssetId": "f3800019-519a-88ba-8018-653901e2bd16",
+      "remoteName": "meet-your-memory-header-hi.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "search-still",
+      "assetKey": "33afd63cf3c240aa3b18a02148da8e06a4170cbb5fd448c6925ab01f5453ea7c",
+      "locale": "hi",
+      "profile": "search-image",
+      "sha256": "7c8c24dba771c709e25a16ad9384eea41997f9fe26b6bf5ed95ad817b053a215",
+      "remoteAssetId": "f3400019-519a-88ba-8001-2cdeee04f551",
+      "remoteName": "meet-your-memory-search-hi.png",
+      "posterSecondsVerified": null
+    }
+  ]
+}

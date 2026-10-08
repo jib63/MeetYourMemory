@@ -1,0 +1,21 @@
+{
+  "status": "verified",
+  "apiVersion": "4.5.1",
+  "selectionSHA256": "9a8ef52822a36f1117effd08b917676a3aa2c891e55a5a02eecb71751293e6ec",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "locales": [
+    "en-US"
+  ],
+  "placements": {
+    "en-US/IPHONE_DUO_PROFILE": [
+      "b3000019-519a-88ba-8f2d-7d26d5fa7def",
+      "15400019-519a-88ba-8f10-0860b98a40dd",
+      "79800019-519a-88ba-8f20-504385dffa8d",
+      "55800019-519a-88ba-8f29-3bb1795de1af",
+      "aa000019-519a-88ba-8f19-e1cd7e0ac6f6",
+      "5fc00019-519a-88ba-8f2d-23b78b7fa076"
+    ]
+  },
+  "reviewSubmitted": false
+}

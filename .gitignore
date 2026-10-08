@@ -35,3 +35,8 @@ Package.resolved
 *.moved-aside
 *.swp
 *~
+
+# Reproducible local media work and Python caches
+__pycache__/
+Screenshots/.native-work/
+AppStore/exports/.work/

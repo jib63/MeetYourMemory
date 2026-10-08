@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "app": "meet-your-memory",
+  "bundleId": "com.jibstudios.Meet-Your-Memory",
+  "outputRoot": "AppStore/exports",
+  "rendererSource": "Tools/render_creative_text.swift",
+  "deliveryPolicy": {"mode": "api-only", "state": "PREPARED_LOCALLY", "reviewSubmission": false},
+  "apiCoverage": {
+    "checkedOn": "2026-10-08", "openapiVersion": "4.5.1",
+    "openapiSHA256": "7518d3a94a8bd701ac25c1c601b95b8f53aad92091affb15a2a9d331713dac1a",
+    "assetLibraryContractVerified": true,
+    "source": "https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip"
+  },
+  "style": {"background": "#130E29", "accent": "#FFD440", "echoWave": false},
+  "locales": {
+    "en-US": {"language": "en", "region": "en_US", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["Discover your memory style"], "searchHeadline": ["How do you", "remember?"], "searchSubtitle": ["Play. Discover. Repeat."]},
+    "fr-FR": {"language": "fr", "region": "fr_FR", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["Découvrez votre mémoire"], "searchHeadline": ["Comment fonctionne", "votre mémoire ?"], "searchSubtitle": ["Jouez. Découvrez. Recommencez."]},
+    "it": {"language": "it", "region": "it_IT", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["Scopri come ricordi"], "searchHeadline": ["Come", "ricordi?"], "searchSubtitle": ["Gioca. Scopri. Ripeti."]},
+    "es-ES": {"language": "es", "region": "es_ES", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["Descubre cómo recuerdas"], "searchHeadline": ["¿Cómo", "recuerdas?"], "searchSubtitle": ["Juega. Descubre. Repite."]},
+    "pt-PT": {"language": "pt", "region": "pt_PT", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["Descubra como se lembra"], "searchHeadline": ["Como é que", "se lembra?"], "searchSubtitle": ["Jogue. Descubra. Repita."]},
+    "ja": {"language": "ja", "region": "ja_JP", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["あなたの記憶タイプを発見"], "searchHeadline": ["あなたは、どう", "覚えていますか？"], "searchSubtitle": ["遊んで、発見して、もう一度。"]},
+    "zh-Hans": {"language": "zh-Hans", "region": "zh_Hans_CN", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["发现你的记忆类型"], "searchHeadline": ["你是如何", "记住的？"], "searchSubtitle": ["玩一玩，发现，再挑战。"]},
+    "hi": {"language": "hi", "region": "hi_IN", "brandHeadline": ["Meet Your", "Memory."], "subtitle": ["अपनी याददाश्त पहचानें"], "searchHeadline": ["आप कैसे", "याद रखते हैं?"], "searchSubtitle": ["खेलें। खोजें। फिर खेलें।"]}
+  },
+  "creatives": [
+    {
+      "id": "header-still", "placement": "header", "profile": "header-image", "size": [3840, 1646],
+      "background": "AppStore/media-artwork/header-safe-source.png",
+      "layout": {"preserveArtwork": true, "artSafeAreaPixels": [1097,493,2743,1154], "textLayers": [
+        {"textKey": "brandHeadline", "rect": [0.47,0.35,0.22,0.24], "font": "system-rounded", "fontScale": 0.095, "color": "#FFFFFF", "align": "center"},
+        {"textKey": "subtitle", "rect": [0.47,0.60,0.22,0.075], "font": "system-rounded", "fontScale": 0.029, "color": "#2AE6D1", "align": "center"}
+      ]}
+    },
+    {
+      "id": "search-still", "placement": "search", "profile": "search-image", "size": [3840, 2560],
+      "background": "AppStore/media-artwork/search-source.png", "ui": "Screenshots/iphone-medium/{language}/01-home.jpg",
+      "layout": {"preserveArtwork": true, "uiRect": [0.64,0.10,0.30,0.80], "uiAngle": -3, "textLayers": [
+        {"textKey": "searchHeadline", "rect": [0.07,0.08,0.50,0.30], "font": "system-rounded", "fontScale": 0.125, "color": "#FFFFFF", "align": "left"}
+      ]}
+    }
+  ],
+  "uploadSelection": {"header": ["header-still"], "search": ["search-still"]},
+  "ordinaryMedia": {},
+  "videos": [],
+  "duoScreenshots": [
+    {"id": "duo-outer-home", "profile": "duo-outer", "source": "Screenshots/iphone-duo-outer/{language}/01-home.png"},
+    {"id": "duo-outer-visual", "profile": "duo-outer", "source": "Screenshots/iphone-duo-outer/{language}/02-visual-memory.png"},
+    {"id": "duo-outer-association", "profile": "duo-outer", "source": "Screenshots/iphone-duo-outer/{language}/04-association-memory.png"},
+    {"id": "duo-outer-history", "profile": "duo-outer", "source": "Screenshots/iphone-duo-outer/{language}/06-history.png"},
+    {"id": "duo-inner-panorama-pairs", "profile": "duo-inner", "source": "Screenshots/iphone-duo-inner/{language}/07-panorama-pairs.png"},
+    {"id": "duo-inner-orbit-map", "profile": "duo-inner", "source": "Screenshots/iphone-duo-inner/{language}/08-orbit-map.png"}
+  ]
+}

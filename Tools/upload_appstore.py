@@ -2,70 +2,18 @@
 # Copyright (c) 2026 Jean-Baptiste Meyer
 # SPDX-License-Identifier: MIT
 
-"""
-upload_appstore.py — push the per-locale metadata and screenshots to
-App Store Connect via the public REST API.
+"""Deliver localized metadata and prepared still images through ASC API 4.5.1.
 
-What it uploads
-───────────────
-• Per-locale text fields, read from AppStore/metadata/<locale>/:
-    name, subtitle               → appInfoLocalizations
-    promotionalText, description,
-    keywords, whatsNew (release_notes),
-    marketingUrl, supportUrl     → appStoreVersionLocalizations
-    privacyPolicyUrl             → appInfoLocalizations
-    copyright                    → appInfo
+Media comes from AppStore/exports/delivery/delivery-manifest.json. Runtime
+Asset Library reference data determines categories, specs, placement groups
+and limits. Native Duo assets remain in their dedicated group. No previews
+are selected and no review submission is made. Existing legacy galleries
+are never deleted as a fallback.
 
-• Screenshots, read from Screenshots/<size>/<lang>/<NN>-*.jpg
-    iPhone:
-      6.9-inch       → APP_IPHONE_67
-    iPad:
-      ipad-13-inch   → APP_IPAD_PRO_3GEN_129
-  The folder name is decided by the captured PNG pixel size — see
-  ScreenshotRig.displayClass in Meet Your MemoryUITests.
-
-Auth
-────
-Generates an ES256-signed JWT against your App Store Connect API key.
-You need a Team or Individual API key — generate one at:
-
-  App Store Connect → Users and Access → Integrations →
-  App Store Connect API → Team Keys → Generate API Key
-
-Then export the three credentials. Local runs can point at the downloaded
-key file; Xcode Cloud can provide the same key as a Base64 secret:
-
-  export ASC_KEY_ID=ABCDE12345           # the Key ID column
-  export ASC_ISSUER_ID=12345678-...      # Issuer ID at the top of the page
-  export ASC_KEY_PATH=~/keys/AuthKey_ABCDE12345.p8
-
-  # Xcode Cloud alternative to ASC_KEY_PATH:
-  export ASC_PRIVATE_KEY_BASE64="$(base64 < AuthKey_ABCDE12345.p8)"
-
-Usage
-─────
-  python3 Tools/upload_appstore.py                   # dry-run (default)
-  python3 Tools/upload_appstore.py --apply           # actually push
-  python3 Tools/upload_appstore.py --apply --locales en-US,fr-FR   # subset
-  python3 Tools/upload_appstore.py --check-assets --locales en-US
-  python3 Tools/upload_appstore.py --apply --skip-screenshots
-  python3 Tools/upload_appstore.py --apply --skip-text
-
-Safety
-──────
-• Default is `--dry-run`: prints every request that would be made, no
-  network writes.
-• `--apply` is required to mutate live data.
-• Targets the version currently in `PREPARE_FOR_SUBMISSION` state — does
-  NOT create a new version. Add one in the web UI first.
-• Existing screenshots in each device-class set are deleted before the
-  new ones are uploaded (otherwise the set accumulates).
-• A complete six-image local gallery is required before a live screenshot
-  set is deleted. Use --check-assets to inspect the plan without credentials.
-
-Dependencies
-────────────
-  pip3 install pyjwt[crypto] requests
+Run Tools/prepare_appstore_media.py --render first. Use --check-assets for
+an offline preflight. Default execution reads the API to plan; --apply is
+required for remote writes. Credentials: ASC_KEY_ID, ASC_ISSUER_ID and
+ASC_KEY_PATH (or ASC_PRIVATE_KEY_BASE64). Dependencies: pyjwt[crypto], requests.
 """
 
 from __future__ import annotations
@@ -73,7 +21,10 @@ from __future__ import annotations
 import argparse
 import base64
 import binascii
-import hashlib
+import math
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from urllib.parse import urlsplit
 import json
 import os
 import sys
@@ -125,9 +76,9 @@ LOCALES = {
 # App Store Connect, also try the alias (right).
 LOCALE_ALIASES = {
     "en-US": ("en",),
-    "fr-FR": ("fr", "fr-CA"),
-    "es-ES": ("es", "es-MX"),
-    "pt-PT": ("pt", "pt-BR"),
+    "fr-FR": ("fr",),
+    "es-ES": ("es",),
+    "pt-PT": ("pt",),
 }
 
 
@@ -141,90 +92,23 @@ def resolve_locale_id(by_locale: dict[str, str], target: str) -> str | None:
             return by_locale[alt]
     return None
 
-# App Store Connect accepts one largest-display set per device family and
-# scales it for smaller displays. APP_IPHONE_67 is Apple's API enum for the
-# 6.9-inch iPhone set; APP_IPAD_PRO_3GEN_129 is the 13-inch iPad set.
-#
-# Maps Apple-enum candidates (first hit wins) → local folder name written
-# by ScreenshotTests. The folder name is derived from the captured PNG/JPEG
-# pixel size — see displayClass(forImageData:) in ScreenshotRig.swift.
-#
-SCREENSHOT_DEVICE_CLASSES: list[tuple[list[str], str]] = [
-    # ── iPhone ─────────────────────────────────────────────────────────
-    # 6.9-inch is the only iPhone size Apple currently requires; uploading
-    # just this set covers the full iPhone store listing.
-    (["APP_IPHONE_67"], "6.9-inch"),
-
-    # ── iPad ───────────────────────────────────────────────────────────
-    # Apple scales this 13-inch set for smaller iPad displays.
-    (["APP_IPAD_PRO_3GEN_129"], "ipad-13-inch"),
-]
-
-# Screen ordering — Apple displays whatever order we upload; pin it
-# explicitly so 01-map appears first in the listing. Must match the
-# files written by ScreenshotRig.swift (8-stage flow as of v1.4 with
-# the Groups feature).
-SCREENSHOT_ORDER = [
-    "01-home.jpg",
-    "02-visual-memory.jpg",
-    "03-spatial-memory.jpg",
-    "04-association-memory.jpg",
-    "05-memory-profile.jpg",
-    "06-history.jpg",
-]
+def media_selection(locales, screenshots_only=False, placements=None):
+    from appstore_asset_library import selection
+    config = json.loads((ROOT / 'AppStore/media/meet-your-memory.json').read_text())
+    placements = {'iphone-medium', 'iphone-large', 'ipad', 'duo'} if screenshots_only else placements
+    return selection(config, ROOT / config['outputRoot'], locales or list(LOCALES),
+                     placements=placements, images=True, previews=False)
 
 
-
-def md5_checksum(path: Path) -> str:
-    """Return Apple's required sourceFileChecksum for an upload commit."""
-    # MD5 is mandated here by Apple's upload protocol; it isn't used for
-    # authentication or any security decision in this client.
-    digest = hashlib.md5()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
-def local_screenshot_set(directory: Path) -> tuple[list[Path], list[str]]:
-    """Return the ordered gallery and the filenames it is missing.
-
-    A partial local gallery must never trigger deletion of a complete live
-    App Store set.
-    """
-    paths = [directory / name for name in SCREENSHOT_ORDER]
-    missing = [path.name for path in paths if not path.is_file()]
-    return ([path for path in paths if path.is_file()], missing)
-
-
-
-def check_local_assets(locales: list[str]) -> bool:
-    """Print and validate the exact six-image upload plan."""
-    print("Local App Store screenshot check")
-    found_any = False
-    valid = True
-    for store_locale, folder in LOCALES.items():
-        if locales and store_locale not in locales:
-            continue
-        print(f"  [{store_locale}]")
-        for _, size_folder in SCREENSHOT_DEVICE_CLASSES:
-            directory = SCREENSHOTS / size_folder / folder
-            shots, missing = local_screenshot_set(directory)
-            if not directory.is_dir() and not shots:
-                continue
-            found_any = found_any or bool(shots)
-            if missing:
-                valid = False
-                print(f"    ✗ {size_folder}: incomplete screenshots "
-                      f"({len(shots)}/{len(SCREENSHOT_ORDER)}); "
-                      f"missing {', '.join(missing)}")
-            else:
-                print(f"    ✓ {size_folder}: {len(shots)} screenshots "
-                      f"({', '.join(path.name for path in shots)})")
-    if not found_any:
-        print(f"  ✗ no screenshots found below {SCREENSHOTS}")
+def check_local_assets(locales, screenshots_only=False, placements=None):
+    try:
+        assets = media_selection(locales, screenshots_only, placements)
+        print(f"Validated {len(assets)} prepared still images for ASC API 4.5.1; no network requests")
+        return True
+    except (ValueError, FileNotFoundError, KeyError) as error:
+        print(f"Media preflight failed: {error}")
         return False
-    return valid
+
 
 # ─────────────────────────────────────────────────────────────────────────
 # Auth + HTTP
@@ -294,40 +178,109 @@ def make_jwt(key_id: str, issuer_id: str, private_key: str) -> str:
 
 
 class Client:
-    """Thin App Store Connect REST wrapper with dry-run support."""
+    """App Store Connect REST wrapper; signed upload URLs use another client."""
 
-    def __init__(self, token: str, dry_run: bool):
+    def __init__(self, token: str, dry_run: bool, token_provider=None):
         self.session = requests.Session()
         self.session.headers["Authorization"] = f"Bearer {token}"
         self.session.headers["Accept"] = "application/json"
         self.dry_run = dry_run
+        self.token_provider = token_provider
+        self.token_issued_at = time.monotonic()
+
+    def refresh_authorization(self) -> None:
+        if self.token_provider and time.monotonic() - self.token_issued_at >= 900:
+            self.session.headers['Authorization'] = f'Bearer {self.token_provider()}'
+            self.token_issued_at = time.monotonic()
+
+    @staticmethod
+    def api_url(path: str) -> str:
+        url = path if path.startswith("http") else API_BASE + path
+        parsed = urlsplit(url)
+        if parsed.scheme != 'https' or parsed.netloc != 'api.appstoreconnect.apple.com' or not parsed.path.startswith('/v1/'):
+            raise ValueError('Refusing to send an App Store Connect token outside the public API')
+        return url
 
     def get(self, path: str, **params) -> dict:
-        url = path if path.startswith("http") else API_BASE + path
-        r = self.session.get(url, params=params, timeout=60)
-        r.raise_for_status()
-        return r.json()
+        url = self.api_url(path)
+        for attempt in range(4):
+            self.refresh_authorization()
+            try:
+                r = self.session.get(url, params=params, timeout=60, allow_redirects=False)
+                if r.status_code in {429, 500, 502, 503, 504} and attempt < 3:
+                    self.wait_for_retry(r, attempt)
+                    continue
+                r.raise_for_status()
+                return r.json()
+            except (requests.ConnectionError, requests.Timeout):
+                if attempt == 3:
+                    raise
+                time.sleep(2 ** attempt)
+        raise RuntimeError('Read retry exhausted')
+
+    @staticmethod
+    def wait_for_retry(response, attempt: int) -> None:
+        """Honor Apple's hourly cooldown without a retry storm or stale JWT."""
+        fallback = min(60 * 2 ** attempt, 600) if response.status_code == 429 else 2 ** attempt
+        value = response.headers.get('Retry-After')
+        try:
+            seconds = float(value)
+        except (TypeError, ValueError):
+            try:
+                seconds = (parsedate_to_datetime(value) - datetime.now(timezone.utc)).total_seconds()
+            except (TypeError, ValueError, OverflowError):
+                seconds = fallback
+        if not math.isfinite(seconds):
+            seconds = fallback
+        seconds = max(0, seconds)
+        if seconds > 3600:
+            raise RuntimeError('Apple requested a retry after more than one hour; reservation IDs remain saved')
+        if response.status_code != 429:
+            seconds = min(seconds, 30)
+        else:
+            print(f'Apple API rate limit: respecting Retry-After ({seconds:.0f}s); saved assets retained', flush=True)
+        # A yielded terminal session remains observable while the client waits.
+        # Refresh authorization on the next request, after this entire cooldown.
+        while seconds > 0:
+            interval = min(seconds, 30)
+            time.sleep(interval)
+            seconds -= interval
 
     def _mutate(self, method: str, path: str, payload: dict | None = None,
                 expect_json: bool = True) -> dict:
-        url = path if path.startswith("http") else API_BASE + path
+        url = self.api_url(path)
         if self.dry_run:
             print(f"    DRY {method:6s} {path}")
             if payload:
                 print(f"      └─ {json.dumps(payload)[:160]}…")
             return {}
         headers = {"Content-Type": "application/json"} if payload is not None else {}
-        r = self.session.request(method, url, headers=headers,
-                                 data=json.dumps(payload) if payload else None,
-                                 timeout=60)
-        if r.status_code == 204 or not r.content:
-            return {}
+        for attempt in range(4):
+            self.refresh_authorization()
+            try:
+                r = self.session.request(method, url, headers=headers,
+                                         data=json.dumps(payload) if payload else None,
+                                         timeout=60, allow_redirects=False)
+                # An explicit 429 rejects the request before acceptance. An
+                # uncertain POST timeout/5xx still requires journal reconciliation.
+                if (r.status_code == 429 or (method != 'POST' and r.status_code in {500, 502, 503, 504})) and attempt < 3:
+                    self.wait_for_retry(r, attempt)
+                    continue
+                break
+            except (requests.ConnectionError, requests.Timeout):
+                if method == 'POST' or attempt == 3:
+                    raise
+                time.sleep(2 ** attempt)
+        if method == 'DELETE' and r.status_code == 404:
+            return {}  # A resumed cleanup can encounter an already removed record.
         if not r.ok:
             # Print the FULL body — Apple's error messages can include
             # detail past the first 600 chars (e.g., a complete list of
             # valid enum values).
             sys.stderr.write(f"❌ {method} {path} → {r.status_code}\n{r.text}\n")
             r.raise_for_status()
+        if r.status_code == 204 or not r.content:
+            return {}
         return r.json() if expect_json else {}
 
     def post(self, path: str, payload: dict, expect_json: bool = True) -> dict:
@@ -593,219 +546,29 @@ def update_version_localizations(client: Client, version_id: str,
 # Screenshot upload (3-step: create, PUT bytes, commit)
 # ─────────────────────────────────────────────────────────────────────────
 
-def upload_screenshots(client: Client, version_id: str,
-                       locales: list[str]) -> None:
-    print("→ Uploading screenshots")
+def upload_screenshots(client, app_id, version_id, locales, *, screenshots_only=False,
+                       verify_only=False, processing_timeout=600, placements=None):
+    """Deliver screenshots plus header/search artwork through the Asset Library."""
+    from appstore_asset_library import collection, execute, verify, Journal, run_lock
+    assets = media_selection(locales, screenshots_only, placements)
+    localizations, _ = collection(client, f'/appStoreVersions/{version_id}/appStoreVersionLocalizations', limit=200)
+    by_locale = {item['attributes']['locale']: item['id'] for item in localizations}
+    selected = {asset['locale'] for asset in assets}
+    mapping = {locale: resolve_locale_id(by_locale, locale) for locale in selected}
+    if any(identifier is None for identifier in mapping.values()):
+        raise ValueError('Every selected locale must have its own App Store version localization')
+    cache = ROOT / 'AppStore/exports/.work/api'
+    cache.mkdir(parents=True, exist_ok=True)
+    with run_lock(cache / 'delivery.lock'):
+        journal = Journal(cache / 'journal.json', app_id)
+        if not verify_only:
+            execute(client, app_id, version_id, mapping, assets, journal,
+                    report_path=cache / 'upload-report.json', cache_root=cache,
+                    processing_timeout=processing_timeout, cleanup_library=False)
+        if verify_only or not client.dry_run:
+            report = verify(client, version_id, mapping, assets, journal, cache / 'verification-report.json')
+            print(f"Independent server check: {len(assets)} assets, {len(report['placements'])} ordered galleries verified")
 
-    # Build a map locale → set-id per device-class. Existing sets must be
-    # rotated: get them first, then create+wipe per device class.
-    version_locs = client.get(
-        f"/appStoreVersions/{version_id}/appStoreVersionLocalizations"
-    ).get("data", [])
-    loc_id_by_locale = {l["attributes"]["locale"]: l["id"]
-                        for l in version_locs}
-
-    for store_locale, folder in LOCALES.items():
-        if locales and store_locale not in locales:
-            continue
-        loc_id = resolve_locale_id(loc_id_by_locale, store_locale)
-        if not loc_id:
-            print(f"   [{store_locale}] no version-localization "
-                  f"(neither '{store_locale}' nor aliases "
-                  f"{LOCALE_ALIASES.get(store_locale, ())} found) — "
-                  "skipping screenshots")
-            continue
-        alias_note = ("  (matched alias)"
-                      if store_locale not in loc_id_by_locale else "")
-        print(f"   [{store_locale}]{alias_note}")
-
-        # Existing screenshot sets for this locale
-        sets = client.get(
-            f"/appStoreVersionLocalizations/{loc_id}/appScreenshotSets"
-        ).get("data", [])
-        set_by_class = {s["attributes"]["screenshotDisplayType"]: s["id"]
-                        for s in sets}
-
-        for class_candidates, size_folder in SCREENSHOT_DEVICE_CLASSES:
-            src = SCREENSHOTS / size_folder / folder
-            if not src.is_dir():
-                continue
-            shots, missing = local_screenshot_set(src)
-            if not shots:
-                continue
-            if missing:
-                sys.stderr.write(
-                    f"   ⚠️  refusing to replace {size_folder}/{folder}: "
-                    f"local gallery is incomplete ({len(shots)}/"
-                    f"{len(SCREENSHOT_ORDER)}); missing "
-                    f"{', '.join(missing)}\n"
-                )
-                continue
-
-            # 1) Get or create the set — try each candidate display-type
-            #    until one works. Apple's API rejects unknown values with
-            #    409 ENTITY_ERROR.ATTRIBUTE.TYPE.
-            set_id: str | None = None
-            chosen_class: str | None = None
-            for candidate in class_candidates:
-                if candidate in set_by_class:
-                    set_id = set_by_class[candidate]
-                    chosen_class = candidate
-                    break
-                if client.dry_run:
-                    chosen_class = candidate
-                    set_id = "DRYRUN-SET"
-                    break
-                try:
-                    resp = client.post("/appScreenshotSets", {
-                        "data": {
-                            "type": "appScreenshotSets",
-                            "attributes": {
-                                "screenshotDisplayType": candidate
-                            },
-                            "relationships": {
-                                "appStoreVersionLocalization": {
-                                    "data": {
-                                        "id": loc_id,
-                                        "type": "appStoreVersionLocalizations",
-                                    }
-                                }
-                            },
-                        }
-                    })
-                    set_id = resp["data"]["id"]
-                    chosen_class = candidate
-                    break
-                except requests.HTTPError as e:
-                    body = e.response.text if e.response is not None else ""
-                    # Treat ANY error during set creation as a reason to
-                    # try the next candidate. Apple's API sometimes
-                    # rejects 409 with codes other than ATTRIBUTE.TYPE
-                    # (e.g., already-exists, region restrictions, asset
-                    # state). We don't want one bad candidate to stop us
-                    # from trying APP_IPHONE_67 as a fallback.
-                    print(f"      ↪ {candidate} rejected ({e}); "
-                          "trying next candidate")
-                    continue
-
-            if set_id is None:
-                sys.stderr.write(
-                    f"   ⚠️  no valid screenshotDisplayType for "
-                    f"{size_folder} — skipping\n"
-                )
-                continue
-
-            print(f"      {chosen_class}  ({size_folder})  "
-                  f"{len(shots)} shots")
-
-            # 2) Wipe existing shots in this set so re-runs don't double up.
-            if set_id != "DRYRUN-SET" and not client.dry_run:
-                existing = client.get(
-                    f"/appScreenshotSets/{set_id}/appScreenshots"
-                ).get("data", [])
-                for shot in existing:
-                    try:
-                        client.delete(f"/appScreenshots/{shot['id']}")
-                    except requests.HTTPError as e:
-                        sys.stderr.write(f"      ⚠️  delete failed: {e}\n")
-
-            # 3) Upload each shot — keep going past per-file failures.
-            uploaded_ids: list[str] = []
-            for shot_path in shots:
-                try:
-                    uploaded_ids.append(upload_one(client, set_id, shot_path))
-                except (requests.HTTPError, RuntimeError) as e:
-                    body = (
-                        e.response.text
-                        if isinstance(e, requests.HTTPError)
-                        and e.response is not None
-                        else ""
-                    )
-                    sys.stderr.write(
-                        f"      ⚠️  {shot_path.name} failed: {e}\n"
-                        f"{body[:300]}\n"
-                    )
-
-            # Creation order is not a storefront ordering contract. Explicitly
-            # replace the relationship in the same order as SCREENSHOT_ORDER.
-            if len(uploaded_ids) == len(shots):
-                try:
-                    client.patch(
-                        f"/appScreenshotSets/{set_id}/relationships/appScreenshots",
-                        {"data": [
-                            {"type": "appScreenshots", "id": screenshot_id}
-                            for screenshot_id in uploaded_ids
-                        ]},
-                        expect_json=False,
-                    )
-                    print("        ✓ screenshot order committed")
-                except requests.HTTPError as error:
-                    sys.stderr.write(
-                        f"      ⚠️  screenshots uploaded but explicit "
-                        f"ordering failed: {error}\n"
-                    )
-            else:
-                sys.stderr.write(
-                    "      ⚠️  screenshot order not committed because one or "
-                    "more uploads failed\n"
-                )
-
-
-def upload_one(client: Client, set_id: str, path: Path) -> str:
-    size = path.stat().st_size
-
-    if client.dry_run:
-        print(f"        DRY  upload {path.name}  ({size} bytes)")
-        return f"DRYRUN-{path.name}"
-
-    # 1. reserve the upload — returns upload URLs + headers
-    resp = client.post("/appScreenshots", {
-        "data": {
-            "type": "appScreenshots",
-            "attributes": {
-                "fileName": path.name,
-                "fileSize": size,
-            },
-            "relationships": {
-                "appScreenshotSet": {
-                    "data": {"id": set_id, "type": "appScreenshotSets"}
-                }
-            },
-        }
-    })
-    shot_id = resp["data"]["id"]
-    ops = resp["data"]["attributes"]["uploadOperations"]
-    if not ops:
-        raise RuntimeError(f"No uploadOperations for {path.name}")
-
-    # 2. PUT the file in chunks per the upload operation contract
-    with path.open("rb") as fh:
-        for op in ops:
-            fh.seek(op["offset"])
-            chunk = fh.read(op["length"])
-            headers = {h["name"]: h["value"] for h in op["requestHeaders"]}
-            r = requests.request(op["method"], op["url"],
-                                 headers=headers, data=chunk, timeout=120)
-            r.raise_for_status()
-
-    # 3. commit the upload
-    client.patch(f"/appScreenshots/{shot_id}", {
-        "data": {
-            "id": shot_id,
-            "type": "appScreenshots",
-            "attributes": {
-                "uploaded": True,
-                "sourceFileChecksum": md5_checksum(path),
-            },
-        }
-    })
-    print(f"        ✓ {path.name}")
-    return shot_id
-
-
-# ─────────────────────────────────────────────────────────────────────────
-# Main
-# ─────────────────────────────────────────────────────────────────────────
 
 def probe_locales(client: Client, app_id: str, version_id: str) -> None:
     """Print what locales App Store Connect already has for this app + the
@@ -860,7 +623,25 @@ def main() -> int:
     parser.add_argument("--check-assets", action="store_true",
                         help="Validate and list local screenshots, "
                              "then exit without credentials or network I/O.")
+    parser.add_argument('--screenshots-only', action='store_true',
+                        help='Select screenshot galleries; exclude header/search creatives.')
+    parser.add_argument('--placements', default='',
+                        help='Comma-separated subset: header,search,duo,iphone-medium,iphone-large,ipad.')
+    parser.add_argument('--verify-assets', action='store_true',
+                        help='Read-only verification of selected uploaded assets and placement order.')
+    parser.add_argument('--processing-timeout', type=int, default=600,
+                        help='Whole-batch processing wait in seconds; reservations are kept on timeout.')
     args = parser.parse_args()
+    placements = {p.strip() for p in args.placements.split(',') if p.strip()} or None
+    if placements and (placements - {'header','search','duo','iphone-medium','iphone-large','ipad'}):
+        parser.error('Unknown placement')
+    if placements and args.screenshots_only:
+        parser.error('Choose either placements or screenshots-only')
+    if args.processing_timeout < 0:
+        parser.error('processing-timeout must be non-negative')
+    if args.verify_assets:
+        args.apply = False
+        args.skip_text = True
 
     locales = [l.strip() for l in args.locales.split(",") if l.strip()]
     unknown = set(locales) - set(LOCALES.keys())
@@ -870,15 +651,15 @@ def main() -> int:
 
     should_check_assets = not args.skip_screenshots
     if args.check_assets or (args.apply and should_check_assets):
-        assets_valid = check_local_assets(locales)
+        assets_valid = check_local_assets(locales, args.screenshots_only, placements)
         if args.check_assets or not assets_valid:
             return 0 if assets_valid else 1
 
     key_id, issuer_id, key_path = load_credentials()
     token = make_jwt(key_id, issuer_id, key_path)
-    client = Client(token, dry_run=not args.apply)
+    client = Client(token, dry_run=not args.apply, token_provider=lambda: make_jwt(key_id, issuer_id, key_path))
 
-    mode = "APPLY ✏️" if args.apply else "DRY-RUN 🟡 (use --apply to write)"
+    mode = "VERIFY (read-only)" if args.verify_assets else "APPLY ✏️" if args.apply else "DRY-RUN 🟡 (use --apply to write)"
     print(f"App Store Connect upload — {mode}")
     print(f"  bundle: {BUNDLE_ID}")
     print(f"  locales: {locales or 'ALL 8'}")
@@ -901,7 +682,10 @@ def main() -> int:
         print()
 
     if not args.skip_screenshots:
-        upload_screenshots(client, version_id, locales)
+        upload_screenshots(client, app_id, version_id, locales,
+                           screenshots_only=args.screenshots_only,
+                           verify_only=args.verify_assets, processing_timeout=args.processing_timeout,
+                           placements=placements)
         print()
 
 
@@ -910,7 +694,8 @@ def main() -> int:
     probe_locales(client, app_id, version_id)
 
     print()
-    print("✅ Done." if args.apply else "✅ Dry-run complete. Re-run with --apply.")
+    print("✅ Verification complete." if args.verify_assets else
+          "✅ Done." if args.apply else "✅ Dry-run complete. Re-run with --apply.")
     return 0
 
 

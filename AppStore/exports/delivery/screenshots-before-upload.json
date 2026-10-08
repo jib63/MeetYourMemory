@@ -1,0 +1,2613 @@
+{
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "localizations": {
+    "ja": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "1a000019-519a-88ba-8f16-65a559a7422f",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:40Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "db800019-519a-88ba-8026-d837bb15df8d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/1a000019-519a-88ba-8f16-65a559a7422f"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ff800019-519a-88ba-8f0b-855a952178e5",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:43Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "90400019-519a-88ba-8039-bc5c01c24737"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ff800019-519a-88ba-8f0b-855a952178e5"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "60000019-519a-88ba-8f21-17a3770496ce",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:45Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "bd000019-519a-88ba-8023-51c91468557a"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/60000019-519a-88ba-8f21-17a3770496ce"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "6fc00019-519a-88ba-8f32-8d0bd237f985",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:48Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "e9800019-519a-88ba-802c-7443cc36c408"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/6fc00019-519a-88ba-8f32-8d0bd237f985"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "8cc00019-519a-88ba-8f02-cba0ea0b8f0c",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:51Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "f2800019-519a-88ba-8035-a1a8ae0c9eec"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/8cc00019-519a-88ba-8f02-cba0ea0b8f0c"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "73800019-519a-88ba-8f1b-dedb01427985",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:54Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "24c00019-519a-88ba-8038-68e1847b89ff"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/73800019-519a-88ba-8f1b-dedb01427985"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ec000019-519a-88ba-8f20-0c460b6dd65a",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:23Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "ab000019-519a-88ba-8000-5e6e4c50d337"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ec000019-519a-88ba-8f20-0c460b6dd65a"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "5cc00019-519a-88ba-8f22-c0204fe29611",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:25Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "ab800019-519a-88ba-8035-79431d904bff"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/5cc00019-519a-88ba-8f22-c0204fe29611"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "92400019-519a-88ba-8f1c-4f6590398703",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:28Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "a2000019-519a-88ba-8016-e87c9abcbb7d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/92400019-519a-88ba-8f1c-4f6590398703"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "72800019-519a-88ba-8f3b-b70ad852f4b4",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:30Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "03c00019-519a-88ba-8029-8f85ff93b282"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/72800019-519a-88ba-8f3b-b70ad852f4b4"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "58c00019-519a-88ba-8f2a-44e12ae8594b",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:33Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "21000019-519a-88ba-800c-764a5df1f170"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/58c00019-519a-88ba-8f2a-44e12ae8594b"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "1e400019-519a-88ba-8f3f-367515b39784",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:36Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "cdc00019-519a-88ba-8034-362687bd3a4b"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/1e400019-519a-88ba-8f3f-367515b39784"
+        }
+      }
+    ],
+    "it": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "61400019-519a-88ba-8f32-b3b184095870",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:53Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "43800019-519a-88ba-8026-007bb9402c12"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/61400019-519a-88ba-8f32-b3b184095870"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "3b800019-519a-88ba-8f18-825aebb744ae",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:55Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "b1800019-519a-88ba-8019-f16968a94036"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/3b800019-519a-88ba-8f18-825aebb744ae"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "7ec00019-519a-88ba-8f11-2d166f94c588",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:57Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "68400019-519a-88ba-8013-d43c90deb789"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/7ec00019-519a-88ba-8f11-2d166f94c588"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "73000019-519a-88ba-8f06-874eaf82b6fb",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:00Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "83c00019-519a-88ba-8019-9f5c3fb8b062"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/73000019-519a-88ba-8f06-874eaf82b6fb"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "54c00019-519a-88ba-8f05-06f989047f71",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:03Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "66000019-519a-88ba-803f-dc93208e6de8"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/54c00019-519a-88ba-8f05-06f989047f71"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "88c00019-519a-88ba-8f0e-b9183f445105",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:06Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "6a800019-519a-88ba-8001-4a6abbb4c96a"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/88c00019-519a-88ba-8f0e-b9183f445105"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "91400019-519a-88ba-8f25-41d6348c37d7",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:34Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "87c00019-519a-88ba-802b-c3c65460091d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/91400019-519a-88ba-8f25-41d6348c37d7"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "67c00019-519a-88ba-8f1c-fbaef9079512",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:37Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "4e800019-519a-88ba-802f-304bfe64966c"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/67c00019-519a-88ba-8f1c-fbaef9079512"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "c6000019-519a-88ba-8f22-f30462c400ab",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:40Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "90800019-519a-88ba-8002-61e323e1ced1"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/c6000019-519a-88ba-8f22-f30462c400ab"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "01400019-519a-88ba-8f3b-49d64feb3625",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:43Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "22800019-519a-88ba-8030-999f9a964b52"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/01400019-519a-88ba-8f3b-49d64feb3625"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "1bc00019-519a-88ba-8f29-949159c5135e",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:46Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "9a800019-519a-88ba-8000-8de4524d3648"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/1bc00019-519a-88ba-8f29-949159c5135e"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ad400019-519a-88ba-8f1a-50b8b85d924c",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:49Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "e4c00019-519a-88ba-8017-8a88f8cf1262"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ad400019-519a-88ba-8f1a-50b8b85d924c"
+        }
+      }
+    ],
+    "es-ES": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "1c800019-519a-88ba-8f13-9931199c17ec",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:28Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "b5400019-519a-88ba-8020-eab78032a26a"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/1c800019-519a-88ba-8f13-9931199c17ec"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "4c400019-519a-88ba-8f35-a531b3bcbeb5",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:31Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "2e800019-519a-88ba-8006-6a9bc980c570"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/4c400019-519a-88ba-8f35-a531b3bcbeb5"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "e2c00019-519a-88ba-8f35-cfb5c2f7fa15",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:34Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "c1400019-519a-88ba-8034-8a51bdc877e9"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/e2c00019-519a-88ba-8f35-cfb5c2f7fa15"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "0e400019-519a-88ba-8f1a-9d4334386337",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:36Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "a9000019-519a-88ba-800e-e908ed80855f"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/0e400019-519a-88ba-8f1a-9d4334386337"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "80800019-519a-88ba-8f22-5e074deed7ad",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:39Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "d2800019-519a-88ba-803f-2bcc73cd4033"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/80800019-519a-88ba-8f22-5e074deed7ad"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "c0000019-519a-88ba-8f10-2190b581f06f",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:42Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "4bc00019-519a-88ba-800d-d566a4ab228c"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/c0000019-519a-88ba-8f10-2190b581f06f"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "bec00019-519a-88ba-8f22-47a8d65de6cd",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:09Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "15400019-519a-88ba-8007-9a1559ce6a14"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/bec00019-519a-88ba-8f22-47a8d65de6cd"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "04000019-519a-88ba-8f1c-530b85183a0e",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:12Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "2f800019-519a-88ba-8023-c0a0f915af33"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/04000019-519a-88ba-8f1c-530b85183a0e"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "76c00019-519a-88ba-8f33-1800097d2ea7",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:15Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "e0000019-519a-88ba-801a-16a9ffa9df79"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/76c00019-519a-88ba-8f33-1800097d2ea7"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "9ac00019-519a-88ba-8f03-10abf3da99d4",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:18Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "95800019-519a-88ba-8001-cb08fb7c3842"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/9ac00019-519a-88ba-8f03-10abf3da99d4"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "89000019-519a-88ba-8f23-a3f928441f43",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:20Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "3e000019-519a-88ba-800d-e65a47c6de7e"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/89000019-519a-88ba-8f23-a3f928441f43"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "92000019-519a-88ba-8f15-6c13f504e1bd",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:24Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "f9400019-519a-88ba-8010-db2b1be7b864"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/92000019-519a-88ba-8f15-6c13f504e1bd"
+        }
+      }
+    ],
+    "fr-FR": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "fac00019-519a-88ba-8f03-ca122114abcb",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:16Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "70c00019-519a-88ba-8032-1abbc79b0ac0"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/fac00019-519a-88ba-8f03-ca122114abcb"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "eb000019-519a-88ba-8f18-5be9345ae096",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:19Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "15800019-519a-88ba-802e-3233690ab8cc"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/eb000019-519a-88ba-8f18-5be9345ae096"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "eac00019-519a-88ba-8f26-15943f682d6b",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:22Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "8f800019-519a-88ba-8022-46fcadbfe97b"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/eac00019-519a-88ba-8f26-15943f682d6b"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "76c00019-519a-88ba-8f05-a2ea84dd235d",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:24Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "fbc00019-519a-88ba-803a-eb2ed84bb9bd"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/76c00019-519a-88ba-8f05-a2ea84dd235d"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "d4400019-519a-88ba-8f08-11e8acc5fc07",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:29Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "77800019-519a-88ba-8034-9ec114c81215"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/d4400019-519a-88ba-8f08-11e8acc5fc07"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "89000019-519a-88ba-8f21-e27aa26fc965",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:30Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "ea400019-519a-88ba-8020-c6c868a3624b"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/89000019-519a-88ba-8f21-e27aa26fc965"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "87c00019-519a-88ba-8f00-2934897643b4",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:59Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "34400019-519a-88ba-8001-b25336c8f38d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/87c00019-519a-88ba-8f00-2934897643b4"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "7ac00019-519a-88ba-8f24-36bcb376df03",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:02Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "77c00019-519a-88ba-800a-228fc5c38add"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/7ac00019-519a-88ba-8f24-36bcb376df03"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "a2400019-519a-88ba-8f14-848407428ed9",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:04Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "62000019-519a-88ba-803c-a06bb8e1a804"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/a2400019-519a-88ba-8f14-848407428ed9"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "e1400019-519a-88ba-8f3f-6a9803b7fab2",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:08Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "d4000019-519a-88ba-8023-9e59816b210c"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/e1400019-519a-88ba-8f3f-6a9803b7fab2"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "a0000019-519a-88ba-8f06-b060c39e2d83",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:10Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "3d800019-519a-88ba-8023-13ced71d9e05"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/a0000019-519a-88ba-8f06-b060c39e2d83"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "94000019-519a-88ba-8f15-ce3c984e9909",
+        "attributes": {
+          "createdDate": "2026-08-02T10:30:12Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "42400019-519a-88ba-803b-befceee92346"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/94000019-519a-88ba-8f15-ce3c984e9909"
+        }
+      }
+    ],
+    "en-US": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ce800019-519a-88ba-8f17-baace2bbed75",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:40Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "d2400019-519a-88ba-803c-d565396fff94"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ce800019-519a-88ba-8f17-baace2bbed75"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "bb400019-519a-88ba-8f0c-6caaf15665ba",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:43Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "95c00019-519a-88ba-802d-408edd84a24b"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/bb400019-519a-88ba-8f0c-6caaf15665ba"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "af000019-519a-88ba-8f36-dcdc24a4a7ef",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:46Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "bc000019-519a-88ba-8011-80b5670a84b4"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/af000019-519a-88ba-8f36-dcdc24a4a7ef"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "1ec00019-519a-88ba-8f1e-18c61e56d3b1",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:49Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "78800019-519a-88ba-802f-c9fbb0004b4e"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/1ec00019-519a-88ba-8f1e-18c61e56d3b1"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "b9800019-519a-88ba-8f29-707bda6a0a9a",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:51Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "53000019-519a-88ba-8010-b9c14870ad62"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/b9800019-519a-88ba-8f29-707bda6a0a9a"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "13800019-519a-88ba-8f3c-3dacd55538cf",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:55Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "eec00019-519a-88ba-8016-c85689610da7"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/13800019-519a-88ba-8f3c-3dacd55538cf"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "43800019-519a-88ba-8f23-9bd44727e4a1",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:21Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "d7000019-519a-88ba-802f-bbf0291dda3a"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/43800019-519a-88ba-8f23-9bd44727e4a1"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "15000019-519a-88ba-8f1b-87dbee16287c",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:24Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "fec00019-519a-88ba-8035-e46fa052c67f"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/15000019-519a-88ba-8f1b-87dbee16287c"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "37000019-519a-88ba-8f0e-1c5d5f7b4064",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:26Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "8a400019-519a-88ba-8034-58a1c3929f2d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/37000019-519a-88ba-8f0e-1c5d5f7b4064"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "84000019-519a-88ba-8f3d-ad1f362815e1",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:31Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "56000019-519a-88ba-8039-ef5ab58fd6d8"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/84000019-519a-88ba-8f3d-ad1f362815e1"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "d6400019-519a-88ba-8f0a-5d132181a467",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:34Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "97c00019-519a-88ba-8007-6de44dcb0b66"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/d6400019-519a-88ba-8f0a-5d132181a467"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "21000019-519a-88ba-8f3b-797348847bad",
+        "attributes": {
+          "createdDate": "2026-08-02T10:29:37Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "61c00019-519a-88ba-8034-a70533bbb3ac"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/21000019-519a-88ba-8f3b-797348847bad"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "17800019-519a-88ba-8f0c-32949b3bc524",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:51Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "b6c00019-519a-88ba-8022-2db439aabd63"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/17800019-519a-88ba-8f0c-32949b3bc524"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "25400019-519a-88ba-8f36-1d18c959e5a1",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:55Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "ad000019-519a-88ba-802b-fcf395a04f6c"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/25400019-519a-88ba-8f36-1d18c959e5a1"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "0f400019-519a-88ba-8f09-88cbf1178a28",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:57Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "b0c00019-519a-88ba-8016-bddf11da29fc"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/0f400019-519a-88ba-8f09-88cbf1178a28"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "2b400019-519a-88ba-8f1b-53a0ec2dd668",
+        "attributes": {
+          "createdDate": "2026-08-02T10:34:00Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "4bc00019-519a-88ba-803e-d460bec3d89f"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/2b400019-519a-88ba-8f1b-53a0ec2dd668"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ac800019-519a-88ba-8f03-7205b2cdf7d1",
+        "attributes": {
+          "createdDate": "2026-08-02T10:34:03Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "96000019-519a-88ba-8036-cb50a26fb655"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ac800019-519a-88ba-8f03-7205b2cdf7d1"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "26800019-519a-88ba-8f1b-9b48905bcfda",
+        "attributes": {
+          "createdDate": "2026-08-02T10:34:06Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "c8c00019-519a-88ba-8012-86bd26aabf0f"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/26800019-519a-88ba-8f1b-9b48905bcfda"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "55c00019-519a-88ba-8f0d-a2904facc9dd",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:33Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "6d400019-519a-88ba-8023-f3122f8957fe"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/55c00019-519a-88ba-8f0d-a2904facc9dd"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "b7c00019-519a-88ba-8f3a-a364f77c878f",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:37Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "a5c00019-519a-88ba-800d-ffdd4a86b7f0"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/b7c00019-519a-88ba-8f3a-a364f77c878f"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "11400019-519a-88ba-8f31-413b9435eb38",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:40Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "7b000019-519a-88ba-8026-8334adf363cf"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/11400019-519a-88ba-8f31-413b9435eb38"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "04000019-519a-88ba-8f12-5080ffa6ead5",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:42Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "89400019-519a-88ba-8039-fa26ba94328b"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/04000019-519a-88ba-8f12-5080ffa6ead5"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ec400019-519a-88ba-8f28-5c6241e745dc",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:45Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "b8c00019-519a-88ba-8013-80ba80adce9e"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ec400019-519a-88ba-8f28-5c6241e745dc"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "58800019-519a-88ba-8f17-ba6358097c3d",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:48Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "c0400019-519a-88ba-8036-1c849720ee44"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/58800019-519a-88ba-8f17-ba6358097c3d"
+        }
+      }
+    ],
+    "pt-PT": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "47800019-519a-88ba-8f15-d6c4e61412fb",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:05Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "9e000019-519a-88ba-8028-9b756c10a16a"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/47800019-519a-88ba-8f15-d6c4e61412fb"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "39c00019-519a-88ba-8f3d-a6c9f9b34fdf",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:08Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "54000019-519a-88ba-8006-4759efc68383"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/39c00019-519a-88ba-8f3d-a6c9f9b34fdf"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "e3400019-519a-88ba-8f23-09278694361a",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:10Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "09c00019-519a-88ba-8021-83a41d275a65"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/e3400019-519a-88ba-8f23-09278694361a"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "98400019-519a-88ba-8f18-57ffdce8a79b",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:13Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "11400019-519a-88ba-8000-0bc6cc2f20e5"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/98400019-519a-88ba-8f18-57ffdce8a79b"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "c1000019-519a-88ba-8f00-9e2877dbebb4",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:15Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "4f400019-519a-88ba-8037-84744c210c3c"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/c1000019-519a-88ba-8f00-9e2877dbebb4"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "82400019-519a-88ba-8f20-eb29010fa0cb",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:18Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "12400019-519a-88ba-8024-366afb640746"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/82400019-519a-88ba-8f20-eb29010fa0cb"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "43800019-519a-88ba-8f15-c071bb396be3",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:45Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "06c00019-519a-88ba-8016-1eb420131bab"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/43800019-519a-88ba-8f15-c071bb396be3"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "14000019-519a-88ba-8f3a-9f5961b294b3",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:49Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "66800019-519a-88ba-801e-0f9d0f9df7bd"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/14000019-519a-88ba-8f3a-9f5961b294b3"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "ffc00019-519a-88ba-8f3b-e1dbcb08a4a2",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:51Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "75800019-519a-88ba-8013-84d93b938179"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/ffc00019-519a-88ba-8f3b-e1dbcb08a4a2"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "cf400019-519a-88ba-8f22-362de79e132a",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:55Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "7cc00019-519a-88ba-803c-6820467dff90"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/cf400019-519a-88ba-8f22-362de79e132a"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "c7000019-519a-88ba-8f0a-1e25a8ade9d4",
+        "attributes": {
+          "createdDate": "2026-08-02T10:31:58Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "ac800019-519a-88ba-8005-0d0ec514ba4c"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/c7000019-519a-88ba-8f0a-1e25a8ade9d4"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "dcc00019-519a-88ba-8f0f-d84b9568c369",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:01Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "03800019-519a-88ba-800a-e32915a89663"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/dcc00019-519a-88ba-8f0f-d84b9568c369"
+        }
+      }
+    ],
+    "zh-Hans": [
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "e5c00019-519a-88ba-8f25-343ac058834e",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:16Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "5f400019-519a-88ba-8003-ab78edb6f4db"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/e5c00019-519a-88ba-8f25-343ac058834e"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "5fc00019-519a-88ba-8f1d-32a874b2a482",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:18Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "3b000019-519a-88ba-8024-b8f8ccd938e4"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/5fc00019-519a-88ba-8f1d-32a874b2a482"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "1c400019-519a-88ba-8f1b-e6fc81c034b8",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:21Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "51800019-519a-88ba-8009-b8974e1c067d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/1c400019-519a-88ba-8f1b-e6fc81c034b8"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "6cc00019-519a-88ba-8f1b-7d5531ae93cb",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:24Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "e5400019-519a-88ba-8002-a639f37088aa"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/6cc00019-519a-88ba-8f1b-7d5531ae93cb"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "2b400019-519a-88ba-8f32-69181cb5eb87",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:28Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "f1000019-519a-88ba-801a-485546144700"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/2b400019-519a-88ba-8f32-69181cb5eb87"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "b1c00019-519a-88ba-8f21-ac6a52d2e07a",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:30Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPAD_13_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "6e000019-519a-88ba-8030-767a6c8315c6"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/b1c00019-519a-88ba-8f21-ac6a52d2e07a"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "41800019-519a-88ba-8f28-4cfb5858af56",
+        "attributes": {
+          "createdDate": "2026-08-02T10:32:58Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "80000019-519a-88ba-8020-9f681de740b1"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/41800019-519a-88ba-8f28-4cfb5858af56"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "dbc00019-519a-88ba-8f30-931b10ea63fc",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:00Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "54800019-519a-88ba-8001-48890baa185d"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/dbc00019-519a-88ba-8f30-931b10ea63fc"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "b9800019-519a-88ba-8f3e-55dff45866b1",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:04Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "64c00019-519a-88ba-802c-d6848319bd2f"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/b9800019-519a-88ba-8f3e-55dff45866b1"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "4d400019-519a-88ba-8f3b-8c8167e756cc",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:06Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "63800019-519a-88ba-8036-a4bddd93e0e2"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/4d400019-519a-88ba-8f3b-8c8167e756cc"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "11000019-519a-88ba-8f0b-4838b0571938",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:09Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "d8800019-519a-88ba-8021-22939c253627"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/11000019-519a-88ba-8f0b-4838b0571938"
+        }
+      },
+      {
+        "type": "appAssetLibraryPlacements",
+        "id": "28000019-519a-88ba-8f2f-c242afa2e880",
+        "attributes": {
+          "createdDate": "2026-08-02T10:33:12Z",
+          "lastModifiedDate": "2026-08-02T11:20:15Z",
+          "placementType": "APP_SCREENSHOT",
+          "mediaType": "IMAGE",
+          "placementGroup": "IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE",
+          "state": "ACTIVE",
+          "stateDetails": null
+        },
+        "relationships": {
+          "image": {
+            "data": {
+              "type": "appAssetLibraryImages",
+              "id": "d7800019-519a-88ba-8034-b63245ef2ea4"
+            }
+          },
+          "video": {
+            "data": null
+          }
+        },
+        "links": {
+          "self": "https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/28000019-519a-88ba-8f2f-c242afa2e880"
+        }
+      }
+    ]
+  }
+}

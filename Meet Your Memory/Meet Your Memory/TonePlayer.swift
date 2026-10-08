@@ -22,15 +22,26 @@ final class TonePlayer {
         if !engine.isRunning { try? engine.start() }
 
         for tone in tones {
-            if let buffer = makeBuffer(frequency: tone.frequency) {
+            if let buffer = makeBuffer(frequencies: [tone.frequency]) {
                 player.scheduleBuffer(buffer)
             }
         }
         player.play()
     }
 
-    private func makeBuffer(frequency: Double) -> AVAudioPCMBuffer? {
-        let toneDuration = 0.34
+    func playChord(_ tones: [MemoryTone], duration: TimeInterval = 0.34) {
+        guard !tones.isEmpty else { return }
+        player.stop()
+        if !engine.isRunning { try? engine.start() }
+        if let buffer = makeBuffer(frequencies: tones.map(\.frequency), toneDuration: duration) {
+            player.scheduleBuffer(buffer)
+            player.play()
+        }
+    }
+
+    func stop() { player.stop() }
+
+    private func makeBuffer(frequencies: [Double], toneDuration: TimeInterval = 0.34) -> AVAudioPCMBuffer? {
         let silenceDuration = 0.12
         let frameCount = AVAudioFrameCount((toneDuration + silenceDuration) * sampleRate)
         guard
@@ -52,8 +63,10 @@ final class TonePlayer {
             let fadeIn = min(1, Double(frame) / Double(max(fadeFrames, 1)))
             let fadeOut = min(1, Double(audibleFrames - frame) / Double(max(fadeFrames, 1)))
             let envelope = Float(min(fadeIn, fadeOut))
-            let phase = 2 * Double.pi * frequency * Double(frame) / sampleRate
-            samples[frame] = sin(Float(phase)) * 0.22 * envelope
+            let wave = frequencies.reduce(Float.zero) { result, frequency in
+                result + sin(Float(2 * Double.pi * frequency * Double(frame) / sampleRate))
+            } / Float(frequencies.count)
+            samples[frame] = wave * 0.22 * envelope
         }
 
         return buffer

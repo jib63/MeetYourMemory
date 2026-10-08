@@ -1,0 +1,168 @@
+{
+  "checkedAt": "2026-10-08T19:28:35.503504+00:00",
+  "apiVersion": "4.5.1",
+  "counts": {
+    "header": 8,
+    "search": 8,
+    "iphone-medium": 48,
+    "iphone-large": 48,
+    "ipad": 48,
+    "duo": 48
+  },
+  "locales": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "hi",
+    "it",
+    "ja",
+    "pt-PT",
+    "zh-Hans"
+  ],
+  "fileValidation": "208 exact-size opaque RGB images with matching SHA-256",
+  "captures": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "FD147959-F02F-4630-8B70-1AB6AEB4A4C3",
+          "deviceName": "iPad Pro 13-inch (M5)",
+          "modelName": "iPad Pro 13-inch (M5)",
+          "osBuildNumber": "24A434",
+          "osVersion": "27.0",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 8,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      },
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "BB2BFB85-F7EB-4B9B-9EDF-8569140AA140",
+          "deviceName": "iPhone 17 Pro",
+          "modelName": "iPhone 17 Pro",
+          "osBuildNumber": "24A434",
+          "osVersion": "27.0",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 8,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      },
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "3DB08210-78F7-4775-AE42-729281119AB3",
+          "deviceName": "iPhone 17 Pro Max",
+          "modelName": "iPhone 17 Pro Max",
+          "osBuildNumber": "24A434",
+          "osVersion": "27.0",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 8,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "Meet Your Memory · Built with macOS 27.0.1",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1791482985.639,
+    "passedTests": 8,
+    "result": "Passed",
+    "runtimeWarnings": [],
+    "skippedTests": 0,
+    "startTime": 1791482983.063,
+    "statistics": [
+      {
+        "subtitle": "24 test runs",
+        "title": "8 tests ran on 3 devices"
+      }
+    ],
+    "testFailures": [],
+    "title": "Test - Meet Your Memory",
+    "topInsights": [],
+    "totalTestCount": 8
+  },
+  "nativeDuoOuter": {
+    "captures": 32,
+    "realSDKContextVerified": true,
+    "nativePixels": [
+      1398,
+      2034
+    ]
+  },
+  "debugBuild": "PASS",
+  "releaseBuild": "PASS",
+  "releaseCaptureFlagAbsent": true,
+  "offlineContractTests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "visualReview": [
+    "eight localized medium home/challenge/result/history screenshots",
+    "eight localized iPad home/result/history screenshots",
+    "all localized Duo outer home/association screenshots",
+    "eight localized headers and search creatives",
+    "header artwork safe-area crop",
+    "eight localized large iPhone home screenshots",
+    "all sixteen localized native Duo inner game screenshots"
+  ],
+  "headerLocalCropSamples": "crop-samples/ (approximations; not Apple server previews)",
+  "imageGeneration": {
+    "mode": "builtin",
+    "prompts": "../../media-artwork/prompts.json"
+  },
+  "previewsGenerated": false,
+  "uploaded": true,
+  "reviewSubmitted": false,
+  "pending": [],
+  "screenshotsUpload": {
+    "status": "UPLOADED_VERIFIED",
+    "count": 192,
+    "appId": "6796454074",
+    "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+    "checkedAt": "2026-10-08T19:29:43.615625+00:00",
+    "report": "screenshots-server-verification.json"
+  },
+  "creativesUpload": {
+    "status": "UPLOADED_VERIFIED",
+    "count": 16,
+    "appId": "6796454074",
+    "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+    "checkedAt": "2026-10-08T19:07:57.454546+00:00",
+    "report": "creatives-server-verification.json"
+  },
+  "uploadedAssetCount": 208,
+  "nativeDuoInner": {
+    "captures": 16,
+    "realSDKContextVerified": true,
+    "nativePixels": [
+      2853,
+      2007
+    ],
+    "orientation": "landscape",
+    "games": [
+      "panoramaPairs",
+      "orbitMap"
+    ],
+    "captureBuild": "Debug 1.1.0",
+    "captureFixtureWaitsForPhysicalPosture": true
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "status": "verified",
+  "apiVersion": "4.5.1",
+  "selectionSHA256": "f4c0e468848f86e9a571c4f4fcb57859237a5066164087dd8998de5358b97bae",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "locales": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "hi",
+    "it",
+    "ja",
+    "pt-PT",
+    "zh-Hans"
+  ],
+  "placements": {
+    "en-US/IPHONE_DUO_PROFILE": [
+      "b3000019-519a-88ba-8f2d-7d26d5fa7def",
+      "15400019-519a-88ba-8f10-0860b98a40dd",
+      "79800019-519a-88ba-8f20-504385dffa8d",
+      "55800019-519a-88ba-8f29-3bb1795de1af",
+      "aa000019-519a-88ba-8f19-e1cd7e0ac6f6",
+      "5fc00019-519a-88ba-8f2d-23b78b7fa076"
+    ],
+    "fr-FR/IPHONE_DUO_PROFILE": [
+      "e3800019-519a-88ba-8f2a-c5f56e8a972e",
+      "82c00019-519a-88ba-8f12-0197f7617f3f",
+      "45c00019-519a-88ba-8f17-79b00c8f41be",
+      "84c00019-519a-88ba-8f06-496d1d3d696b",
+      "a9000019-519a-88ba-8f24-f133d7db3f70",
+      "a4400019-519a-88ba-8f1a-93cde4b80302"
+    ],
+    "it/IPHONE_DUO_PROFILE": [
+      "0b000019-519a-88ba-8f33-f66a91217646",
+      "77000019-519a-88ba-8f3a-6b3a4090b7c3",
+      "c9000019-519a-88ba-8f1a-d5d807cf5094",
+      "76000019-519a-88ba-8f08-17fdf7675a67",
+      "b3400019-519a-88ba-8f33-fed61576bf89",
+      "85800019-519a-88ba-8f37-026272992219"
+    ],
+    "es-ES/IPHONE_DUO_PROFILE": [
+      "57c00019-519a-88ba-8f2c-080b71b601c8",
+      "01000019-519a-88ba-8f15-db805ce3f9ef",
+      "42c00019-519a-88ba-8f3d-8c19843cdbe4",
+      "7f800019-519a-88ba-8f19-9c3bc872c681",
+      "f2c00019-519a-88ba-8f2e-54fc8ba57fee",
+      "90800019-519a-88ba-8f3b-4937d19dfbf4"
+    ],
+    "pt-PT/IPHONE_DUO_PROFILE": [
+      "94c00019-519a-88ba-8f14-27d1b2a6d58b",
+      "c8000019-519a-88ba-8f20-31f4e099819f",
+      "9bc00019-519a-88ba-8f1b-f6d426ffb651",
+      "08c00019-519a-88ba-8f2a-2ea019a64621",
+      "e4800019-519a-88ba-8f00-451ba0395bd2",
+      "1cc00019-519a-88ba-8f13-e701a0ab2bb2"
+    ],
+    "ja/IPHONE_DUO_PROFILE": [
+      "ff800019-519a-88ba-8f04-a3d4fd4b416d",
+      "d7c00019-519a-88ba-8f0d-29cd27024af9",
+      "bc800019-519a-88ba-8f2a-2750644adbc5",
+      "b9400019-519a-88ba-8f11-189094c0d2aa",
+      "0e000019-519a-88ba-8f0e-28d84a4a3652",
+      "ed800019-519a-88ba-8f15-018b2ffb18fb"
+    ],
+    "zh-Hans/IPHONE_DUO_PROFILE": [
+      "49800019-519a-88ba-8f2a-1d3c6d97c8c3",
+      "09000019-519a-88ba-8f3c-2de980d56096",
+      "30800019-519a-88ba-8f01-bc1c46a8f6fe",
+      "1dc00019-519a-88ba-8f32-3b69ac5c205d",
+      "66800019-519a-88ba-8f2c-f3b219d38cc1",
+      "07400019-519a-88ba-8f34-88bebdc27bb4"
+    ],
+    "hi/IPHONE_DUO_PROFILE": [
+      "4b800019-519a-88ba-8f07-038c7066e32e",
+      "70000019-519a-88ba-8f2b-5efccdb58f9c",
+      "02400019-519a-88ba-8f3f-940c171a2730",
+      "1a400019-519a-88ba-8f22-4c9d41f02185",
+      "bb400019-519a-88ba-8f3e-b4c3df553daf",
+      "2b400019-519a-88ba-8f1f-8dc6f2ed2bf7"
+    ]
+  },
+  "reviewSubmitted": false
+}
