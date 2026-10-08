@@ -410,6 +410,40 @@
       "remoteAssetId": "57800019-519a-88ba-802d-e76e2903ee4e"
     },
     {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-en-US.png",
+      "locale": "en-US",
+      "sha256": "ffd4d16f36c2346362d163948d529e830f88382e3473991f3e8b6057266595d6",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f1400019-519a-88ba-8006-1449a17a4373"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-en-US.png",
+      "locale": "en-US",
+      "sha256": "8308423ad10cc346bbec616db06c74cfe0b12e804156eb66da3de943f0555c68",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c3400019-519a-88ba-8027-c41c8b4d12ac"
+    },
+    {
       "fileName": "meet-your-memory-header-fr-FR.png",
       "locale": "fr-FR",
       "sha256": "2c78c9d63c56514fc93d0ed7620250d3b2217d487c0b40c3942747a75e2439de",
@@ -816,6 +850,40 @@
       "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
       "remoteState": "UPLOADED_VERIFIED",
       "remoteAssetId": "44400019-519a-88ba-8028-9dee7ef223cb"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "bbdba92e68785f9896cf3a703b89e0ea366ba789bc43d4e0923e80339de421bc",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ae000019-519a-88ba-8034-1c22d6c68715"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "de2f38d1166014433c6cfad28f8d0d4d26040c98e1eada17b7f99582a10887bc",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "4b000019-519a-88ba-8010-3a8781a60123"
     },
     {
       "fileName": "meet-your-memory-header-it.png",
@@ -1226,6 +1294,40 @@
       "remoteAssetId": "9e400019-519a-88ba-803d-01060179067a"
     },
     {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-it.png",
+      "locale": "it",
+      "sha256": "dd552623b9dad99ab581cc880b4c96ff31cc48c033526cd31f6fc0f59bf33f32",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "26c00019-519a-88ba-8000-484a267a1a37"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-it.png",
+      "locale": "it",
+      "sha256": "fc2ef0c388f852186c4bcecccb621598983124398678b68cb4aa8d26c64b82d0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ef400019-519a-88ba-8000-f796897241a7"
+    },
+    {
       "fileName": "meet-your-memory-header-es-ES.png",
       "locale": "es-ES",
       "sha256": "c2b23f25ea524f5c5a96258bfd4bde13fb7d89c46ae165f5fbd4a040f6cdcbea",
@@ -1632,6 +1734,40 @@
       "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
       "remoteState": "UPLOADED_VERIFIED",
       "remoteAssetId": "ae400019-519a-88ba-8007-f08dcf62ddef"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "66ec4d11d9504d1d99879e39ff24dc1af07ac45668670b33144568cb7f65ee43",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f4800019-519a-88ba-803d-c9f8aa60c43d"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "b0f0e02f741477f7aa6cde1f205bead2f68b0dfdf87c86582690a09604770f1f",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ef800019-519a-88ba-8039-21b8970a73e4"
     },
     {
       "fileName": "meet-your-memory-header-pt-PT.png",
@@ -2042,6 +2178,40 @@
       "remoteAssetId": "05400019-519a-88ba-8003-3a006df3d8a5"
     },
     {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "fcf75a9aa014d5e74650ee04fe71bea78fd5e9b7ecf0523e0edcd5f83ef41048",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "66400019-519a-88ba-800c-c22d8f51fbd3"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "46bc973f62fa1eba9ad90f7f2a8ce923a227be88b758fc374a25ed9881f1fde4",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "2e000019-519a-88ba-800c-33adaaa865d0"
+    },
+    {
       "fileName": "meet-your-memory-header-ja.png",
       "locale": "ja",
       "sha256": "976ebb6a22aa8a5d11b73b0300b1ddb1ada84ccf10f20a8cb6093ab189772569",
@@ -2448,6 +2618,40 @@
       "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
       "remoteState": "UPLOADED_VERIFIED",
       "remoteAssetId": "c0800019-519a-88ba-8035-e62fc66527c0"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-ja.png",
+      "locale": "ja",
+      "sha256": "d7ca29b20e359a444e00c1fdae77ecc19ca5b102506fbb1915cc1fd6d2b50b9e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "4c400019-519a-88ba-801d-382eacc52834"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-ja.png",
+      "locale": "ja",
+      "sha256": "299ad5e35d13a19082b3f74a6fadaf7327bc1c7046d4233b3e2602a1730b2bf9",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e7400019-519a-88ba-802a-a92cab84c3f5"
     },
     {
       "fileName": "meet-your-memory-header-zh-Hans.png",
@@ -2858,6 +3062,40 @@
       "remoteAssetId": "01000019-519a-88ba-800a-2b98d3a3dfc4"
     },
     {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "46449b6ed93e84ddcdfeeb22aa158a06ab15b773001c798f273a7c4e8d3407dc",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "53400019-519a-88ba-8024-8fdfdacc0dee"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "664f390f219dc1ff198382e38f515f5df17d8143f3eea65665ec04bb1e827915",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f9c00019-519a-88ba-8005-953e428f7acd"
+    },
+    {
       "fileName": "meet-your-memory-header-hi.png",
       "locale": "hi",
       "sha256": "a64e272ca6fdfe06d8c27a3e6722c73d6a5e1b25a1c183854eb0eaf9e8c325f0",
@@ -3264,6 +3502,40 @@
       "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
       "remoteState": "UPLOADED_VERIFIED",
       "remoteAssetId": "60000019-519a-88ba-803c-c0dcdc99bd9c"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-hi.png",
+      "locale": "hi",
+      "sha256": "54f543b9798de3b16e1ec76f1019527d039ba2ee59f39984969acae574d3513f",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c5000019-519a-88ba-8034-675264bd5ec8"
+    },
+    {
+      "fileName": "meet-your-memory-duo-inner-orbit-map-hi.png",
+      "locale": "hi",
+      "sha256": "aea20e45317ef630082a81e42bc252b41878cd0638a5169bb390c602b4e0e731",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "74400019-519a-88ba-8029-fe5450d40dd3"
     }
   ],
   "remoteState": "UPLOADED_VERIFIED",

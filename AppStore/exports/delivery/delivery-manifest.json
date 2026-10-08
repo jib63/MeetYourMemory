@@ -972,6 +972,86 @@
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
     {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/en-US/meet-your-memory-duo-inner-panorama-pairs-en-US.png",
+      "sha256": "ffd4d16f36c2346362d163948d529e830f88382e3473991f3e8b6057266595d6",
+      "md5": "e977f822e8edea213efd5918f280d202",
+      "bytes": 1979373,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "en-US",
+      "language": "en",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-en-US.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/en/07-panorama-pairs.png",
+        "sha256": "ffd4d16f36c2346362d163948d529e830f88382e3473991f3e8b6057266595d6",
+        "md5": "e977f822e8edea213efd5918f280d202",
+        "bytes": 1979373
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "7b3811a69f47c5e8bc787df79233a872550d4cfd2bbc9fb3b039711064c1adc3",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "f1400019-519a-88ba-8006-1449a17a4373",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/en-US/meet-your-memory-duo-inner-orbit-map-en-US.png",
+      "sha256": "8308423ad10cc346bbec616db06c74cfe0b12e804156eb66da3de943f0555c68",
+      "md5": "d1ac48a228814ef61e469396afc7c2cc",
+      "bytes": 1715894,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "en-US",
+      "language": "en",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-en-US.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/en/08-orbit-map.png",
+        "sha256": "8308423ad10cc346bbec616db06c74cfe0b12e804156eb66da3de943f0555c68",
+        "md5": "d1ac48a228814ef61e469396afc7c2cc",
+        "bytes": 1715894
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "08683e070011f75393daeb4e250863b50f1c23863a2f08bd9ab98377154dd717",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "c3400019-519a-88ba-8027-c41c8b4d12ac",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
       "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/creative/fr-FR/meet-your-memory-header-fr-FR.png",
       "sha256": "2c78c9d63c56514fc93d0ed7620250d3b2217d487c0b40c3942747a75e2439de",
       "md5": "053e87daf64a807b14d6a30566a74595",
@@ -1928,6 +2008,86 @@
         "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
       },
       "remoteAssetId": "44400019-519a-88ba-8028-9dee7ef223cb",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/fr-FR/meet-your-memory-duo-inner-panorama-pairs-fr-FR.png",
+      "sha256": "bbdba92e68785f9896cf3a703b89e0ea366ba789bc43d4e0923e80339de421bc",
+      "md5": "d29262567312f2cd96a89692c37690d6",
+      "bytes": 1987143,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "fr-FR",
+      "language": "fr",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-fr-FR.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/fr/07-panorama-pairs.png",
+        "sha256": "bbdba92e68785f9896cf3a703b89e0ea366ba789bc43d4e0923e80339de421bc",
+        "md5": "d29262567312f2cd96a89692c37690d6",
+        "bytes": 1987143
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "ac02c37c1ac4dd23047abd1d3d257f70007f58aefd3547e7447102ef28a8153d",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "ae000019-519a-88ba-8034-1c22d6c68715",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/fr-FR/meet-your-memory-duo-inner-orbit-map-fr-FR.png",
+      "sha256": "de2f38d1166014433c6cfad28f8d0d4d26040c98e1eada17b7f99582a10887bc",
+      "md5": "bae4fe18bc0e7d76464d66b9b7b37c3f",
+      "bytes": 1813415,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "fr-FR",
+      "language": "fr",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-fr-FR.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/fr/08-orbit-map.png",
+        "sha256": "de2f38d1166014433c6cfad28f8d0d4d26040c98e1eada17b7f99582a10887bc",
+        "md5": "bae4fe18bc0e7d76464d66b9b7b37c3f",
+        "bytes": 1813415
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "1592c8f3fa6b0f48b71fbf32e3ba67f24e0cc1c70d9e223f5f2532a1161d9a06",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "4b000019-519a-88ba-8010-3a8781a60123",
       "appId": "6796454074",
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
@@ -2892,6 +3052,86 @@
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
     {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/it/meet-your-memory-duo-inner-panorama-pairs-it.png",
+      "sha256": "dd552623b9dad99ab581cc880b4c96ff31cc48c033526cd31f6fc0f59bf33f32",
+      "md5": "9a57ebe96082037cbc67ac2877a773cf",
+      "bytes": 1766185,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "it",
+      "language": "it",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-it.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/it/07-panorama-pairs.png",
+        "sha256": "dd552623b9dad99ab581cc880b4c96ff31cc48c033526cd31f6fc0f59bf33f32",
+        "md5": "9a57ebe96082037cbc67ac2877a773cf",
+        "bytes": 1766185
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "2a28f599dac2b3f30bed55215ee098230f018a25c037f48123c1aac465f99165",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "26c00019-519a-88ba-8000-484a267a1a37",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/it/meet-your-memory-duo-inner-orbit-map-it.png",
+      "sha256": "fc2ef0c388f852186c4bcecccb621598983124398678b68cb4aa8d26c64b82d0",
+      "md5": "a78ec42ee3bc664b5bfb440aa78fc6e6",
+      "bytes": 1695835,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "it",
+      "language": "it",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-it.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/it/08-orbit-map.png",
+        "sha256": "fc2ef0c388f852186c4bcecccb621598983124398678b68cb4aa8d26c64b82d0",
+        "md5": "a78ec42ee3bc664b5bfb440aa78fc6e6",
+        "bytes": 1695835
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "e2293d0aa186a4ce45d32f381ae8735fac24d863311189e729c5d0e90db4e260",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "ef400019-519a-88ba-8000-f796897241a7",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
       "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/creative/es-ES/meet-your-memory-header-es-ES.png",
       "sha256": "c2b23f25ea524f5c5a96258bfd4bde13fb7d89c46ae165f5fbd4a040f6cdcbea",
       "md5": "508bd749f1f9cd01aba8e5e7c194449f",
@@ -3848,6 +4088,86 @@
         "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
       },
       "remoteAssetId": "ae400019-519a-88ba-8007-f08dcf62ddef",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/es-ES/meet-your-memory-duo-inner-panorama-pairs-es-ES.png",
+      "sha256": "66ec4d11d9504d1d99879e39ff24dc1af07ac45668670b33144568cb7f65ee43",
+      "md5": "b1887b17871a9e166fe59e2ff537bf52",
+      "bytes": 2032089,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "es-ES",
+      "language": "es",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-es-ES.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/es/07-panorama-pairs.png",
+        "sha256": "66ec4d11d9504d1d99879e39ff24dc1af07ac45668670b33144568cb7f65ee43",
+        "md5": "b1887b17871a9e166fe59e2ff537bf52",
+        "bytes": 2032089
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "6bac8997612c4609e4afa58a05da7d682748fa435aefc08a8eac048f2d051535",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "f4800019-519a-88ba-803d-c9f8aa60c43d",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/es-ES/meet-your-memory-duo-inner-orbit-map-es-ES.png",
+      "sha256": "b0f0e02f741477f7aa6cde1f205bead2f68b0dfdf87c86582690a09604770f1f",
+      "md5": "b59d32af2c8162dee8a27c554c36c476",
+      "bytes": 1850880,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "es-ES",
+      "language": "es",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-es-ES.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/es/08-orbit-map.png",
+        "sha256": "b0f0e02f741477f7aa6cde1f205bead2f68b0dfdf87c86582690a09604770f1f",
+        "md5": "b59d32af2c8162dee8a27c554c36c476",
+        "bytes": 1850880
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "f5dd5a5bf24262961dcde76f774a9582d193bb3361cc89120357ab5731637771",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "ef800019-519a-88ba-8039-21b8970a73e4",
       "appId": "6796454074",
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
@@ -4812,6 +5132,86 @@
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
     {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/pt-PT/meet-your-memory-duo-inner-panorama-pairs-pt-PT.png",
+      "sha256": "fcf75a9aa014d5e74650ee04fe71bea78fd5e9b7ecf0523e0edcd5f83ef41048",
+      "md5": "66f07827c62aff562c190c7cd23f4586",
+      "bytes": 1992755,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "pt-PT",
+      "language": "pt",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-pt-PT.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/pt/07-panorama-pairs.png",
+        "sha256": "fcf75a9aa014d5e74650ee04fe71bea78fd5e9b7ecf0523e0edcd5f83ef41048",
+        "md5": "66f07827c62aff562c190c7cd23f4586",
+        "bytes": 1992755
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "3a2dda3326d622c896ae8af9a7eaca5c3596a6c7585a0d6ba37c70040f89151c",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "66400019-519a-88ba-800c-c22d8f51fbd3",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/pt-PT/meet-your-memory-duo-inner-orbit-map-pt-PT.png",
+      "sha256": "46bc973f62fa1eba9ad90f7f2a8ce923a227be88b758fc374a25ed9881f1fde4",
+      "md5": "cfd765a298c5b0db9558a829cf123ebd",
+      "bytes": 1722258,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "pt-PT",
+      "language": "pt",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-pt-PT.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/pt/08-orbit-map.png",
+        "sha256": "46bc973f62fa1eba9ad90f7f2a8ce923a227be88b758fc374a25ed9881f1fde4",
+        "md5": "cfd765a298c5b0db9558a829cf123ebd",
+        "bytes": 1722258
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "93c9bd046b0a0986067da26abc5150b735d3f3e4dd567cb42469a8ec36cd3e49",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "2e000019-519a-88ba-800c-33adaaa865d0",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
       "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/creative/ja/meet-your-memory-header-ja.png",
       "sha256": "976ebb6a22aa8a5d11b73b0300b1ddb1ada84ccf10f20a8cb6093ab189772569",
       "md5": "fb44de675d8b77bf554222cfe5bfa1e1",
@@ -5768,6 +6168,86 @@
         "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
       },
       "remoteAssetId": "c0800019-519a-88ba-8035-e62fc66527c0",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/ja/meet-your-memory-duo-inner-panorama-pairs-ja.png",
+      "sha256": "d7ca29b20e359a444e00c1fdae77ecc19ca5b102506fbb1915cc1fd6d2b50b9e",
+      "md5": "44e85ebf65d57d1be44192c04571322a",
+      "bytes": 2016268,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "ja",
+      "language": "ja",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-ja.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/ja/07-panorama-pairs.png",
+        "sha256": "d7ca29b20e359a444e00c1fdae77ecc19ca5b102506fbb1915cc1fd6d2b50b9e",
+        "md5": "44e85ebf65d57d1be44192c04571322a",
+        "bytes": 2016268
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "efaf366b0ed5d7543eea42cda89b108227c170dec1da3faa7cf7cd4af8658058",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "4c400019-519a-88ba-801d-382eacc52834",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/ja/meet-your-memory-duo-inner-orbit-map-ja.png",
+      "sha256": "299ad5e35d13a19082b3f74a6fadaf7327bc1c7046d4233b3e2602a1730b2bf9",
+      "md5": "9b83939e95f439ac871aedacafac55ee",
+      "bytes": 1824044,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "ja",
+      "language": "ja",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-ja.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/ja/08-orbit-map.png",
+        "sha256": "299ad5e35d13a19082b3f74a6fadaf7327bc1c7046d4233b3e2602a1730b2bf9",
+        "md5": "9b83939e95f439ac871aedacafac55ee",
+        "bytes": 1824044
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "665c1d5eabbd0ee7f9152e871b71dc6230a647f715b55ca67167f8f7486476b5",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "e7400019-519a-88ba-802a-a92cab84c3f5",
       "appId": "6796454074",
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
@@ -6732,6 +7212,86 @@
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     },
     {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/zh-Hans/meet-your-memory-duo-inner-panorama-pairs-zh-Hans.png",
+      "sha256": "46449b6ed93e84ddcdfeeb22aa158a06ab15b773001c798f273a7c4e8d3407dc",
+      "md5": "ec6f051318d376a2a0e46765bb56adb0",
+      "bytes": 1878664,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "zh-Hans",
+      "language": "zh-Hans",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-zh-Hans.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/zh-Hans/07-panorama-pairs.png",
+        "sha256": "46449b6ed93e84ddcdfeeb22aa158a06ab15b773001c798f273a7c4e8d3407dc",
+        "md5": "ec6f051318d376a2a0e46765bb56adb0",
+        "bytes": 1878664
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "fde6a3718cecc75c8a8642ddf52019fb406392c891f320575f24e7f1d0db9d44",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "53400019-519a-88ba-8024-8fdfdacc0dee",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/zh-Hans/meet-your-memory-duo-inner-orbit-map-zh-Hans.png",
+      "sha256": "664f390f219dc1ff198382e38f515f5df17d8143f3eea65665ec04bb1e827915",
+      "md5": "2b979782b86938e886e988d26eea7aa9",
+      "bytes": 1664624,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "zh-Hans",
+      "language": "zh-Hans",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-zh-Hans.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/zh-Hans/08-orbit-map.png",
+        "sha256": "664f390f219dc1ff198382e38f515f5df17d8143f3eea65665ec04bb1e827915",
+        "md5": "2b979782b86938e886e988d26eea7aa9",
+        "bytes": 1664624
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "d75dcadc4f3f81e1fd2d9ffc9c9044c0a0a5ab379774069ea357ad2f5ab6922e",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "f9c00019-519a-88ba-8005-953e428f7acd",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
       "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/creative/hi/meet-your-memory-header-hi.png",
       "sha256": "a64e272ca6fdfe06d8c27a3e6722c73d6a5e1b25a1c183854eb0eaf9e8c325f0",
       "md5": "3e8ec0e4683470b84032297e67ea8e35",
@@ -7690,18 +8250,96 @@
       "remoteAssetId": "60000019-519a-88ba-803c-c0dcdc99bd9c",
       "appId": "6796454074",
       "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/hi/meet-your-memory-duo-inner-panorama-pairs-hi.png",
+      "sha256": "54f543b9798de3b16e1ec76f1019527d039ba2ee59f39984969acae574d3513f",
+      "md5": "6988b096e8bfd09bc304650887f7e119",
+      "bytes": 1942449,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-panorama-pairs",
+      "locale": "hi",
+      "language": "hi",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-panorama-pairs-hi.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/hi/07-panorama-pairs.png",
+        "sha256": "54f543b9798de3b16e1ec76f1019527d039ba2ee59f39984969acae574d3513f",
+        "md5": "6988b096e8bfd09bc304650887f7e119",
+        "bytes": 1942449
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "0bf6c617de9fc262f01ce35f8db8b38638131da1c2ddc7880e85b7a736da74cb",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "c5000019-519a-88ba-8034-675264bd5ec8",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/AppStore/exports/delivery/screenshots/duo/hi/meet-your-memory-duo-inner-orbit-map-hi.png",
+      "sha256": "aea20e45317ef630082a81e42bc252b41878cd0638a5169bb390c602b4e0e731",
+      "md5": "0cf6b4a9d7d0770ed9ef798e37616003",
+      "bytes": 2041819,
+      "width": 2853,
+      "height": 2007,
+      "kind": "image",
+      "app": "meet-your-memory",
+      "id": "duo-inner-orbit-map",
+      "locale": "hi",
+      "language": "hi",
+      "placement": "duo",
+      "profile": "duo-inner",
+      "fileName": "meet-your-memory-duo-inner-orbit-map-hi.png",
+      "source": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/hi/08-orbit-map.png",
+        "sha256": "aea20e45317ef630082a81e42bc252b41878cd0638a5169bb390c602b4e0e731",
+        "md5": "0cf6b4a9d7d0770ed9ef798e37616003",
+        "bytes": 2041819
+      },
+      "reviewState": "LOCAL_VISUAL_REVIEW",
+      "deliveryState": "UPLOADED_VERIFIED",
+      "assetKey": "68bf7b07366fdefc68eaba79e4a63ff83bdaaec27bbf7f4cc02c0a26dbc73956",
+      "api": {
+        "apiVersion": "4.5.1",
+        "resource": "appAssetLibraryImages",
+        "targets": [
+          {
+            "placementType": "APP_SCREENSHOT",
+            "displayClass": "IPHONE_DUO",
+            "platform": "IPHONE_APP_STORE"
+          }
+        ],
+        "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData"
+      },
+      "remoteAssetId": "74400019-519a-88ba-8029-fe5450d40dd3",
+      "appId": "6796454074",
+      "versionId": "1037ece1-f94a-493b-9c26-8951337ba754"
     }
   ],
   "previewsGenerated": false,
   "uploaded": true,
+  "uploadedAssetCount": 208,
   "reviewSubmitted": false,
   "duoIncluded": true,
-  "duoCoverage": "outer-only",
-  "pendingCapture": [
-    "Duo inner: requires physical fully unfolded portrait simulator"
-  ],
-  "uploadedAssetCount": 192,
+  "duoCoverage": "outer-and-inner",
+  "pendingCapture": [],
   "screenshotsUploaded": true,
   "remoteVersionId": "1037ece1-f94a-493b-9c26-8951337ba754",
-  "serverVerifiedAt": "2026-10-08T19:07:57.454546+00:00"
+  "serverVerifiedAt": "2026-10-08T19:29:43.615625+00:00"
 }

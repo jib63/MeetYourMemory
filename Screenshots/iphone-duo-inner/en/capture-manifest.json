@@ -1,0 +1,91 @@
+{
+  "language": "en",
+  "locale": "en-US",
+  "display": "LCD-1",
+  "posture": "physical fully unfolded",
+  "appBuild": [
+    {
+      "path": "/private/tmp/memory-1.1.0-tests/Build/Products/Debug-iphonesimulator/Meet Your Memory.app/Meet Your Memory",
+      "sha256": "88377a27eb65ebb27459c14b818238756aceb2c8559fd0a2eb128f5a52a73935",
+      "md5": "3378db61cd70ca9f335b725c840820c4",
+      "bytes": 72992
+    },
+    {
+      "path": "/private/tmp/memory-1.1.0-tests/Build/Products/Debug-iphonesimulator/Meet Your Memory.app/Meet Your Memory.debug.dylib",
+      "sha256": "c0ecc2678c58bf1491063a71cea93aa62064d608d31d83c766a41421aeebae96",
+      "md5": "4904890ef76fb811e1d6db79386799a2",
+      "bytes": 13427216
+    }
+  ],
+  "captures": [
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/en/07-panorama-pairs.png",
+      "sha256": "ffd4d16f36c2346362d163948d529e830f88382e3473991f3e8b6057266595d6",
+      "md5": "e977f822e8edea213efd5918f280d202",
+      "bytes": 1979373,
+      "scene": "07-panorama-pairs",
+      "locale": "en-US",
+      "language": "en",
+      "original": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/.native-work/inner/en/07-panorama-pairs-native.png",
+        "sha256": "9ad38d8902907008ada4f3583074ecaeba129ee1c6d3a3c1dc449e40461a7e79",
+        "md5": "585c979a85b080a72a24145f920922c6",
+        "bytes": 3275654
+      },
+      "display": "LCD-1",
+      "deviceUDID": "96058282-9E19-4C38-9FFD-8B654E4D32D3",
+      "sdkContext": {
+        "expanded": true,
+        "mode": "expanded",
+        "pose": "flat"
+      },
+      "launchArguments": [
+        "-AppleLanguages",
+        "(en)",
+        "-AppleLocale",
+        "en_US",
+        "--marketing-native-capture",
+        "UI_TESTING",
+        "--duo-ui-testing",
+        "--duo-test-game",
+        "panoramaPairs"
+      ],
+      "orientation": "landscape"
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-inner/en/08-orbit-map.png",
+      "sha256": "8308423ad10cc346bbec616db06c74cfe0b12e804156eb66da3de943f0555c68",
+      "md5": "d1ac48a228814ef61e469396afc7c2cc",
+      "bytes": 1715894,
+      "scene": "08-orbit-map",
+      "locale": "en-US",
+      "language": "en",
+      "original": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/.native-work/inner/en/08-orbit-map-native.png",
+        "sha256": "d6314504e91806ce260ecd681412772e7d84a4812b68476810672f0b1b66b8da",
+        "md5": "3e04d9b19db6c6f74d25e6488e861820",
+        "bytes": 2904700
+      },
+      "display": "LCD-1",
+      "deviceUDID": "96058282-9E19-4C38-9FFD-8B654E4D32D3",
+      "sdkContext": {
+        "expanded": true,
+        "mode": "expanded",
+        "pose": "flat"
+      },
+      "launchArguments": [
+        "-AppleLanguages",
+        "(en)",
+        "-AppleLocale",
+        "en_US",
+        "--marketing-native-capture",
+        "UI_TESTING",
+        "--duo-ui-testing",
+        "--duo-test-game",
+        "orbitMap"
+      ],
+      "orientation": "landscape"
+    }
+  ],
+  "complete": true
+}

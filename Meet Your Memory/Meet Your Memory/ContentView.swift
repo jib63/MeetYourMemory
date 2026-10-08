@@ -8,6 +8,9 @@ struct ContentView: View {
     @State private var history = MemoryHistoryStore()
     @State private var showsHistory = false
     @State private var showsAbout = false
+    #if DEBUG
+    @State private var nativeCaptureFixtureStarted = false
+    #endif
 
     init() {
         let game = MemoryGame()
@@ -23,7 +26,8 @@ struct ContentView: View {
                 showHistory = true
             }
         }
-        if ProcessInfo.processInfo.arguments.contains("--duo-ui-testing"),
+        if !ProcessInfo.processInfo.arguments.contains("--marketing-native-capture"),
+           ProcessInfo.processInfo.arguments.contains("--duo-ui-testing"),
            let marker = ProcessInfo.processInfo.arguments.firstIndex(of: "--duo-test-game"),
            ProcessInfo.processInfo.arguments.indices.contains(marker + 1) {
             if let adaptiveGame = DuoGame(rawValue: ProcessInfo.processInfo.arguments[marker + 1]) {
@@ -79,6 +83,20 @@ struct ContentView: View {
             AdaptiveDisplayObserver { context in
                 game.updateAdaptiveContext(context)
                 #if DEBUG
+                // Native captures wait for the real display report before
+                // starting a fixture, so launch-time hinge updates do not
+                // interrupt a round that has already begun.
+                let arguments = ProcessInfo.processInfo.arguments
+                if arguments.contains("--marketing-native-capture"),
+                   !nativeCaptureFixtureStarted,
+                   let marker = arguments.firstIndex(of: "--duo-test-game"),
+                   arguments.indices.contains(marker + 1),
+                   let fixture = DuoGame(rawValue: arguments[marker + 1]),
+                   context.mode == (fixture.availability == .expanded ? .expanded : .folded) {
+                    nativeCaptureFixtureStarted = true
+                    game.startAdaptiveUITest(fixture)
+                    game.updateAdaptiveContext(context)
+                }
                 if ProcessInfo.processInfo.arguments.contains("--marketing-native-capture"),
                    let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
                     let report: [String: Any] = ["pose": context.pose.rawValue,

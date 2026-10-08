@@ -227,6 +227,26 @@
       "posterSecondsVerified": null
     },
     {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "7b3811a69f47c5e8bc787df79233a872550d4cfd2bbc9fb3b039711064c1adc3",
+      "locale": "en-US",
+      "profile": "duo-inner",
+      "sha256": "ffd4d16f36c2346362d163948d529e830f88382e3473991f3e8b6057266595d6",
+      "remoteAssetId": "f1400019-519a-88ba-8006-1449a17a4373",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "08683e070011f75393daeb4e250863b50f1c23863a2f08bd9ab98377154dd717",
+      "locale": "en-US",
+      "profile": "duo-inner",
+      "sha256": "8308423ad10cc346bbec616db06c74cfe0b12e804156eb66da3de943f0555c68",
+      "remoteAssetId": "c3400019-519a-88ba-8027-c41c8b4d12ac",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
       "id": "iphone-medium-01-home",
       "assetKey": "fb35965cedc5225b7f3af18d613df3ae4294eda699b7c98abcdaf5a89b5306c6",
       "locale": "fr-FR",
@@ -444,6 +464,26 @@
       "sha256": "1789ee6eaa2678439bd2c6497a972ee793bb9dd80af85271c8752fe3097e1b9d",
       "remoteAssetId": "44400019-519a-88ba-8028-9dee7ef223cb",
       "remoteName": "meet-your-memory-duo-outer-history-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "ac02c37c1ac4dd23047abd1d3d257f70007f58aefd3547e7447102ef28a8153d",
+      "locale": "fr-FR",
+      "profile": "duo-inner",
+      "sha256": "bbdba92e68785f9896cf3a703b89e0ea366ba789bc43d4e0923e80339de421bc",
+      "remoteAssetId": "ae000019-519a-88ba-8034-1c22d6c68715",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "1592c8f3fa6b0f48b71fbf32e3ba67f24e0cc1c70d9e223f5f2532a1161d9a06",
+      "locale": "fr-FR",
+      "profile": "duo-inner",
+      "sha256": "de2f38d1166014433c6cfad28f8d0d4d26040c98e1eada17b7f99582a10887bc",
+      "remoteAssetId": "4b000019-519a-88ba-8010-3a8781a60123",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-fr-FR.png",
       "posterSecondsVerified": null
     },
     {
@@ -667,6 +707,26 @@
       "posterSecondsVerified": null
     },
     {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "2a28f599dac2b3f30bed55215ee098230f018a25c037f48123c1aac465f99165",
+      "locale": "it",
+      "profile": "duo-inner",
+      "sha256": "dd552623b9dad99ab581cc880b4c96ff31cc48c033526cd31f6fc0f59bf33f32",
+      "remoteAssetId": "26c00019-519a-88ba-8000-484a267a1a37",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "e2293d0aa186a4ce45d32f381ae8735fac24d863311189e729c5d0e90db4e260",
+      "locale": "it",
+      "profile": "duo-inner",
+      "sha256": "fc2ef0c388f852186c4bcecccb621598983124398678b68cb4aa8d26c64b82d0",
+      "remoteAssetId": "ef400019-519a-88ba-8000-f796897241a7",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-it.png",
+      "posterSecondsVerified": null
+    },
+    {
       "id": "iphone-medium-01-home",
       "assetKey": "779cbe4a05cba68430802b3ff5605a0184a1136edacd8b902d5ab4ab8af3f0f9",
       "locale": "es-ES",
@@ -884,6 +944,26 @@
       "sha256": "47e24a7110da070f455b5618b0414b85ea037999f06f2600eda2dcd51e85116b",
       "remoteAssetId": "ae400019-519a-88ba-8007-f08dcf62ddef",
       "remoteName": "meet-your-memory-duo-outer-history-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "6bac8997612c4609e4afa58a05da7d682748fa435aefc08a8eac048f2d051535",
+      "locale": "es-ES",
+      "profile": "duo-inner",
+      "sha256": "66ec4d11d9504d1d99879e39ff24dc1af07ac45668670b33144568cb7f65ee43",
+      "remoteAssetId": "f4800019-519a-88ba-803d-c9f8aa60c43d",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "f5dd5a5bf24262961dcde76f774a9582d193bb3361cc89120357ab5731637771",
+      "locale": "es-ES",
+      "profile": "duo-inner",
+      "sha256": "b0f0e02f741477f7aa6cde1f205bead2f68b0dfdf87c86582690a09604770f1f",
+      "remoteAssetId": "ef800019-519a-88ba-8039-21b8970a73e4",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-es-ES.png",
       "posterSecondsVerified": null
     },
     {
@@ -1107,6 +1187,26 @@
       "posterSecondsVerified": null
     },
     {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "3a2dda3326d622c896ae8af9a7eaca5c3596a6c7585a0d6ba37c70040f89151c",
+      "locale": "pt-PT",
+      "profile": "duo-inner",
+      "sha256": "fcf75a9aa014d5e74650ee04fe71bea78fd5e9b7ecf0523e0edcd5f83ef41048",
+      "remoteAssetId": "66400019-519a-88ba-800c-c22d8f51fbd3",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "93c9bd046b0a0986067da26abc5150b735d3f3e4dd567cb42469a8ec36cd3e49",
+      "locale": "pt-PT",
+      "profile": "duo-inner",
+      "sha256": "46bc973f62fa1eba9ad90f7f2a8ce923a227be88b758fc374a25ed9881f1fde4",
+      "remoteAssetId": "2e000019-519a-88ba-800c-33adaaa865d0",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
       "id": "iphone-medium-01-home",
       "assetKey": "e7f657e77bcb4245f99617885c9d7222da0f308ac2cbcf3d8b06196c8458378d",
       "locale": "ja",
@@ -1324,6 +1424,26 @@
       "sha256": "42f440c27559373e68dad7189617e3ebe47a47c3a06e007779bf47725b266e61",
       "remoteAssetId": "c0800019-519a-88ba-8035-e62fc66527c0",
       "remoteName": "meet-your-memory-duo-outer-history-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "efaf366b0ed5d7543eea42cda89b108227c170dec1da3faa7cf7cd4af8658058",
+      "locale": "ja",
+      "profile": "duo-inner",
+      "sha256": "d7ca29b20e359a444e00c1fdae77ecc19ca5b102506fbb1915cc1fd6d2b50b9e",
+      "remoteAssetId": "4c400019-519a-88ba-801d-382eacc52834",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "665c1d5eabbd0ee7f9152e871b71dc6230a647f715b55ca67167f8f7486476b5",
+      "locale": "ja",
+      "profile": "duo-inner",
+      "sha256": "299ad5e35d13a19082b3f74a6fadaf7327bc1c7046d4233b3e2602a1730b2bf9",
+      "remoteAssetId": "e7400019-519a-88ba-802a-a92cab84c3f5",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-ja.png",
       "posterSecondsVerified": null
     },
     {
@@ -1547,6 +1667,26 @@
       "posterSecondsVerified": null
     },
     {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "fde6a3718cecc75c8a8642ddf52019fb406392c891f320575f24e7f1d0db9d44",
+      "locale": "zh-Hans",
+      "profile": "duo-inner",
+      "sha256": "46449b6ed93e84ddcdfeeb22aa158a06ab15b773001c798f273a7c4e8d3407dc",
+      "remoteAssetId": "53400019-519a-88ba-8024-8fdfdacc0dee",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "d75dcadc4f3f81e1fd2d9ffc9c9044c0a0a5ab379774069ea357ad2f5ab6922e",
+      "locale": "zh-Hans",
+      "profile": "duo-inner",
+      "sha256": "664f390f219dc1ff198382e38f515f5df17d8143f3eea65665ec04bb1e827915",
+      "remoteAssetId": "f9c00019-519a-88ba-8005-953e428f7acd",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
       "id": "iphone-medium-01-home",
       "assetKey": "5f48792d77cc906b4f7fb805db7e26be84c8ddd2110d9fa20a6992afc76988cc",
       "locale": "hi",
@@ -1764,6 +1904,26 @@
       "sha256": "83568b83360010f4e81ebc906027a8d53cf7979a0d28f5363a5077f0906373d3",
       "remoteAssetId": "60000019-519a-88ba-803c-c0dcdc99bd9c",
       "remoteName": "meet-your-memory-duo-outer-history-hi.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-panorama-pairs",
+      "assetKey": "0bf6c617de9fc262f01ce35f8db8b38638131da1c2ddc7880e85b7a736da74cb",
+      "locale": "hi",
+      "profile": "duo-inner",
+      "sha256": "54f543b9798de3b16e1ec76f1019527d039ba2ee59f39984969acae574d3513f",
+      "remoteAssetId": "c5000019-519a-88ba-8034-675264bd5ec8",
+      "remoteName": "meet-your-memory-duo-inner-panorama-pairs-hi.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-inner-orbit-map",
+      "assetKey": "68bf7b07366fdefc68eaba79e4a63ff83bdaaec27bbf7f4cc02c0a26dbc73956",
+      "locale": "hi",
+      "profile": "duo-inner",
+      "sha256": "aea20e45317ef630082a81e42bc252b41878cd0638a5169bb390c602b4e0e731",
+      "remoteAssetId": "74400019-519a-88ba-8029-fe5450d40dd3",
+      "remoteName": "meet-your-memory-duo-inner-orbit-map-hi.png",
       "posterSecondsVerified": null
     }
   ]

@@ -2,7 +2,7 @@
 
 Open `exports/delivery/index.html` to review the generated still images by
 language. The delivery manifest records dimensions, sources and SHA-256
-digests. The 176 generated screenshots have been uploaded to version **1.1.0**
+digests. The 192 generated screenshots have been uploaded to version **1.1.0**
 using the API 4.5.1 Asset Library, across all eight languages and 32 galleries.
 The 16 localized header/search assets are also uploaded and verified. No App
 Previews or review submissions were performed. Server receipts are saved in
@@ -17,29 +17,33 @@ Japanese, Simplified Chinese and Hindi.
 | iPhone large | 6 | 1320 × 2868 |
 | iPad 13-inch | 6 | 2064 × 2752 |
 | Duo outer | 4 | 1398 × 2034 |
+| Duo inner | 2 | 2853 × 2007 |
 | Product-page header | 1 | 3840 × 1646 |
 | Search artwork | 1 | 3840 × 2560 |
 
-Current bundle: **192 images** (176 screenshots, 16 creatives). The standalone
+Current bundle: **208 images** (192 screenshots, 16 creatives). The standalone
 banner is `exports/banner/meet-your-memory-banner.png`. Header and banner use
 the same artwork. Built-in ImageGen sources and exact prompts are preserved
 in `media-artwork/`; localized typography uses native macOS font shaping.
 
-**Pending:** two native Duo inner screenshots per locale, Panorama Pairs and
-Orbit Map, at 2007 × 2853 or 2853 × 2007.
-The simulator remains physically folded. Device Hub automation timed out;
-`simctl` has no public fold/unfold command. Unfold simulator
-`96058282-9E19-4C38-9FFD-8B654E4D32D3` fully flat in portrait, then run:
+The two native Duo inner screenshots show Panorama Pairs and Orbit Map in
+landscape at 2853 × 2007. Each capture records the real SDK context as fully
+unfolded (`flat`, `expanded`) and preserves native source hashes. The capture
+fixture starts only after that context is reported, avoiding launch-time
+recovery overlays.
+
+To recapture, unfold simulator `96058282-9E19-4C38-9FFD-8B654E4D32D3` fully
+flat in Device Hub, then run (`simctl` has no public fold/unfold command):
 
 ```bash
 python3 Tools/capture_native_duo.py \
   --udid 96058282-9E19-4C38-9FFD-8B654E4D32D3 \
-  --app '/private/tmp/memory-appstore-native/Build/Products/Debug-iphonesimulator/Meet Your Memory.app' \
+  --app '/private/tmp/memory-1.1.0-tests/Build/Products/Debug-iphonesimulator/Meet Your Memory.app' \
   --posture inner --scenes panoramaPairs,orbitMap
 python3 Tools/prepare_appstore_media.py --include-duo
 ```
 
-That produces a **208-image** bundle, with six Duo screenshots per language.
+This produces a **208-image** bundle, with six Duo screenshots per language.
 Duo outer and inner screenshots share
 one ten-image limit and stay in the dedicated Duo group. Native captures
 check real SDK posture, normalize orientation, reject black displays and
@@ -49,7 +53,7 @@ To regenerate ordinary screenshots, run `ScreenshotTests` on iPhone 17 Pro,
 iPhone 17 Pro Max and iPad Pro 13-inch. Then export and validate:
 
 ```bash
-python3 Tools/prepare_appstore_media.py --render --include-duo-outer
+python3 Tools/prepare_appstore_media.py --render --include-duo
 python3 Tools/prepare_appstore_media.py --validate
 python3 Tools/upload_appstore.py --check-assets
 python3 Tools/test_appstore_media.py

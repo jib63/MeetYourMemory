@@ -785,6 +785,9 @@ def verify(client, version_id: str, localizations: dict, assets: list[dict], jou
     report = {'status': 'verified', 'apiVersion': '4.5.1', 'selectionSHA256': selection_digest(plan),
               'appId': journal.value['appId'], 'versionId': version_id,
               'locales': sorted(localizations), 'placements': verified_groups, 'reviewSubmitted': False}
+    # A read-only check may use a broader selection than the preceding upload.
+    # Keep the saved plan aligned with its verification and delivery receipt.
+    atomic_json(journal.path.parent/'asset-library-upload-plan.json', {'versionId': version_id, 'assets': plan})
     atomic_json(report_path, report)
     delivery_receipt(plan, remotes, journal.path.parent/'asset-library-delivery-receipt.json',
                      journal.value['appId'], version_id)

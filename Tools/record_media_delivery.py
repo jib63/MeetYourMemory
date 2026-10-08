@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Refresh the local review bundle from an independently verified API receipt."""
 import json
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from appstore_asset_library import selection_digest, validate_file
@@ -49,6 +50,9 @@ def main():
     validation_path = delivery / 'validation-report.json'
     if validation_path.exists():
         validation = json.loads(validation_path.read_text())
+        validation['counts'] = dict(Counter(a['placement'] for a in manifest['assets']))
+        validation['fileValidation'] = f'{len(manifest["assets"])} exact-size opaque RGB images with matching SHA-256'
+        validation['pending'] = manifest.get('pendingCapture', [])
         validation['uploaded'] = manifest['uploaded']
         validation['uploadedAssetCount'] = manifest['uploadedAssetCount']
         validation[f'{scope}Upload'] = {'status':'UPLOADED_VERIFIED','count':matched,
@@ -59,10 +63,16 @@ def main():
     handoff_path = delivery / 'api-handoff.json'
     handoff = json.loads(handoff_path.read_text())
     by_name = {a['remoteName']:a for a in receipt['assets']}
+    delivered = {a['fileName']:a for a in manifest['assets'] if a.get('deliveryState') == 'UPLOADED_VERIFIED'}
     for asset in handoff['assets']:
         record = by_name.get(asset['fileName'])
         if record:
             asset.update(remoteState='UPLOADED_VERIFIED', remoteAssetId=record['remoteAssetId'])
+        elif asset['fileName'] in delivered:
+            previous = delivered[asset['fileName']]
+            if previous['sha256'] != asset['sha256']:
+                raise ValueError('Previously delivered asset differs from the handoff')
+            asset.update(remoteState='UPLOADED_VERIFIED', remoteAssetId=previous['remoteAssetId'])
     handoff['remoteState'] = 'PARTIALLY_UPLOADED_VERIFIED' if not manifest['uploaded'] else 'UPLOADED_VERIFIED'
     atomic_json(handoff_path,handoff)
     review(manifest['assets'],delivery)

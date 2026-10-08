@@ -43,9 +43,10 @@ The `DuoArcadeTests` suite covers the catalog, transparent next-challenge select
 Localized screenshots, product-page headers and search artwork are prepared
 with the App Store Connect API 4.5.1 workflow. See [the media guide](AppStore/README.md)
 and [the generated review gallery](AppStore/exports/delivery/index.html).
-The 176 prepared screenshots are uploaded to App Store version 1.1.0 in all
-eight languages. No previews or review submissions were performed. Native Duo
-inner captures remain pending until the simulator is physically unfolded.
+The 192 prepared screenshots are uploaded to App Store version 1.1.0 in all
+eight languages, including two native unfolded Duo game screenshots per
+language. The 16 localized header/search assets are also uploaded and verified.
+No previews or review submissions were performed.
 
 ## License
 

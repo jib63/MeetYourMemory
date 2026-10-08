@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-08T18:31:55.282093+00:00",
+  "checkedAt": "2026-10-08T19:28:35.503504+00:00",
   "apiVersion": "4.5.1",
   "counts": {
     "header": 8,
@@ -7,7 +7,7 @@
     "iphone-medium": 48,
     "iphone-large": 48,
     "ipad": 48,
-    "duo": 32
+    "duo": 48
   },
   "locales": [
     "en-US",
@@ -19,7 +19,7 @@
     "pt-PT",
     "zh-Hans"
   ],
-  "fileValidation": "192 exact-size opaque RGB images with matching SHA-256",
+  "fileValidation": "208 exact-size opaque RGB images with matching SHA-256",
   "captures": {
     "devicesAndConfigurations": [
       {
@@ -121,7 +121,8 @@
     "all localized Duo outer home/association screenshots",
     "eight localized headers and search creatives",
     "header artwork safe-area crop",
-    "eight localized large iPhone home screenshots"
+    "eight localized large iPhone home screenshots",
+    "all sixteen localized native Duo inner game screenshots"
   ],
   "headerLocalCropSamples": "crop-samples/ (approximations; not Apple server previews)",
   "imageGeneration": {
@@ -131,15 +132,13 @@
   "previewsGenerated": false,
   "uploaded": true,
   "reviewSubmitted": false,
-  "pending": [
-    "48 native Duo inner screenshots: physical unfolded portrait simulator required; Device Hub automation timeout"
-  ],
+  "pending": [],
   "screenshotsUpload": {
     "status": "UPLOADED_VERIFIED",
-    "count": 176,
+    "count": 192,
     "appId": "6796454074",
     "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
-    "checkedAt": "2026-10-08T18:53:12.552410+00:00",
+    "checkedAt": "2026-10-08T19:29:43.615625+00:00",
     "report": "screenshots-server-verification.json"
   },
   "creativesUpload": {
@@ -150,5 +149,20 @@
     "checkedAt": "2026-10-08T19:07:57.454546+00:00",
     "report": "creatives-server-verification.json"
   },
-  "uploadedAssetCount": 192
+  "uploadedAssetCount": 208,
+  "nativeDuoInner": {
+    "captures": 16,
+    "realSDKContextVerified": true,
+    "nativePixels": [
+      2853,
+      2007
+    ],
+    "orientation": "landscape",
+    "games": [
+      "panoramaPairs",
+      "orbitMap"
+    ],
+    "captureBuild": "Debug 1.1.0",
+    "captureFixtureWaitsForPhysicalPosture": true
+  }
 }
