@@ -1,0 +1,43 @@
+{
+  "status": "verified",
+  "apiVersion": "4.5.1",
+  "selectionSHA256": "5a67a1dc76f3d144fc72225a5848d7781b4bc0cc8e1fa9ca79258eeb9da5d03b",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "locales": [
+    "en-US"
+  ],
+  "placements": {
+    "en-US/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "9dc00019-519a-88ba-8f03-0c9858481479",
+      "ad000019-519a-88ba-8f03-2a1ff402f855",
+      "e4000019-519a-88ba-8f12-b7c5a61d9bbc",
+      "60c00019-519a-88ba-8f01-0d22304e87ed",
+      "2d800019-519a-88ba-8f2d-31cf71bdd64a",
+      "99000019-519a-88ba-8f15-65c64aeb16b5"
+    ],
+    "en-US/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "02c00019-519a-88ba-8f13-2d1bc75864fb",
+      "dcc00019-519a-88ba-8f23-9e6791028292",
+      "88400019-519a-88ba-8f29-97a1b16e8157",
+      "41800019-519a-88ba-8f0d-2f236e1a7c90",
+      "25000019-519a-88ba-8f0e-95b2302a1da1",
+      "63c00019-519a-88ba-8f18-1045c39ac313"
+    ],
+    "en-US/IPAD_13_PROFILE": [
+      "d1800019-519a-88ba-8f3d-45a7a1d7f1ea",
+      "c7000019-519a-88ba-8f20-b748791366d6",
+      "11000019-519a-88ba-8f11-752c4bb11c7a",
+      "6a400019-519a-88ba-8f05-7646176ec698",
+      "60c00019-519a-88ba-8f05-e6d489e56894",
+      "a4400019-519a-88ba-8f38-854c05214d8b"
+    ],
+    "en-US/IPHONE_DUO_PROFILE": [
+      "b3000019-519a-88ba-8f2d-7d26d5fa7def",
+      "15400019-519a-88ba-8f10-0860b98a40dd",
+      "79800019-519a-88ba-8f20-504385dffa8d",
+      "55800019-519a-88ba-8f29-3bb1795de1af"
+    ]
+  },
+  "reviewSubmitted": false
+}

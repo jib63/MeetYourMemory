@@ -1,0 +1,260 @@
+{
+  "status": "verified",
+  "apiVersion": "4.5.1",
+  "selectionSHA256": "7459c239d653dc0120791ddb949921acd0050ab55b64a453351783cda854ff8b",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "locales": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "hi",
+    "it",
+    "ja",
+    "pt-PT",
+    "zh-Hans"
+  ],
+  "placements": {
+    "en-US/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "9dc00019-519a-88ba-8f03-0c9858481479",
+      "ad000019-519a-88ba-8f03-2a1ff402f855",
+      "e4000019-519a-88ba-8f12-b7c5a61d9bbc",
+      "60c00019-519a-88ba-8f01-0d22304e87ed",
+      "2d800019-519a-88ba-8f2d-31cf71bdd64a",
+      "99000019-519a-88ba-8f15-65c64aeb16b5"
+    ],
+    "en-US/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "02c00019-519a-88ba-8f13-2d1bc75864fb",
+      "dcc00019-519a-88ba-8f23-9e6791028292",
+      "88400019-519a-88ba-8f29-97a1b16e8157",
+      "41800019-519a-88ba-8f0d-2f236e1a7c90",
+      "25000019-519a-88ba-8f0e-95b2302a1da1",
+      "63c00019-519a-88ba-8f18-1045c39ac313"
+    ],
+    "en-US/IPAD_13_PROFILE": [
+      "d1800019-519a-88ba-8f3d-45a7a1d7f1ea",
+      "c7000019-519a-88ba-8f20-b748791366d6",
+      "11000019-519a-88ba-8f11-752c4bb11c7a",
+      "6a400019-519a-88ba-8f05-7646176ec698",
+      "60c00019-519a-88ba-8f05-e6d489e56894",
+      "a4400019-519a-88ba-8f38-854c05214d8b"
+    ],
+    "en-US/IPHONE_DUO_PROFILE": [
+      "b3000019-519a-88ba-8f2d-7d26d5fa7def",
+      "15400019-519a-88ba-8f10-0860b98a40dd",
+      "79800019-519a-88ba-8f20-504385dffa8d",
+      "55800019-519a-88ba-8f29-3bb1795de1af"
+    ],
+    "fr-FR/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "20000019-519a-88ba-8f20-47fe599b57f1",
+      "c0400019-519a-88ba-8f3e-215f388a55f1",
+      "27000019-519a-88ba-8f1d-ad73b0205ed4",
+      "e7800019-519a-88ba-8f1f-63f23045bd8d",
+      "b6400019-519a-88ba-8f1a-ba1a2ba5c6d3",
+      "00c00019-519a-88ba-8f29-4f450fd2c872"
+    ],
+    "fr-FR/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "54800019-519a-88ba-8f28-696a97bf3cea",
+      "9c000019-519a-88ba-8f3c-05e13cc92151",
+      "cd800019-519a-88ba-8f1b-627ecb05fbab",
+      "81400019-519a-88ba-8f13-28818c86c4da",
+      "91c00019-519a-88ba-8f04-57e680386aa8",
+      "f7800019-519a-88ba-8f06-392518b4a18d"
+    ],
+    "fr-FR/IPAD_13_PROFILE": [
+      "54c00019-519a-88ba-8f25-1847105a914e",
+      "c9000019-519a-88ba-8f3e-1bba5ee863c6",
+      "dec00019-519a-88ba-8f03-cd131f83ae1a",
+      "ff400019-519a-88ba-8f2c-a0bea3a081d9",
+      "4c000019-519a-88ba-8f13-c33e1b5fd27f",
+      "dc400019-519a-88ba-8f24-2d0a40af85ae"
+    ],
+    "fr-FR/IPHONE_DUO_PROFILE": [
+      "e3800019-519a-88ba-8f2a-c5f56e8a972e",
+      "82c00019-519a-88ba-8f12-0197f7617f3f",
+      "45c00019-519a-88ba-8f17-79b00c8f41be",
+      "84c00019-519a-88ba-8f06-496d1d3d696b"
+    ],
+    "it/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "ff800019-519a-88ba-8f11-1749c172f858",
+      "5f000019-519a-88ba-8f31-6b8254a57794",
+      "23800019-519a-88ba-8f2c-ff818801581b",
+      "f3c00019-519a-88ba-8f29-670d50f4a01e",
+      "d8c00019-519a-88ba-8f25-f7cb0fce0898",
+      "fdc00019-519a-88ba-8f31-be24cd5185f9"
+    ],
+    "it/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "d2800019-519a-88ba-8f1c-d8a4a8dd552a",
+      "38c00019-519a-88ba-8f2a-9732f5f9a812",
+      "b3800019-519a-88ba-8f18-5f5079e21ae6",
+      "3f400019-519a-88ba-8f10-7de4d67b9a92",
+      "6fc00019-519a-88ba-8f01-76fff49c0ee3",
+      "1c800019-519a-88ba-8f1f-05b278d18c71"
+    ],
+    "it/IPAD_13_PROFILE": [
+      "bf400019-519a-88ba-8f19-ea6dc535ecdf",
+      "a5000019-519a-88ba-8f14-38ffe455745f",
+      "5f800019-519a-88ba-8f0c-ee9421bc66f8",
+      "ec800019-519a-88ba-8f30-a7273d7c75d9",
+      "87c00019-519a-88ba-8f10-f57e24dc57c9",
+      "db800019-519a-88ba-8f39-365fb2687466"
+    ],
+    "it/IPHONE_DUO_PROFILE": [
+      "0b000019-519a-88ba-8f33-f66a91217646",
+      "77000019-519a-88ba-8f3a-6b3a4090b7c3",
+      "c9000019-519a-88ba-8f1a-d5d807cf5094",
+      "76000019-519a-88ba-8f08-17fdf7675a67"
+    ],
+    "es-ES/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "0c400019-519a-88ba-8f2a-3425eb4db8cd",
+      "13000019-519a-88ba-8f29-62975b825235",
+      "76000019-519a-88ba-8f3e-8efecb6fe7f8",
+      "71000019-519a-88ba-8f09-c4baed19a997",
+      "87400019-519a-88ba-8f12-8bf58fc529bd",
+      "48400019-519a-88ba-8f05-fb4c3e69abd8"
+    ],
+    "es-ES/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "96c00019-519a-88ba-8f0a-7e193050b9c5",
+      "51400019-519a-88ba-8f3b-a2d7115a89a1",
+      "51400019-519a-88ba-8f3e-0328c5d1c4d7",
+      "b9400019-519a-88ba-8f3a-ca047c3e6b4c",
+      "4f800019-519a-88ba-8f18-e6479b8393aa",
+      "68800019-519a-88ba-8f32-168f0613d949"
+    ],
+    "es-ES/IPAD_13_PROFILE": [
+      "63000019-519a-88ba-8f07-2bb1db42a4ab",
+      "6e800019-519a-88ba-8f3b-483646537607",
+      "91800019-519a-88ba-8f06-ee910f798449",
+      "a6000019-519a-88ba-8f35-bec09a5d3afe",
+      "d6000019-519a-88ba-8f12-488bbdefd3ab",
+      "c6800019-519a-88ba-8f32-72411ac53f88"
+    ],
+    "es-ES/IPHONE_DUO_PROFILE": [
+      "57c00019-519a-88ba-8f2c-080b71b601c8",
+      "01000019-519a-88ba-8f15-db805ce3f9ef",
+      "42c00019-519a-88ba-8f3d-8c19843cdbe4",
+      "7f800019-519a-88ba-8f19-9c3bc872c681"
+    ],
+    "pt-PT/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "b7800019-519a-88ba-8f38-577bd21fac12",
+      "32800019-519a-88ba-8f39-70d928cb129c",
+      "37c00019-519a-88ba-8f0a-cf97a2fe3133",
+      "a7000019-519a-88ba-8f30-bd29b5227413",
+      "4cc00019-519a-88ba-8f3e-dffbbf6b63cf",
+      "02400019-519a-88ba-8f10-4cc048adfd48"
+    ],
+    "pt-PT/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "ff800019-519a-88ba-8f2d-00308a59a298",
+      "d2000019-519a-88ba-8f2c-ce86a7745449",
+      "3d800019-519a-88ba-8f1a-9c742f474d27",
+      "5c400019-519a-88ba-8f0f-3e9e0ffcd15f",
+      "ea400019-519a-88ba-8f1b-043f09f8e01a",
+      "54c00019-519a-88ba-8f0c-111168e481e7"
+    ],
+    "pt-PT/IPAD_13_PROFILE": [
+      "9f400019-519a-88ba-8f1c-1c3aff0c2f69",
+      "c3c00019-519a-88ba-8f21-bc1fa11c86ba",
+      "84400019-519a-88ba-8f19-d36e1312edd3",
+      "b0c00019-519a-88ba-8f07-af69dae01771",
+      "01400019-519a-88ba-8f38-468f5ce6877a",
+      "f6000019-519a-88ba-8f32-f7fe6c1359fd"
+    ],
+    "pt-PT/IPHONE_DUO_PROFILE": [
+      "94c00019-519a-88ba-8f14-27d1b2a6d58b",
+      "c8000019-519a-88ba-8f20-31f4e099819f",
+      "9bc00019-519a-88ba-8f1b-f6d426ffb651",
+      "08c00019-519a-88ba-8f2a-2ea019a64621"
+    ],
+    "ja/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "5c000019-519a-88ba-8f02-d31f745136e0",
+      "5c800019-519a-88ba-8f1a-dc1118e7a67c",
+      "05400019-519a-88ba-8f18-7cb88f1726a4",
+      "b0c00019-519a-88ba-8f0c-f0166715103a",
+      "c6400019-519a-88ba-8f02-2ce3f361bbb2",
+      "e2400019-519a-88ba-8f09-d96921951f17"
+    ],
+    "ja/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "5ec00019-519a-88ba-8f3f-1e05613f448b",
+      "25000019-519a-88ba-8f15-d693c90b1798",
+      "cfc00019-519a-88ba-8f05-4c4b01c02b36",
+      "bb800019-519a-88ba-8f2d-1c274f2eaf7b",
+      "d3000019-519a-88ba-8f14-a0c967f82254",
+      "be400019-519a-88ba-8f00-1c5103d55394"
+    ],
+    "ja/IPAD_13_PROFILE": [
+      "74400019-519a-88ba-8f13-f2832f6d7c24",
+      "ec800019-519a-88ba-8f3c-90c1c1e43e94",
+      "37400019-519a-88ba-8f24-a094426a8542",
+      "3e400019-519a-88ba-8f07-2531de81760b",
+      "82800019-519a-88ba-8f38-b491b8cd868b",
+      "96800019-519a-88ba-8f3b-44efeda557f6"
+    ],
+    "ja/IPHONE_DUO_PROFILE": [
+      "ff800019-519a-88ba-8f04-a3d4fd4b416d",
+      "d7c00019-519a-88ba-8f0d-29cd27024af9",
+      "bc800019-519a-88ba-8f2a-2750644adbc5",
+      "b9400019-519a-88ba-8f11-189094c0d2aa"
+    ],
+    "zh-Hans/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "cbc00019-519a-88ba-8f09-e0618bc5928d",
+      "89000019-519a-88ba-8f03-cc0c1a09d021",
+      "ce000019-519a-88ba-8f20-bdfa4d0348b6",
+      "2b800019-519a-88ba-8f3e-9259b2060e7c",
+      "b8800019-519a-88ba-8f32-207184f57e76",
+      "03c00019-519a-88ba-8f0c-dd433f3aa190"
+    ],
+    "zh-Hans/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "fa400019-519a-88ba-8f03-fc8385b843da",
+      "16000019-519a-88ba-8f27-41f69c1af2e0",
+      "cc000019-519a-88ba-8f08-9a44dbf90399",
+      "54400019-519a-88ba-8f25-c73a9c72b76f",
+      "6cc00019-519a-88ba-8f39-0c75e5fe8eda",
+      "88c00019-519a-88ba-8f0d-ab28dc8726d2"
+    ],
+    "zh-Hans/IPAD_13_PROFILE": [
+      "0dc00019-519a-88ba-8f11-8484ff8a5a66",
+      "0a400019-519a-88ba-8f0b-40beb6a11d7a",
+      "09c00019-519a-88ba-8f1e-dc9eb571d447",
+      "60400019-519a-88ba-8f2e-232e93f9fa8e",
+      "71800019-519a-88ba-8f05-a79df430fdde",
+      "df400019-519a-88ba-8f0a-41f88175054e"
+    ],
+    "zh-Hans/IPHONE_DUO_PROFILE": [
+      "49800019-519a-88ba-8f2a-1d3c6d97c8c3",
+      "09000019-519a-88ba-8f3c-2de980d56096",
+      "30800019-519a-88ba-8f01-bc1c46a8f6fe",
+      "1dc00019-519a-88ba-8f32-3b69ac5c205d"
+    ],
+    "hi/IPHONE_DYNAMIC_ISLAND_MEDIUM_PROFILE": [
+      "33400019-519a-88ba-8f37-4ea47dd319c0",
+      "28c00019-519a-88ba-8f05-fcb21198cd8e",
+      "1b400019-519a-88ba-8f03-d5ededeffe16",
+      "cc000019-519a-88ba-8f17-dabf6fd279b0",
+      "6b000019-519a-88ba-8f2a-67b40660bb3c",
+      "bb800019-519a-88ba-8f36-9778f3779575"
+    ],
+    "hi/IPHONE_DYNAMIC_ISLAND_LARGE_PROFILE": [
+      "9d400019-519a-88ba-8f33-4610c3633ecf",
+      "22000019-519a-88ba-8f3c-ba3e3b52a5f1",
+      "9c000019-519a-88ba-8f1e-a705f3ee49d2",
+      "25c00019-519a-88ba-8f29-7cfc04f175f4",
+      "7b000019-519a-88ba-8f0e-3e151fe0888d",
+      "e5800019-519a-88ba-8f00-6268f2251d5e"
+    ],
+    "hi/IPAD_13_PROFILE": [
+      "10000019-519a-88ba-8f37-c9d8ba5a4611",
+      "f3400019-519a-88ba-8f32-750c8ec2088d",
+      "0ec00019-519a-88ba-8f31-4470e8d1d424",
+      "32000019-519a-88ba-8f01-03f44dc71d16",
+      "60000019-519a-88ba-8f01-fdceb0286ab0",
+      "22400019-519a-88ba-8f2e-3b5024836f82"
+    ],
+    "hi/IPHONE_DUO_PROFILE": [
+      "4b800019-519a-88ba-8f07-038c7066e32e",
+      "70000019-519a-88ba-8f2b-5efccdb58f9c",
+      "02400019-519a-88ba-8f3f-940c171a2730",
+      "1a400019-519a-88ba-8f22-4c9d41f02185"
+    ]
+  },
+  "reviewSubmitted": false
+}

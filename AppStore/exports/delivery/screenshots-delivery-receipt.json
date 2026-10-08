@@ -1,0 +1,1770 @@
+{
+  "schemaVersion": 1,
+  "app": "meet-your-memory",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "transportUsed": "App Store Connect API 4.5.1",
+  "reviewSubmitted": false,
+  "assets": [
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "1786af90e4696d5ab29b3b4bc15d2aeca890bcd87102ba15afd96a57eb8be295",
+      "locale": "en-US",
+      "profile": "iphone-medium",
+      "sha256": "8e883306625ee3b168ec5c2f21d3aa1233b95c0ba6f4f0ce6345a066dbe29bc5",
+      "remoteAssetId": "c7400019-519a-88ba-8027-8b6560052b09",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "785f603c2916b7c7182ed70a263a88ecc0f38f68bfc2da7f03c9cce5f44d4088",
+      "locale": "en-US",
+      "profile": "iphone-medium",
+      "sha256": "fd873e94a4d2719c9b243fc3299148e012f5c3a94c896d5cba657ee01fd87dab",
+      "remoteAssetId": "c3400019-519a-88ba-802e-471598557b0b",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "eb6402bf4ec32b8cf9d40ba6562bd217ae842182aa185414b535ca0bb8fce584",
+      "locale": "en-US",
+      "profile": "iphone-medium",
+      "sha256": "f4f2f1b972f2ff7d9b7d3d15028a31003bf7fa37b62b84f5bdf15fbc4b5e7a60",
+      "remoteAssetId": "42000019-519a-88ba-803d-96bc4537a630",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "4036fabb5236f9bf9e18b7ecb3a865a74e30959af4ff676239867b26ac48dafc",
+      "locale": "en-US",
+      "profile": "iphone-medium",
+      "sha256": "dbc47e40d8215281b0e22047f8f973b1c164c6c4e92a3cc5dd9ad1cc3e63f99e",
+      "remoteAssetId": "6b400019-519a-88ba-802d-ad8a8019bbaa",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "5f2ac5f466384bd67d884f7e35b9c9f7f5eeb9911eab952a2ea685d4631087f7",
+      "locale": "en-US",
+      "profile": "iphone-medium",
+      "sha256": "bcdcf82b8ad2c223816239386fc557d6ca8caa81ecb15a3aeaaf8bf88e86c20d",
+      "remoteAssetId": "52400019-519a-88ba-8035-5196c2e6a5cc",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "14c5871f4352d99453c7dc7cff6c4c849d95b5359221342ac840993374beda18",
+      "locale": "en-US",
+      "profile": "iphone-medium",
+      "sha256": "afc8c7a959d3231d642d45500d4e4c80cb55321b79b72407dd77271121fde6a0",
+      "remoteAssetId": "43c00019-519a-88ba-8035-6b0ed119c907",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "6af18e79732457e221b7e81b3929bd7dc5f12ab7b0f15521bae8a50312e0f251",
+      "locale": "en-US",
+      "profile": "iphone-large-screenshot",
+      "sha256": "a06f66cc9f85f71657af02a00de427199c62ac589bc630da1c3aa2fcb27c239b",
+      "remoteAssetId": "d3000019-519a-88ba-8033-e72ca4813341",
+      "remoteName": "meet-your-memory-iphone-large-01-home-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "9714c9c59d57930aee7e52f4ef43c092a58ea63125f9e24d816436114ed981d0",
+      "locale": "en-US",
+      "profile": "iphone-large-screenshot",
+      "sha256": "348212a7053bc843bbdd3cf85bb49c3c2384d1a84363b51e7d983406a1238548",
+      "remoteAssetId": "95800019-519a-88ba-8005-735a0d9358fa",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "a5055d392eb3df1ba182e3e21654b184dd71c4c535d802a900676da46f7494f4",
+      "locale": "en-US",
+      "profile": "iphone-large-screenshot",
+      "sha256": "0fe4ad1e685d749873a2ffb4c68a4ea09c0d72337690b6f3dea0218e3788f63b",
+      "remoteAssetId": "f2c00019-519a-88ba-8007-8724ec907d22",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "af55a6c0ec0cac09ceb1a8c5946e4559810dfb7861078ee4486b96cf883146b0",
+      "locale": "en-US",
+      "profile": "iphone-large-screenshot",
+      "sha256": "fd4a503bb945a09f3b45f47b674030561c46daf875eb4b4925d96aee494eb2eb",
+      "remoteAssetId": "9c400019-519a-88ba-803d-8f2d745d2efb",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "01ac7cb9920c7a9e0df98f6ac2fa0619a637ea29faa9397bc29f26407f3c133e",
+      "locale": "en-US",
+      "profile": "iphone-large-screenshot",
+      "sha256": "63123733e148e434a7f6739747aab0c0edeb2bcc8df5fd3180b40a84b2cd0913",
+      "remoteAssetId": "f8c00019-519a-88ba-803b-2adbc5985d7e",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "c3519b2928360db9d5eea9adbc8986de5ad90fe479e553965378b186b2194d38",
+      "locale": "en-US",
+      "profile": "iphone-large-screenshot",
+      "sha256": "36d49d2f57371c337d9c2d52d9f695549ea1146dcf0275e5a005fbb3839ae71b",
+      "remoteAssetId": "70400019-519a-88ba-801e-db8e32f7b780",
+      "remoteName": "meet-your-memory-iphone-large-06-history-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "7b3c4d0f5ddc340d0625a0e60532bdead01fd5f6b656e4af4f4dedc1e04f0f77",
+      "locale": "en-US",
+      "profile": "ipad-screenshot",
+      "sha256": "904f798ff9b905f75398980a9da613d09ebf0d940499ad35525092bb40d98729",
+      "remoteAssetId": "0dc00019-519a-88ba-8003-f32f6e267c55",
+      "remoteName": "meet-your-memory-ipad-01-home-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "76f46920c757599a8826ddd5ab02926cc5e1de8eb79168e0c428a2958d38215e",
+      "locale": "en-US",
+      "profile": "ipad-screenshot",
+      "sha256": "df71d2c177f5e88240f4a2cb0f0629c33451ee8b086bc64efe801545f706ab7a",
+      "remoteAssetId": "9cc00019-519a-88ba-8011-8332e0b062f5",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "681e30037ead13e95ae784751f2a73cf660b409d966754c0b9d49ff618449783",
+      "locale": "en-US",
+      "profile": "ipad-screenshot",
+      "sha256": "d10fe8c206bc099af1b7c64cf512aaf7a79a51b5a6673b427e26e20b5be7c483",
+      "remoteAssetId": "eb000019-519a-88ba-803f-967b5c02406d",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "232cc8d692cdb9fb6f0f408bed3f60e09f91ca3f0971608a5d31fbafc140d84c",
+      "locale": "en-US",
+      "profile": "ipad-screenshot",
+      "sha256": "98c49952133c64ec067cf331b788ee8b8027c53cef72fda24fcbf64ac8e0a3ad",
+      "remoteAssetId": "d3400019-519a-88ba-8002-5b0905fd2b53",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "273009417802e815e17e1ae992cddd0a06bbd43727f832edf900d8312cc38b1a",
+      "locale": "en-US",
+      "profile": "ipad-screenshot",
+      "sha256": "e05ba7b522f4d12c46f059c430cb1163da32eb431e06441c944a43eeba6b5a10",
+      "remoteAssetId": "90400019-519a-88ba-8028-2f44dbdd322b",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "48f4b9274d9467808d09cd98764b56ecac602b5db0aa54004595572587e194da",
+      "locale": "en-US",
+      "profile": "ipad-screenshot",
+      "sha256": "aa4ab9aebfee1c2e99addd791661879a35cf9ea7d8eea7f38d6365e8884bb30b",
+      "remoteAssetId": "66400019-519a-88ba-8033-ad877ce6fb79",
+      "remoteName": "meet-your-memory-ipad-06-history-en-US.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "8ba4ffbcc4db5e36dd735c3ce13f96076ed1d202fa965d4a7a3104eb31c1ece5",
+      "locale": "en-US",
+      "profile": "duo-outer",
+      "sha256": "2295ddf070974edc3f5136c3b7c98562397d1669fc71728cc0589dff1ee33e2c",
+      "remoteAssetId": "5e400019-519a-88ba-8002-8b9fcaf18e6e",
+      "remoteName": "meet-your-memory-duo-outer-home-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "fd6d00987be11d6730e7476dd50fc601f69507cee26e380ce116fe392a17397f",
+      "locale": "en-US",
+      "profile": "duo-outer",
+      "sha256": "9f80d81a610f2c3fe6c294417e81d884f3262cfea7b9c016b8eb36f41a4ade53",
+      "remoteAssetId": "22400019-519a-88ba-8007-a09d2bad88f5",
+      "remoteName": "meet-your-memory-duo-outer-visual-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "58e2bd4d2e307f4b7769350836dd1370e5724303740c11b454cbbe3748b5ff5f",
+      "locale": "en-US",
+      "profile": "duo-outer",
+      "sha256": "2969926ec7eced0e85c1b2257742bc76a65761fc6f509be7bd0e6d19182b166e",
+      "remoteAssetId": "2ac00019-519a-88ba-8008-e52b74d5c3fb",
+      "remoteName": "meet-your-memory-duo-outer-association-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "a8a140e24774295ffe41072e462c7a3f107a4e88e564d2eca1a659569a1c7935",
+      "locale": "en-US",
+      "profile": "duo-outer",
+      "sha256": "79012d27854eee7fb2d44d7f74b0aaa22a7d0bb801dab26d420bfc2a87609863",
+      "remoteAssetId": "57800019-519a-88ba-802d-e76e2903ee4e",
+      "remoteName": "meet-your-memory-duo-outer-history-en-US.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "fb35965cedc5225b7f3af18d613df3ae4294eda699b7c98abcdaf5a89b5306c6",
+      "locale": "fr-FR",
+      "profile": "iphone-medium",
+      "sha256": "d2944bc23982aefd7d4e48d25e0e856a3158a51362779795d19513a0d4781e06",
+      "remoteAssetId": "9ec00019-519a-88ba-8019-c16601478970",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "dbdfb36d2fa7cebd6fa1e95e4e6eae99a529a068f50a20cb270f55975ca798ff",
+      "locale": "fr-FR",
+      "profile": "iphone-medium",
+      "sha256": "8fb7072f0e5106ec075bfb365a51075b21d8528422856a592031927e076e6da9",
+      "remoteAssetId": "ee400019-519a-88ba-800e-f77e6761ae7d",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "2a0a6538b4b0661c3ae14ecf409d4f841526a25e7cc1f0d99719363024c53579",
+      "locale": "fr-FR",
+      "profile": "iphone-medium",
+      "sha256": "14eac58ff87fe4a2a9032a25d2abac3f633f4558ed70876b781357e17735803a",
+      "remoteAssetId": "de400019-519a-88ba-803b-b474a6ee0f11",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "a305b8301873765deb564db8df05ce979986df6138a2b1191efe43eff34c9ec6",
+      "locale": "fr-FR",
+      "profile": "iphone-medium",
+      "sha256": "61939cc406a63e2cbf2d7691b1e0439bd5f646a641d5388f17c0be5b439e4c7c",
+      "remoteAssetId": "49400019-519a-88ba-8037-b8c0c9336d5f",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "4a26822ecb5c5a37c665f4f0407a8c93e896c0f43f4fd82c5d56591580496543",
+      "locale": "fr-FR",
+      "profile": "iphone-medium",
+      "sha256": "633b471e19a7fefd21574e7361569bd89826c6a8ba6a2fb05ef5b22f2555c4c9",
+      "remoteAssetId": "1e800019-519a-88ba-803b-bf4c67ccdec6",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "0058cf4448de0ef7f380dc81e28496cdbaf41b94a80ec80906803581135f804d",
+      "locale": "fr-FR",
+      "profile": "iphone-medium",
+      "sha256": "7e41a8df9b3aba3b728bde93c83c7f125f356ac5f14d7c3c40ac828053aa2f8f",
+      "remoteAssetId": "16c00019-519a-88ba-800e-4c7ef324e1c9",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "35a48537542f2f3cce897b33c0ab46acf84c8198965c25c987ee344236160ae4",
+      "locale": "fr-FR",
+      "profile": "iphone-large-screenshot",
+      "sha256": "f1af80ac2615b3baa0f4a278c0f519b3a3a9e83090fc68f279be9eb6ad371d59",
+      "remoteAssetId": "04000019-519a-88ba-802a-936eb2bf0316",
+      "remoteName": "meet-your-memory-iphone-large-01-home-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "4ca6b1d7cbf2ad1bcdc8b34cd59839b73a55add3019a7ea4bc3d839183545c48",
+      "locale": "fr-FR",
+      "profile": "iphone-large-screenshot",
+      "sha256": "b04268858089ecc8efb628a0ff5f822f9b70a780c44f7384be3f7e6b683588c6",
+      "remoteAssetId": "00800019-519a-88ba-8014-ed238c7b5f8f",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "8841b50ab38e52f1b88034b880bb987f69e565545c79e90f6f8079a59d47b868",
+      "locale": "fr-FR",
+      "profile": "iphone-large-screenshot",
+      "sha256": "3dc75b08ff1b1170a7ce13291aac5ad594729f02314c397fc5e1c6682330357e",
+      "remoteAssetId": "e7c00019-519a-88ba-800a-e59707519165",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "344145ab16e31aa57075e1f2ff98c779dd375e4b5cec534eddd8e781f2d9b222",
+      "locale": "fr-FR",
+      "profile": "iphone-large-screenshot",
+      "sha256": "5b4a99d0c2f528427edbf9a98b1fb04cdf70ac837f5e0cc259c6eff90bb1e724",
+      "remoteAssetId": "c7400019-519a-88ba-802f-ae52c6ace903",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "26cc7b1febbec63a4c272dc516e6c854aa9fa417e6ab563b04840a06413b84e6",
+      "locale": "fr-FR",
+      "profile": "iphone-large-screenshot",
+      "sha256": "0590a64b2b0789390ba1c43efcfcb9b8d7b8bc852c506e0f2f6dfa766f9d41bb",
+      "remoteAssetId": "de000019-519a-88ba-8016-585a630f6058",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "cfbe00c687d764ffb752c6fde4a508bb7a0fd4aac21d1abfac86ddc6b8f58767",
+      "locale": "fr-FR",
+      "profile": "iphone-large-screenshot",
+      "sha256": "e3d430a86a098140411e5a7b54842291c5b7e2ea15762f2a5498cb618118705b",
+      "remoteAssetId": "21c00019-519a-88ba-803d-f0d18ae71b34",
+      "remoteName": "meet-your-memory-iphone-large-06-history-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "b29729dd9418f8b880724c67d68e16f413dbe3a30dc02c21df23e3eccebf8514",
+      "locale": "fr-FR",
+      "profile": "ipad-screenshot",
+      "sha256": "69f0a2f5f87a0b9662044b226488e7d2a660d149385eeedcab91f59f324fcda1",
+      "remoteAssetId": "bb000019-519a-88ba-800f-2cabb85629ca",
+      "remoteName": "meet-your-memory-ipad-01-home-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "74c79ea400afb0ccc9b6e3a6372183666b4486ff331c5424c034da39ceeecf25",
+      "locale": "fr-FR",
+      "profile": "ipad-screenshot",
+      "sha256": "d9021ad3bd95126724ef21c54d9a9178a4941d610239ae216c73146d2879432b",
+      "remoteAssetId": "45800019-519a-88ba-8016-5b351829f5b7",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "63ba329d751765764d7e58087ac12dd9fcc9394790f6c9259be18915bd9b59e2",
+      "locale": "fr-FR",
+      "profile": "ipad-screenshot",
+      "sha256": "8473b922530c9e1fc5686132e430c405dac994496628c1fa1fe288c07a7f5c24",
+      "remoteAssetId": "e9800019-519a-88ba-803a-c1ae2bf4803c",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "579beed8b1e4119b7e9804fdaf069872071b6b9502ba3a3d733b87959d1a5d6b",
+      "locale": "fr-FR",
+      "profile": "ipad-screenshot",
+      "sha256": "f804ad0cd246edaec170de3999b65c190b4ef322b98741b090e8b199083614b2",
+      "remoteAssetId": "0c800019-519a-88ba-8016-c632710fc841",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "1104620280e4ff3b0d13cfb1011b0fe65843453e969c06031e0996e281f061f2",
+      "locale": "fr-FR",
+      "profile": "ipad-screenshot",
+      "sha256": "805a6b1151a63d8c3cde53240bf281dca27698a1cfe9167bb6fc3d837a0370e7",
+      "remoteAssetId": "a5400019-519a-88ba-8039-bab8a7fdeed1",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "c18502f70c5e67a5de840183496480b8e34af0a51770c654c6ff2ae9d5bea3fa",
+      "locale": "fr-FR",
+      "profile": "ipad-screenshot",
+      "sha256": "7062ed19304877785f34942f8b9f232cc1476ce644cc0e3d5bf6e1282ba92e49",
+      "remoteAssetId": "2d800019-519a-88ba-802e-e17740b875b1",
+      "remoteName": "meet-your-memory-ipad-06-history-fr-FR.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "13c0ba7467cbe1477e93f1e999bfad4ea082c77ef9b24ae0ca2354aff6881248",
+      "locale": "fr-FR",
+      "profile": "duo-outer",
+      "sha256": "2cc248a16676aaa940b2c5be8cd947adcc2ffd9947124f33d76041bcad4f2d4c",
+      "remoteAssetId": "e5000019-519a-88ba-8021-08e8e2d58e30",
+      "remoteName": "meet-your-memory-duo-outer-home-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "4a257528ce8f89771226087503c4b5507a8e46525c735425adce6e8c9f430c64",
+      "locale": "fr-FR",
+      "profile": "duo-outer",
+      "sha256": "df89992c31aa87133065b8708ec7bb31c191ec8cb6e842bb02c98284fec0970c",
+      "remoteAssetId": "bf800019-519a-88ba-801e-8fb052649c39",
+      "remoteName": "meet-your-memory-duo-outer-visual-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "8b48988684439d6f36eeca2ab52eb0972ef290f898487eeaa7af208f8799c47d",
+      "locale": "fr-FR",
+      "profile": "duo-outer",
+      "sha256": "c4f532e169b93fa366e1b804f1a4c822768d50b5ebd1204abf1d8d6e7b470164",
+      "remoteAssetId": "65800019-519a-88ba-8031-c3d5f53c6144",
+      "remoteName": "meet-your-memory-duo-outer-association-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "2f8ce6e88ca5e4f5411197b06bc0caa76ce592bbdca62818537b62e8cc1d4087",
+      "locale": "fr-FR",
+      "profile": "duo-outer",
+      "sha256": "1789ee6eaa2678439bd2c6497a972ee793bb9dd80af85271c8752fe3097e1b9d",
+      "remoteAssetId": "44400019-519a-88ba-8028-9dee7ef223cb",
+      "remoteName": "meet-your-memory-duo-outer-history-fr-FR.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "d311e59e7d144eddee18248791fcba4769e71416d4015379f0bfb35524b96956",
+      "locale": "it",
+      "profile": "iphone-medium",
+      "sha256": "dc71997df64e90e76804682154c43f39b031bff0985ca3ca63c206874480e27b",
+      "remoteAssetId": "dcc00019-519a-88ba-802f-3175ba39fbb4",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "affd7449c92570d0479aeeb75581c35521c34be4e2810eba577e3022ef59d603",
+      "locale": "it",
+      "profile": "iphone-medium",
+      "sha256": "fe31bfbefb0584cde48d6698879f3bf80c4b36ec172531addf9ff41b7b1c3a34",
+      "remoteAssetId": "a8400019-519a-88ba-803b-9e0366493108",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "5892d4d9d21077ba0d0bd68bf991f4cf4df542c1d2043046fa2dc0a8198b6118",
+      "locale": "it",
+      "profile": "iphone-medium",
+      "sha256": "d1b6433165847c5d2594d9493a72f1bfb790fc66f3bd6ff584abdc96ee648e8b",
+      "remoteAssetId": "aec00019-519a-88ba-803e-f05ae94fee3e",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "ff60a7605c9e6d34729a52c2f10fcfe02aa34b415317b85883191d92c2852c6d",
+      "locale": "it",
+      "profile": "iphone-medium",
+      "sha256": "491787b9565fb27e66adef9827dbcb7bccbbef6407f96f507ca78f45f7fe0f4e",
+      "remoteAssetId": "a9000019-519a-88ba-802e-1c01ec613f4c",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "4b6190efd4a6ce4d60f4e12fdd705f24b6f10070796a0b2e9cb894177cfdbd47",
+      "locale": "it",
+      "profile": "iphone-medium",
+      "sha256": "79ee7e44df5b9033b24ff73707b19db69894610125180967f7f29d02ef42032c",
+      "remoteAssetId": "c9000019-519a-88ba-803b-98a5efd57136",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "0e8a9ba0f0b28dd746dad805de85a23f37517735a7d485442d4e62db3cb55d1a",
+      "locale": "it",
+      "profile": "iphone-medium",
+      "sha256": "b5e4ffe858817ced674c4f8c443c5d714b8c2d452e36357df5e78cb30abf1c24",
+      "remoteAssetId": "1dc00019-519a-88ba-803a-861ee4b60c2b",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "decf43a58952fc48789c4f042e7f01ed564c199852b4171d1c1dc1e563dcb903",
+      "locale": "it",
+      "profile": "iphone-large-screenshot",
+      "sha256": "c9b75e2462cb43a076fd9e5559e6ef213b40d5c1feaf1b93e1c810dacd9cc0f1",
+      "remoteAssetId": "32000019-519a-88ba-8031-a73b0cf0863d",
+      "remoteName": "meet-your-memory-iphone-large-01-home-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "5c2e8b4e2e1a9a898e59c6f18f444ca70c81ba8458969a969339a1496d33c303",
+      "locale": "it",
+      "profile": "iphone-large-screenshot",
+      "sha256": "2a73feb9906948d6c05849185e3803b8df28601dcf0e83126439e01e9d02885b",
+      "remoteAssetId": "3ec00019-519a-88ba-800e-8ecfb8cd816a",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "5aa5a43c524c541f3dd2349d49830f6e5dddc83ee5cf965a52d2385f0b611bb1",
+      "locale": "it",
+      "profile": "iphone-large-screenshot",
+      "sha256": "a4af6e11c2a580b2b954b69fa533d8ddac073fab5e282903119a6b79261cfbc7",
+      "remoteAssetId": "cb400019-519a-88ba-8035-90fc40c029ff",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "dca0b5a4ae6cd236622617a4dffcad89e46027d8bef5bfeb17e6dd0f8545a9ad",
+      "locale": "it",
+      "profile": "iphone-large-screenshot",
+      "sha256": "55a3b4ddc7450151879928d50ee3de24b621ed64ce279158cb5b85ec26ca1ad2",
+      "remoteAssetId": "87800019-519a-88ba-8022-9ff21c3602ac",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "a2382ea06d9d660586ae92f41deb10e2ae9585e4fe4b52bdd100c3d7c1caa61a",
+      "locale": "it",
+      "profile": "iphone-large-screenshot",
+      "sha256": "9684c151f2f87dbbf6ed540927df4f063b65603142ec5e643959a1c907a6d74c",
+      "remoteAssetId": "48400019-519a-88ba-801a-4341fdca788d",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "e030e0293282bba54cb3d004c029f6ed9fb8a81aeff61e80e71a6e4a2c3d057f",
+      "locale": "it",
+      "profile": "iphone-large-screenshot",
+      "sha256": "b1d86b60533223da723cb173f6f31d0326a7bbf452cc297f39f54e1aa47909fa",
+      "remoteAssetId": "8c000019-519a-88ba-8008-72c11b3ebf1e",
+      "remoteName": "meet-your-memory-iphone-large-06-history-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "d9985693634584dd9d1caac8b53b69c814abdd06f3c891ec95448a883a7f5978",
+      "locale": "it",
+      "profile": "ipad-screenshot",
+      "sha256": "9fa3fa3156d2fe54b1371dc101ce2ec26d7b86b545da570656541cd842807647",
+      "remoteAssetId": "a3400019-519a-88ba-803a-88a67bf47e7d",
+      "remoteName": "meet-your-memory-ipad-01-home-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "532db1678ba12bfd9f50fd86012ad2a5816331301b252be467dbf24515e068e7",
+      "locale": "it",
+      "profile": "ipad-screenshot",
+      "sha256": "bccef62fba027d157ca052e4f4db6a88000a5f2ded4635679243558746cf95dc",
+      "remoteAssetId": "ffc00019-519a-88ba-803c-f1cebc0c0dc7",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "4a8af8f215e50e2522b37b0e7bfa3ad30e8f992629fb46abd4e11987572e74eb",
+      "locale": "it",
+      "profile": "ipad-screenshot",
+      "sha256": "c5e9d6228322b35285dab1dbe3f3ddbdee9cd829a27442cff0ca6ba69baa6edf",
+      "remoteAssetId": "d0400019-519a-88ba-8038-1e1848508a7d",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "264c128d4fc9ca9a1c387bb1902f465c2a7203d48a3e8d5fab2392e477141d70",
+      "locale": "it",
+      "profile": "ipad-screenshot",
+      "sha256": "ee29f2c8e178c6596f070e99e0d466d24e7d1c67a4cce5b04606b789e8fc35cb",
+      "remoteAssetId": "17000019-519a-88ba-8032-6859d694fa6c",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "a280423d69b5333929bde6bfa4cf13c3788d2ea1d6d6638f81aa0289cdede09d",
+      "locale": "it",
+      "profile": "ipad-screenshot",
+      "sha256": "692c06f121488b22f7cd35570112d53f110a7895ad47828a2cd3665b6c947ab1",
+      "remoteAssetId": "e8c00019-519a-88ba-802b-5705b8f90df9",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "db196f7bfe08638e16b152e6366ecfce0e26765861d6d487fbea2f46c4988483",
+      "locale": "it",
+      "profile": "ipad-screenshot",
+      "sha256": "4184dbdd2c65312b1d42ac57ba52f59bb96fdfc487f3623052bb1d936a2d1c79",
+      "remoteAssetId": "35000019-519a-88ba-8007-2855e0181fad",
+      "remoteName": "meet-your-memory-ipad-06-history-it.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "17dd8d366a760f966207407c7f26553ab8d8f464181aeb0c82f677a6eb73ae38",
+      "locale": "it",
+      "profile": "duo-outer",
+      "sha256": "b5e0f42b94b6d39ee58b75e42589a0732c6127309c21910767ed8e425021a07f",
+      "remoteAssetId": "bd800019-519a-88ba-8032-58ba585170da",
+      "remoteName": "meet-your-memory-duo-outer-home-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "a6eab9248a74c83aad5c7fca0bee5ef14b9425d192476220aea2ef7f8bbfbaa6",
+      "locale": "it",
+      "profile": "duo-outer",
+      "sha256": "07f99ae8bb579f8260798ff8ea4a2dd4f4482bc09af867ee596231280e81127b",
+      "remoteAssetId": "b1800019-519a-88ba-8000-2194177f2805",
+      "remoteName": "meet-your-memory-duo-outer-visual-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "a2c4bfe9f59cab6103df4d5d91f773646c8f2d3fa0b822e175d524d210d5b3c6",
+      "locale": "it",
+      "profile": "duo-outer",
+      "sha256": "fddb726c2a1a54a59f269ab53932a4bb5d54ed10aed02e77e3ab1aa56d3f94d1",
+      "remoteAssetId": "c4800019-519a-88ba-800b-efe802ee88a2",
+      "remoteName": "meet-your-memory-duo-outer-association-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "a498ad6efdca37c3d85dbe5dfee514250684502fbffbf42c37de2903b4cb79b6",
+      "locale": "it",
+      "profile": "duo-outer",
+      "sha256": "364d9613a6230e7e6b7801e5ac66ccee9142c616f162d3103cfc910b29ee963b",
+      "remoteAssetId": "9e400019-519a-88ba-803d-01060179067a",
+      "remoteName": "meet-your-memory-duo-outer-history-it.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "779cbe4a05cba68430802b3ff5605a0184a1136edacd8b902d5ab4ab8af3f0f9",
+      "locale": "es-ES",
+      "profile": "iphone-medium",
+      "sha256": "c7a1d998d3e638c934152b777a0601f5b8a789faf93735f5747318c12d0be265",
+      "remoteAssetId": "0b000019-519a-88ba-8021-b494c7fab8b9",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "532fde7964d073317eabb80dfdae2a04e43941279d1e38bac2cb56f9de575295",
+      "locale": "es-ES",
+      "profile": "iphone-medium",
+      "sha256": "7fdab2dd44ceeeea82e677db2c581ced013bbf47f774ba645b3a7be58239a97a",
+      "remoteAssetId": "f1000019-519a-88ba-8005-4d0586ff0962",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "8d26cd6ae47d78099b057d9e00286496be85ab1316c909e4ca62624ccb15aa9f",
+      "locale": "es-ES",
+      "profile": "iphone-medium",
+      "sha256": "882d771923a132d63e9a9b60f65422f84c2c2215a7d315514b1a4134ef664eef",
+      "remoteAssetId": "a7800019-519a-88ba-8020-27c5e018d8b4",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "1a536304bc970b1017c94232b996733e21f927a053f3214c4f112e6b6e3a5778",
+      "locale": "es-ES",
+      "profile": "iphone-medium",
+      "sha256": "017c5940c0e9df5aa889ab81719cfe949f1bce311c381e2a782261ed9fb3c74e",
+      "remoteAssetId": "dbc00019-519a-88ba-803a-6b683b20431d",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "3035508a8b105d5126434ae63c99c82ccb8c921da186c68312d4b49a41157465",
+      "locale": "es-ES",
+      "profile": "iphone-medium",
+      "sha256": "4a3c90f45a04b0f783bd8d291ecdd4b0d3a697c09f7fb2593ddbb77a9a78a7fc",
+      "remoteAssetId": "54c00019-519a-88ba-8037-709e590da0a1",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "d9c8c45b5a79f76d04efb3cafae4802a5ef1558cb31e5c2949e8792c452e1717",
+      "locale": "es-ES",
+      "profile": "iphone-medium",
+      "sha256": "71b6abb7d39995a7df9776da840dbb97015ed5c8ef28a4155e71928010ccdd86",
+      "remoteAssetId": "89400019-519a-88ba-8031-2b5714401456",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "ed2276cd85570b86d95cc1f74f9583abd1d489ef911f34c3197ba9628564f102",
+      "locale": "es-ES",
+      "profile": "iphone-large-screenshot",
+      "sha256": "28dc072bed1f7e250adbb81b2d86026a941b87161b141087ff2624c2711e1b32",
+      "remoteAssetId": "0ac00019-519a-88ba-8037-cbf2f565a8d9",
+      "remoteName": "meet-your-memory-iphone-large-01-home-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "5205f6be7d3a9dbeb262cc038035e0a4c3bd05812614cd36c7711afe80d08a29",
+      "locale": "es-ES",
+      "profile": "iphone-large-screenshot",
+      "sha256": "e75cd2cb1b9559bd846acb7ba974ed6574650962bd23a806edb395c2723087d8",
+      "remoteAssetId": "02800019-519a-88ba-8008-21a86bb8d9f8",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "bb0a2449d7f2802d611b3352e71a6a56719ad78faca78cd72d133c72d731c144",
+      "locale": "es-ES",
+      "profile": "iphone-large-screenshot",
+      "sha256": "69ebf8ba56bfeccb82c71d2f66d469c7a41b9b67f158c1cd16c7328ea5fea2ef",
+      "remoteAssetId": "4f400019-519a-88ba-8014-5794c670d471",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "1c66368ae519707d9379e7cf73e784801a81fdd6cb9ad16f9fe0a586b453ffba",
+      "locale": "es-ES",
+      "profile": "iphone-large-screenshot",
+      "sha256": "ff34878c548a3fef0100f3b027864a3c402a86db5315c4eaa162090cf4128111",
+      "remoteAssetId": "ef400019-519a-88ba-800c-1a9a184f3d4b",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "879420bf931e6fb4d223f355f99ce8dffb8afd5be8c5eca00f5960b7a389ed52",
+      "locale": "es-ES",
+      "profile": "iphone-large-screenshot",
+      "sha256": "6cb06c9098ba588c04e77704c59840e2711e48a6c900ac436de47e2bb8399c6e",
+      "remoteAssetId": "bdc00019-519a-88ba-8005-fd0476b17086",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "3e710cb374207b301e9c319b7179ada2cb6d29f71f979a57f01fb19aeef066f7",
+      "locale": "es-ES",
+      "profile": "iphone-large-screenshot",
+      "sha256": "7ab307d863c9e6f4f2395be4d5cdfeffcbfd6990aafb59fb7b77414301ccfd11",
+      "remoteAssetId": "84800019-519a-88ba-800e-24d51613af30",
+      "remoteName": "meet-your-memory-iphone-large-06-history-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "84bdef50b620e8130d5fe24eb937a2c9c4fd71da51ea7ae5a1ddf01beda47267",
+      "locale": "es-ES",
+      "profile": "ipad-screenshot",
+      "sha256": "a7c493eecbdc038c487796f993c8c2fb7393abcd4bec58cd5f9a140e1d515f20",
+      "remoteAssetId": "aa400019-519a-88ba-8029-a231091e9801",
+      "remoteName": "meet-your-memory-ipad-01-home-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "4fe7ad7f13bcaffc4a71d80e66d725c2577d95e8612b5c0486bed549c71e4614",
+      "locale": "es-ES",
+      "profile": "ipad-screenshot",
+      "sha256": "44e655eb0aa3167fdb83fce0e9ce514cedfc9518142b18b89ac3f5b4d4a20df2",
+      "remoteAssetId": "f7c00019-519a-88ba-8007-39fe2b4832c6",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "caf18294367011a01ff7ef6079518f1b333e17ebf7c21843cafb2fa332b02077",
+      "locale": "es-ES",
+      "profile": "ipad-screenshot",
+      "sha256": "16b3dca6c62b2632063aa4fdc125ca52c3f5010ecb127587e7bd2babffd9bb82",
+      "remoteAssetId": "98800019-519a-88ba-8015-9cbbdaca76c8",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "ceb8895e147145183df4ce1016380904b83fc0313998cacea34acce0371ed4e4",
+      "locale": "es-ES",
+      "profile": "ipad-screenshot",
+      "sha256": "f183e8a2176b226c6120fa001d20166bf90fe34ffbac66edb3aec730cba75d3c",
+      "remoteAssetId": "4a400019-519a-88ba-800e-65b601d05c86",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "571e0422f99385116ec837fc58fa6f5573832eb358548f93d07ebf860deecf19",
+      "locale": "es-ES",
+      "profile": "ipad-screenshot",
+      "sha256": "9059e7e0f0a2fe15bd8c4cda1fe5a841f8b016023cfd7f7a36562eb77c44d3c0",
+      "remoteAssetId": "1a400019-519a-88ba-8011-8d05bd816012",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "8f70323129d8a3b4ca464225a58123599e03e219fbe55c33ce82e23fe5560556",
+      "locale": "es-ES",
+      "profile": "ipad-screenshot",
+      "sha256": "3dd4853b745a85d94b4d0df3a5c5e95f9547506c23c6f872bfb661d4b83efde5",
+      "remoteAssetId": "84800019-519a-88ba-8025-a5607733645f",
+      "remoteName": "meet-your-memory-ipad-06-history-es-ES.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "44e9cf029d3c136260e94752b4675d379536f918efab026fd13769b56cf1561d",
+      "locale": "es-ES",
+      "profile": "duo-outer",
+      "sha256": "f4e5907f41ab609458716743033b8b7927f6056922515df67f0f290fe92318c7",
+      "remoteAssetId": "bc000019-519a-88ba-8002-f71b4b570bb2",
+      "remoteName": "meet-your-memory-duo-outer-home-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "dd1bf752afa408a1b9799a36d3e21e135a3486d4cabc7957aa81d3e386c33894",
+      "locale": "es-ES",
+      "profile": "duo-outer",
+      "sha256": "9642801160a5f501027b84d476fe27ccf3411afeefac44049ab90bb7eaded11b",
+      "remoteAssetId": "c6000019-519a-88ba-8028-1c3d73877d45",
+      "remoteName": "meet-your-memory-duo-outer-visual-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "114f39a6914cf13bc50f1d01d409bbcb020369650a656fe91642c8ededc5ef73",
+      "locale": "es-ES",
+      "profile": "duo-outer",
+      "sha256": "201416ad4c37d2220e7bfc58033a0d00f71ecae141ae2331728ec25f375d4f6c",
+      "remoteAssetId": "9c800019-519a-88ba-8028-e9b1608d170b",
+      "remoteName": "meet-your-memory-duo-outer-association-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "00bbf24976d75b87d00e29f65b2d9ec627bd03d457969969a4215d51704079ed",
+      "locale": "es-ES",
+      "profile": "duo-outer",
+      "sha256": "47e24a7110da070f455b5618b0414b85ea037999f06f2600eda2dcd51e85116b",
+      "remoteAssetId": "ae400019-519a-88ba-8007-f08dcf62ddef",
+      "remoteName": "meet-your-memory-duo-outer-history-es-ES.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "bfb9efb1ebee57462fc4ba96ab7d79bab68d016e0147c431cd72d15b51394c36",
+      "locale": "pt-PT",
+      "profile": "iphone-medium",
+      "sha256": "e4a13321ec9abfb2f7acf65a94a041466874768f55e26557e87796d5207e01d1",
+      "remoteAssetId": "f1800019-519a-88ba-802f-0bfc5e0a59a7",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "4a03265a506fce1a5462f80bbede8660cdb15adc6d35f5ed6a69489e75ee5b65",
+      "locale": "pt-PT",
+      "profile": "iphone-medium",
+      "sha256": "9e695e90025cd0220c1d34668b80b9587f6c1d408b809f5b00c9788cd92e14ef",
+      "remoteAssetId": "5cc00019-519a-88ba-8033-83ebc3aa920e",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "39946ed7200820043a6d9d06071a356d431822ac6ce888539918d4d1b75bd8f9",
+      "locale": "pt-PT",
+      "profile": "iphone-medium",
+      "sha256": "7afa83be4fba0742501b2afbf10f2abd319b6622b336ef754b0005ea9ad00f4a",
+      "remoteAssetId": "30400019-519a-88ba-801a-e609d18a0461",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "da49edcfa67aaf6b45da48f1e24250e39911dd8b72ec999c6aae4f4e61f5f70d",
+      "locale": "pt-PT",
+      "profile": "iphone-medium",
+      "sha256": "8d6b8e0f8ae4b015856fcf2d281976dda0edd2c41eee6eb3219c43335b67b9ca",
+      "remoteAssetId": "5fc00019-519a-88ba-802c-a8ca192d7417",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "1158391a9ca96ae0870ea1389705cc478ae5fe34d6f3f9d7de32a5c9b1dcc7ad",
+      "locale": "pt-PT",
+      "profile": "iphone-medium",
+      "sha256": "b4da1c1bc9d45f8297b014646e1b7b5a990979a80feae43c6c902defe713524c",
+      "remoteAssetId": "23c00019-519a-88ba-802c-e6b2525ca9b9",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "423929bbed6f0b00ee4248feb96903844e2a55b8095cd4ff871b602933542ca7",
+      "locale": "pt-PT",
+      "profile": "iphone-medium",
+      "sha256": "5f76d7a24eae6460a304ec315d59392b9b63bd2aaba226b95719d9cfbaf435c5",
+      "remoteAssetId": "adc00019-519a-88ba-8026-97f4dd709bd8",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "ecc7971e148216a8c592a0bbfdfaf27fcc49f855e15ce1994298deeaf223432d",
+      "locale": "pt-PT",
+      "profile": "iphone-large-screenshot",
+      "sha256": "013485658ed12996a068e648a39f73e1c72e39f90445d781e8fe6f26ff42604b",
+      "remoteAssetId": "c6400019-519a-88ba-8002-b4cc437e90eb",
+      "remoteName": "meet-your-memory-iphone-large-01-home-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "f79467f4d39cb28553f05ff18a0b54462ab32f190350fd009ccb450a6685dafc",
+      "locale": "pt-PT",
+      "profile": "iphone-large-screenshot",
+      "sha256": "e1d69aafe0fcf733fd87eb76cf159336e629f8f68d91d49393f82425f1cb99f5",
+      "remoteAssetId": "63c00019-519a-88ba-8005-de797af9ef2f",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "2ba4340d79c95f540c093e3a295e4c1983562ae2b581922c2b9ccfbd984680c1",
+      "locale": "pt-PT",
+      "profile": "iphone-large-screenshot",
+      "sha256": "310eef531573cab5e0494e00229df07590f21313714655c0243e53ee35b9688e",
+      "remoteAssetId": "b8c00019-519a-88ba-803a-125093690676",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "d12138572a7af4faaa918741ed3eaad4ad31acb9d32d16ad062d9a3c132e5fde",
+      "locale": "pt-PT",
+      "profile": "iphone-large-screenshot",
+      "sha256": "ec525fdbf9df60f383bf61de5330324f70e3f0ceaa7cae49d9fd350df736d3c5",
+      "remoteAssetId": "ba000019-519a-88ba-8021-8127ecc9f894",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "4cc7c6b6375ac9b22438b47e49420f98640ca5d273c06742729c64bc5d2f39ef",
+      "locale": "pt-PT",
+      "profile": "iphone-large-screenshot",
+      "sha256": "99c07357748b6463fc30706ec0822aaf73b31ab4337f8401004506ab0161e555",
+      "remoteAssetId": "77400019-519a-88ba-8034-4bea5181266e",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "cf37639ae83ce6793fca6961987c07ca639376d68bd2247df11163024f7dfcd8",
+      "locale": "pt-PT",
+      "profile": "iphone-large-screenshot",
+      "sha256": "ceecde042dffc9ed7aa7295f3a297babeea5804680050aa9dc93fadd1cbb7de6",
+      "remoteAssetId": "cec00019-519a-88ba-8010-3c2325e45903",
+      "remoteName": "meet-your-memory-iphone-large-06-history-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "007495cc7ba1bf92da78d5249fd230bb735c289db54fb612be5aaec2c5418056",
+      "locale": "pt-PT",
+      "profile": "ipad-screenshot",
+      "sha256": "7eb5eef25a15d3e02402ddf498dfc49775fbb76ddae5cc9750b5b8ec6a250d5d",
+      "remoteAssetId": "00400019-519a-88ba-803c-87a846a5209e",
+      "remoteName": "meet-your-memory-ipad-01-home-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "03a1ac8fd3eb76d6a89438b86946bbe6dee06919b5c69072e4f1a78ff036875f",
+      "locale": "pt-PT",
+      "profile": "ipad-screenshot",
+      "sha256": "8578b9ccf08808f695bfc545cbdaafa6fada42a8e09fc7eba43808c856890c77",
+      "remoteAssetId": "17000019-519a-88ba-802a-446346e39137",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "9b340e0964da9e164d1ef3d0d36537e16acf3e124c63540bf0fe16d2b549ac72",
+      "locale": "pt-PT",
+      "profile": "ipad-screenshot",
+      "sha256": "966d8f68a56e1043632dc9499b30b7c3c4da1c6f7e4ba42365a49ff1e12cf092",
+      "remoteAssetId": "86000019-519a-88ba-800b-73802756b4a1",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "f95be321716ba3e089840bfc5e222172b648246ffbe78ecafcb928afcc2269fd",
+      "locale": "pt-PT",
+      "profile": "ipad-screenshot",
+      "sha256": "17f82774c14a19a6b2c365b5f51af1e00b90d3153d306c9e23e5ce65c7ee0a8f",
+      "remoteAssetId": "bcc00019-519a-88ba-8020-0063acef93b5",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "919abbcecd1273f8d657299d680f8a2134ad8fa856a9854ae199f7c677dc34c1",
+      "locale": "pt-PT",
+      "profile": "ipad-screenshot",
+      "sha256": "e75ceaa46cec6de09f332f5d81c1b70690d3298fcc164b2bdde4e6840acfb618",
+      "remoteAssetId": "6d000019-519a-88ba-8022-056f0afd9831",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "03bebdea82498b35f632dce7be9bf5762778cbe335d98a565f320d69b126e444",
+      "locale": "pt-PT",
+      "profile": "ipad-screenshot",
+      "sha256": "2e133e5f2ab8bf91e395ecc74624f6ebec64aab9fef93c0829369c6c9c0c80c1",
+      "remoteAssetId": "c6400019-519a-88ba-801e-f9b615bbfced",
+      "remoteName": "meet-your-memory-ipad-06-history-pt-PT.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "3c445c9c9e5e2ba70926c2ceb3f2d6a7cedde3d5ace130abf90755453065cef0",
+      "locale": "pt-PT",
+      "profile": "duo-outer",
+      "sha256": "bf3cef198aa90a5aad95ee35635ef9e4ce8a7f29fb00852ab6830947aea83a9c",
+      "remoteAssetId": "08400019-519a-88ba-800a-a3dfc5475ea2",
+      "remoteName": "meet-your-memory-duo-outer-home-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "9c897a7a2bde5947fc7a18214dbde9dd5968b1edc6848eb08a6e34cf01363f8e",
+      "locale": "pt-PT",
+      "profile": "duo-outer",
+      "sha256": "5e1a01b4c05745456ff755cf64e886896e2471127ff848cb922d6353152f27d4",
+      "remoteAssetId": "e1800019-519a-88ba-8007-6fc83103556e",
+      "remoteName": "meet-your-memory-duo-outer-visual-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "6c7d7985bcb614f62d97c3f532afd48daf61a988ff93579f9bac27c4f8ba1e7c",
+      "locale": "pt-PT",
+      "profile": "duo-outer",
+      "sha256": "5df50215fa449a47679a83de840f0380b3cd99edc9a43b80b1ee4625daf3be71",
+      "remoteAssetId": "cc000019-519a-88ba-801a-07316ebd387b",
+      "remoteName": "meet-your-memory-duo-outer-association-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "a031e62c59c0491f48a8a14e33c266cccd47d5514a4951bece5fbebec6dc3735",
+      "locale": "pt-PT",
+      "profile": "duo-outer",
+      "sha256": "805559bca82b14a3a8c829c0e1ab565eb78663d5b63a2fa8c6e49df6cc65eae6",
+      "remoteAssetId": "05400019-519a-88ba-8003-3a006df3d8a5",
+      "remoteName": "meet-your-memory-duo-outer-history-pt-PT.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "e7f657e77bcb4245f99617885c9d7222da0f308ac2cbcf3d8b06196c8458378d",
+      "locale": "ja",
+      "profile": "iphone-medium",
+      "sha256": "fc85bd9331f39cf09bc30611c3ab3b3362ecb4ce81f2ce22550dc44972763715",
+      "remoteAssetId": "62000019-519a-88ba-8008-143921258d5a",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "d1dff28e33ce3dbd86cde5fe92973c0c4c282b13af8e094e09d384ca4e31cfe6",
+      "locale": "ja",
+      "profile": "iphone-medium",
+      "sha256": "41f12d56b814cfb1840c8077ed958080718bbd16409a07c85ffa27111e9b27a8",
+      "remoteAssetId": "bcc00019-519a-88ba-8010-c596ed995ce5",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "f673a8d942f770c39068c8ab1039ec03bc38c29441d057feaa494fca5483911c",
+      "locale": "ja",
+      "profile": "iphone-medium",
+      "sha256": "af83b936e73889f92c9aca3f5ea0becea2c1e64d321a7f3da0ff5f0cc26d8524",
+      "remoteAssetId": "f5000019-519a-88ba-8015-6975c3b1ac8c",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "85e3623f44feb6c1a42517dd6f4684bef3412fcee31c6874bef48c7b7acbfdb7",
+      "locale": "ja",
+      "profile": "iphone-medium",
+      "sha256": "9fbae393accd5b4a266cd8d491b3cabcdf79ea5ef04f7fc3f6d52d8f86b3d208",
+      "remoteAssetId": "86400019-519a-88ba-8022-1b9597fc3995",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "0f5b49803450dad1d7d36151f7a71e37b3a4b4a017d2da62c62e21867df6793e",
+      "locale": "ja",
+      "profile": "iphone-medium",
+      "sha256": "ea717a0f7b86cd28651fa632ba7f86cea332b340182efb4a599a455363f06260",
+      "remoteAssetId": "97c00019-519a-88ba-8022-a5cf960f3c77",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "163521893831f8add7978e318336b79a82a078a0530bb2febc8646bd45863155",
+      "locale": "ja",
+      "profile": "iphone-medium",
+      "sha256": "8bba265af0cf72ddb53832522d329d57deb3b5c236220f592220de4e6d618be4",
+      "remoteAssetId": "07400019-519a-88ba-802e-bd99ebe88099",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "5790e9cb982edd24cb54c6f954d19406f044c34a29da0ae2241f8daf2c337c86",
+      "locale": "ja",
+      "profile": "iphone-large-screenshot",
+      "sha256": "f834fbf6771fbe7c599748db6699dad089291b77b333adc7c2921a340c515a4b",
+      "remoteAssetId": "32800019-519a-88ba-8032-911ad47133a5",
+      "remoteName": "meet-your-memory-iphone-large-01-home-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "ba6c6b9a7e334bd2c7b9fd21c4d4607ad6e9c14d52e2bd2ac6093669fcbec9fd",
+      "locale": "ja",
+      "profile": "iphone-large-screenshot",
+      "sha256": "8e907315f644d0b5d462494a6eff03876539c69cb0e3271fb995724f3042fc19",
+      "remoteAssetId": "f3000019-519a-88ba-800d-c6bd8ac9cb16",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "43ade210355b5c4e314e498ea8d2fd0296c4970d926e9fb1e923307073176aea",
+      "locale": "ja",
+      "profile": "iphone-large-screenshot",
+      "sha256": "8afed00373d12342c2abbd9d219157f9931a28db247fbd067f6c460077cbba7c",
+      "remoteAssetId": "0d000019-519a-88ba-8018-af4b466163a0",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "85f54b5a307b7226068bbfdee13d6a1eef63364262b687baa9376e3564833012",
+      "locale": "ja",
+      "profile": "iphone-large-screenshot",
+      "sha256": "4912b51539d9a042682ae6d0472013e38d7d2dc8d9dfd75926416037c13a79e0",
+      "remoteAssetId": "1a400019-519a-88ba-803b-a98a5f03e04e",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "f6d081eb85cbfaa0d3f3fd6b48ce3eeede941ae94edb3f46eb46799e71a116c0",
+      "locale": "ja",
+      "profile": "iphone-large-screenshot",
+      "sha256": "c81132f217afdb9da5b51c7d40ef3c5ae112f06facb84f0b285ff3156ebb5f14",
+      "remoteAssetId": "d3800019-519a-88ba-8023-fbd531ac0043",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "a81bb14bb34776b75856640aa7cf0f0b7933287d8509f523b323c4399726942f",
+      "locale": "ja",
+      "profile": "iphone-large-screenshot",
+      "sha256": "3970bc691e44fd22ee1396fea80eacf8562c0107ab7c660f79128571b8f115e8",
+      "remoteAssetId": "7ac00019-519a-88ba-802e-ceb8ff94064e",
+      "remoteName": "meet-your-memory-iphone-large-06-history-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "2971bb6c8bd1052e912f033b02657897a2532f58efc118031663f74577e9535d",
+      "locale": "ja",
+      "profile": "ipad-screenshot",
+      "sha256": "11fd5d54d6da392e4dd1c2d0746c7c370b8d55fc6a7214cf0a74a8867117a72c",
+      "remoteAssetId": "6b400019-519a-88ba-8019-53b65f2ece81",
+      "remoteName": "meet-your-memory-ipad-01-home-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "eae52faca85895043994457c155d635699f4937d307a6408583e55323b1c26ea",
+      "locale": "ja",
+      "profile": "ipad-screenshot",
+      "sha256": "512ecf25433f33b1fc88b200e1b46ed5e6ebf7951970005b073954766a3dbbf8",
+      "remoteAssetId": "b5000019-519a-88ba-803b-27152cf85aaa",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "606f0cde1a47db876c7f74f969bc5367a2d21e45dca907b3f48d1d6948ff8f13",
+      "locale": "ja",
+      "profile": "ipad-screenshot",
+      "sha256": "d4152ce371ccc1ce842c5ccc8b83ac107e596872fda6884e44d1dab7fce2236c",
+      "remoteAssetId": "fec00019-519a-88ba-8038-3912f65fb357",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "3ad434c3085775c21d29f9cb7afdddcb6f4d811395ba3746e038622c95bc52fd",
+      "locale": "ja",
+      "profile": "ipad-screenshot",
+      "sha256": "25db0e9728e6bdf82f8195b6ec78a51641675289ff3a780f75c0dce430b2ab9e",
+      "remoteAssetId": "a6800019-519a-88ba-8011-e1ba1b04ef9c",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "f07bfeedf1fb0a9b3c4c53b3f901939f9726b733546afdb76a9bc03bc91de844",
+      "locale": "ja",
+      "profile": "ipad-screenshot",
+      "sha256": "22b3a7dfb715c00308c57c5231f900f663f75b51159b9b776f424edf02eec0f3",
+      "remoteAssetId": "88800019-519a-88ba-8025-e8c94a7bcc75",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "3f5cce2c2279c4cfcc69485e4b41f66c4307be7d122d21688ac89ce920389055",
+      "locale": "ja",
+      "profile": "ipad-screenshot",
+      "sha256": "2059683885c14094266961348a511b9399faca5c4733d32fbf0bcedf3a27e67a",
+      "remoteAssetId": "19400019-519a-88ba-803e-041c3f67ae13",
+      "remoteName": "meet-your-memory-ipad-06-history-ja.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "2422291aabe31b96f0d8b25052889d92f23de4783a8c3d418c45e408975f3b0f",
+      "locale": "ja",
+      "profile": "duo-outer",
+      "sha256": "056009329c05232ad44f8514c9f7f15a61e97e117acbdbf3be58cc8bae221111",
+      "remoteAssetId": "6bc00019-519a-88ba-8039-044438cf7291",
+      "remoteName": "meet-your-memory-duo-outer-home-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "f71a1c369a3ae067d4636f98c9c0417eb086419b958d63e297051d91891cdd43",
+      "locale": "ja",
+      "profile": "duo-outer",
+      "sha256": "46278807c190595c64ca9e2b5c4724cc4202ab6a4daf9d2b940cf3a51c8dbb60",
+      "remoteAssetId": "ee800019-519a-88ba-8027-b37863c52ad5",
+      "remoteName": "meet-your-memory-duo-outer-visual-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "fec779da18cb5690b29265e494a92b0630380eccabcb4cf50c3821732e4e2c24",
+      "locale": "ja",
+      "profile": "duo-outer",
+      "sha256": "35d7dbc88ad9de1c57605389f55fcf128c21d3b47c8911eea563e1b8b7961fc1",
+      "remoteAssetId": "58c00019-519a-88ba-800d-f1fa7ac0b7b0",
+      "remoteName": "meet-your-memory-duo-outer-association-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "1426774f9829df532e7b5d754ebfd4b57b4e74eab914af8e1be3729ef9d1e13c",
+      "locale": "ja",
+      "profile": "duo-outer",
+      "sha256": "42f440c27559373e68dad7189617e3ebe47a47c3a06e007779bf47725b266e61",
+      "remoteAssetId": "c0800019-519a-88ba-8035-e62fc66527c0",
+      "remoteName": "meet-your-memory-duo-outer-history-ja.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "066c350b2512165d08ae2833c9c35b37b5ee58956970aa0dc9b3f1290adf5fb8",
+      "locale": "zh-Hans",
+      "profile": "iphone-medium",
+      "sha256": "8995580514cae546f1b37ceece01f4b7e713260bf7f5260b53094cd4b924edb8",
+      "remoteAssetId": "81800019-519a-88ba-8021-bdb9a43300ab",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "ea5071b13f7ecf598810651a170b81b0f08610fd9083c3b7a44ad1629ceb3aad",
+      "locale": "zh-Hans",
+      "profile": "iphone-medium",
+      "sha256": "6243f6ac0013b4122ca165a29472a2e9eb41f0be6c04a18645e2c9d6c3aaf342",
+      "remoteAssetId": "13c00019-519a-88ba-8025-e217c36f76a3",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "9d8696553d367a0924bf5bfe3bba13498c68bcdd8d82912dbf1ee804a4032140",
+      "locale": "zh-Hans",
+      "profile": "iphone-medium",
+      "sha256": "139e1650f8d2f43d40d57d91d7e4daa75c6741c455c68cbacbe9da4b5b1a8dca",
+      "remoteAssetId": "ce000019-519a-88ba-8038-9b11bfb1412b",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "cc3c5b4da540e5a7d914d5fc40571dba440fb3017d822a227933089099ee7cd2",
+      "locale": "zh-Hans",
+      "profile": "iphone-medium",
+      "sha256": "8f2cb57395f8e9431047e161441667957f215dd54bd2d2f662fea21a669a7d4b",
+      "remoteAssetId": "b2000019-519a-88ba-8024-3888cce291ec",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "09c8199945b7e4a75e2681378fb4ba94c998d5b8af166c5aa39228ec1fc9bc1b",
+      "locale": "zh-Hans",
+      "profile": "iphone-medium",
+      "sha256": "f3579be8447736112ca3a8d22b34b31bcc83960335074e1b8f9711826e98b336",
+      "remoteAssetId": "21000019-519a-88ba-802c-d9ac9013ce15",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "87a464456064703419ccfa78a648441726a0d3399995f9e2d6ef20e7703419f7",
+      "locale": "zh-Hans",
+      "profile": "iphone-medium",
+      "sha256": "7c903941df37a6f28554b2f53f109bc65a99a53584c11cccdc66fd4d706c30f6",
+      "remoteAssetId": "4c400019-519a-88ba-803e-0282bede7b62",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "8c009e3d804c6522ffbfb2f50fadb58d8c79583965a69fd99dcc6c61225d3ca3",
+      "locale": "zh-Hans",
+      "profile": "iphone-large-screenshot",
+      "sha256": "cb5e6ba6adf78b7f28accb53cd59b27d9fc4b3444f4a0f9fe73edfd09346604b",
+      "remoteAssetId": "97800019-519a-88ba-800e-69e847f78a3e",
+      "remoteName": "meet-your-memory-iphone-large-01-home-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "cb5a0d058eebd6d7b1ae7494a18ad3d44b2571b7214308de4f413be0fe47b9e6",
+      "locale": "zh-Hans",
+      "profile": "iphone-large-screenshot",
+      "sha256": "2cb40ceb747d64ef860dd3d276eb36752dfba94622d72bd85b152098caa6a870",
+      "remoteAssetId": "bdc00019-519a-88ba-8020-e67a3e2d7587",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "912005abb700a8ebc105ab8ce68eccb2aaf4a995134d994575fd2355b5899f18",
+      "locale": "zh-Hans",
+      "profile": "iphone-large-screenshot",
+      "sha256": "d5f452b711f538dad6bc5e330a5df2e18abea12b178332c7ae20e15c405592f2",
+      "remoteAssetId": "dd000019-519a-88ba-8021-287c99d50c06",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "b30e0f69fc6d682ecb44df35343b6d64180f4b5ac78a0a5ad79831183147acdd",
+      "locale": "zh-Hans",
+      "profile": "iphone-large-screenshot",
+      "sha256": "7a346d80ad8f2649a833058498286e63b31c1fac5f27e86706c6db0388791c52",
+      "remoteAssetId": "10800019-519a-88ba-800f-6fc9418dc39f",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "1eb7d190f6e1f3c9290928b89a933d45c49596fa8101bfe4908f7be87289d229",
+      "locale": "zh-Hans",
+      "profile": "iphone-large-screenshot",
+      "sha256": "8319cfae98cdea9595f563a76191a70b6e0295deda23e80f61a06985edc6a389",
+      "remoteAssetId": "bc400019-519a-88ba-8001-da21f4082161",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "c5c86d9d733a462c14dcebd7ec167c45e7477eb5cb995a59ee92235706190611",
+      "locale": "zh-Hans",
+      "profile": "iphone-large-screenshot",
+      "sha256": "0a63ee628b565be6d746150e3b06810d72db28d0280d39b3b6a35bf8bab70e3f",
+      "remoteAssetId": "45400019-519a-88ba-8007-b8c88f9c4f88",
+      "remoteName": "meet-your-memory-iphone-large-06-history-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "2e63616a38923daf5fc0284e7e45b5215acab76472877983648f37047825b5c2",
+      "locale": "zh-Hans",
+      "profile": "ipad-screenshot",
+      "sha256": "58971217e398a7feb521307d78f772b490287624f8df981905618fab6802b89b",
+      "remoteAssetId": "f1800019-519a-88ba-8031-ab347450b58c",
+      "remoteName": "meet-your-memory-ipad-01-home-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "e88af78b550eeb23c9bd441fcfff9294aecdc90b905e858090b71aea27a789d5",
+      "locale": "zh-Hans",
+      "profile": "ipad-screenshot",
+      "sha256": "786abc4e6982ceeefbff85c3482d29cc8d727aea11bb73e5135c7449e08bf130",
+      "remoteAssetId": "68c00019-519a-88ba-800a-55ea13a783e5",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "ca741d2bd21fd408c9cee6dd4d3141d0415fc4c8262e14483e753baf100c52b5",
+      "locale": "zh-Hans",
+      "profile": "ipad-screenshot",
+      "sha256": "31e002835edc906f1acfdf429beea1948c2694221c7e7ccfa5d35f56118b03f8",
+      "remoteAssetId": "7d800019-519a-88ba-8034-9e031eeefaf1",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "1457168a2604ac5f161b200ef6508aa655e1e5551b7f29d3ae962a253447be90",
+      "locale": "zh-Hans",
+      "profile": "ipad-screenshot",
+      "sha256": "57304b405451d17b07f969ca6fdb6c24e22998cd934bc752184a59f664944ad9",
+      "remoteAssetId": "06c00019-519a-88ba-8028-9889c63a8e3a",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "8685c5ebd3d75d72553f9d05c55b03e465b5a59747c215751f1d631f01d8bf3c",
+      "locale": "zh-Hans",
+      "profile": "ipad-screenshot",
+      "sha256": "55c7634324ff3843ea01977b1fe1b6b667d1edd1f8197ac975b892df08e6a6a0",
+      "remoteAssetId": "d7400019-519a-88ba-8014-f32bc7191805",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "769c7f2126b916757658ceb0718109d983e1f3678ad12b37b2cc23c38a6499db",
+      "locale": "zh-Hans",
+      "profile": "ipad-screenshot",
+      "sha256": "a728444dd8a27b7461b19b12ab1480c3f6353fb5ba1863ed41579095d22ea390",
+      "remoteAssetId": "ce400019-519a-88ba-8019-f595f883d74c",
+      "remoteName": "meet-your-memory-ipad-06-history-zh-Hans.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "72ed6aba56b5bb4924bcac53358051eafb79940a7152f38b07ccaa12f7001375",
+      "locale": "zh-Hans",
+      "profile": "duo-outer",
+      "sha256": "5c1fb7a74a9621896c7bbe8b563834c1c1155bf70f8bfa2e8e5b535d3a532960",
+      "remoteAssetId": "48800019-519a-88ba-801b-985d884569cb",
+      "remoteName": "meet-your-memory-duo-outer-home-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "e8533281228377f053038847a92f719f5c0bc7068425ded8f809466910dabc62",
+      "locale": "zh-Hans",
+      "profile": "duo-outer",
+      "sha256": "31e225da589d564623e70f311a06f98b5ef76f31580777def4bb836b0147aa5e",
+      "remoteAssetId": "30000019-519a-88ba-8002-efe9d9b6f2f6",
+      "remoteName": "meet-your-memory-duo-outer-visual-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "1927237524ebc0919369cb876810c1b868e3a39d4cd132c52de79a989b11f614",
+      "locale": "zh-Hans",
+      "profile": "duo-outer",
+      "sha256": "bf5221941697cdfe9a0a0ba290237fef5ac04110c1d24a0a4e47caded937c2b3",
+      "remoteAssetId": "6c400019-519a-88ba-800a-3061a6a61f2c",
+      "remoteName": "meet-your-memory-duo-outer-association-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "3ae7efb5115a2e502ddc56ee76128df06eb82316a2c5cb0b7ff9040bc12a7dd4",
+      "locale": "zh-Hans",
+      "profile": "duo-outer",
+      "sha256": "70aaa6942afb8756c2d388e2f741306ed66cbfbaef07ff98c08a0648e34abdd3",
+      "remoteAssetId": "01000019-519a-88ba-800a-2b98d3a3dfc4",
+      "remoteName": "meet-your-memory-duo-outer-history-zh-Hans.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-01-home",
+      "assetKey": "5f48792d77cc906b4f7fb805db7e26be84c8ddd2110d9fa20a6992afc76988cc",
+      "locale": "hi",
+      "profile": "iphone-medium",
+      "sha256": "68560444d64523217662c15fc0f0a8eaa031799ae297d2e67e8fc3259ba9580b",
+      "remoteAssetId": "43c00019-519a-88ba-8024-8c8c5efc9fdc",
+      "remoteName": "meet-your-memory-iphone-medium-01-home-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-02-visual-memory",
+      "assetKey": "8ecc512865a32dc436ca88ca36851bcd847298ebccbac79ee118107c636afcce",
+      "locale": "hi",
+      "profile": "iphone-medium",
+      "sha256": "1427dc5bea04fb2b3c2cb7bd8ae10823f2a40e46e3254315ebea9f1a37701404",
+      "remoteAssetId": "61800019-519a-88ba-803e-7a6663421c4a",
+      "remoteName": "meet-your-memory-iphone-medium-02-visual-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-03-spatial-memory",
+      "assetKey": "5e39ff1a38165513c300108fc3c654894eb8e595b86e658efe293d99a2ba658d",
+      "locale": "hi",
+      "profile": "iphone-medium",
+      "sha256": "a4ac0077f44b5217b01a802c60d8e083156a8e36347fdfb7a8b100f2f1b3c32a",
+      "remoteAssetId": "1e400019-519a-88ba-8013-ff6e442ac23a",
+      "remoteName": "meet-your-memory-iphone-medium-03-spatial-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-04-association-memory",
+      "assetKey": "1761b68a0fb40e8e0a3859e34bf569054c0721a69f11162624f9aae8c8e46ec9",
+      "locale": "hi",
+      "profile": "iphone-medium",
+      "sha256": "50758485ac5becef7030f80b53740e2934305eee5106b67082b75147e4a34998",
+      "remoteAssetId": "80c00019-519a-88ba-8023-9eae0f457ca0",
+      "remoteName": "meet-your-memory-iphone-medium-04-association-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-05-memory-profile",
+      "assetKey": "e4f153ef6ea1a11c7e47df0672b62ca9cdeb92d10563e1038092c6d9ad2b310c",
+      "locale": "hi",
+      "profile": "iphone-medium",
+      "sha256": "2f1986b4c773061d9245becb60d02b1fbe99b443bc3e810d3c6b1124f43fba22",
+      "remoteAssetId": "e9000019-519a-88ba-8018-ec8c1dd060e4",
+      "remoteName": "meet-your-memory-iphone-medium-05-memory-profile-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-medium-06-history",
+      "assetKey": "f3c83234160b020069bcc135498248dbdbc6e08861dfc2b75591d8dc107b2322",
+      "locale": "hi",
+      "profile": "iphone-medium",
+      "sha256": "3c86e3dda6d0be3f1ecd30eb87c0473d97cb04f75d7389e2fbba7107f44ac629",
+      "remoteAssetId": "87000019-519a-88ba-8031-9887ff448ea7",
+      "remoteName": "meet-your-memory-iphone-medium-06-history-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-01-home",
+      "assetKey": "42c79b0820d1663839914f29b5676cb308af51b5b816d8b4b6cdf8dc6d138d1b",
+      "locale": "hi",
+      "profile": "iphone-large-screenshot",
+      "sha256": "1d2b72dd3b0e236681ffbfd9455eefd70be5c510d63a7e34da8ac43ad459dbe2",
+      "remoteAssetId": "d3c00019-519a-88ba-801d-8acee0e4fc58",
+      "remoteName": "meet-your-memory-iphone-large-01-home-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-02-visual-memory",
+      "assetKey": "6fa7737414983044742e557a1a5e8ef4470d0e2c8b43424200a1d0f804fe04d0",
+      "locale": "hi",
+      "profile": "iphone-large-screenshot",
+      "sha256": "f256fce523bf60befa207bbfcaf0dfbb7197eceff0537a73fd6e7f2668db55a0",
+      "remoteAssetId": "01c00019-519a-88ba-8031-6cb9acffcb94",
+      "remoteName": "meet-your-memory-iphone-large-02-visual-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-03-spatial-memory",
+      "assetKey": "b8811e33cc2ba2d810625cd1b58b8d40f908787f6acbd3769f623808458d5a28",
+      "locale": "hi",
+      "profile": "iphone-large-screenshot",
+      "sha256": "0e0e969c62d3335427b3931aa5577a2ebc451efcbda2a770357e6721c2331449",
+      "remoteAssetId": "09800019-519a-88ba-802e-17f9cb5cc5f5",
+      "remoteName": "meet-your-memory-iphone-large-03-spatial-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-04-association-memory",
+      "assetKey": "08d9b18df4d7b5c29ac55c50338e97fdbd9340ec9ed6d474fc7ebc5017705eb1",
+      "locale": "hi",
+      "profile": "iphone-large-screenshot",
+      "sha256": "3bcbd759aacb9252760ef64aedbe89aadc29adcded98f907c4d7e4f1433dbebf",
+      "remoteAssetId": "90000019-519a-88ba-802d-3c7828b41e15",
+      "remoteName": "meet-your-memory-iphone-large-04-association-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-05-memory-profile",
+      "assetKey": "76ab4f9fdaa88b6bf04049b474b6de07f669505cc1e727cff0672f1013bdafe8",
+      "locale": "hi",
+      "profile": "iphone-large-screenshot",
+      "sha256": "b1863b823f322bce7da20c0887b26ec4fc29d83f442b0fa11d6996c40c70a714",
+      "remoteAssetId": "c5400019-519a-88ba-802d-8577d64a824b",
+      "remoteName": "meet-your-memory-iphone-large-05-memory-profile-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "iphone-large-06-history",
+      "assetKey": "4c8fd4f261b0c9e1504bc940fc32fbf7e3749a8ebdb586423b22787164e16916",
+      "locale": "hi",
+      "profile": "iphone-large-screenshot",
+      "sha256": "5f59a70c4a8bfb305bdc7d81ce6c855bab55ae0f55991c3cf5895d05b4a9dcf6",
+      "remoteAssetId": "c5800019-519a-88ba-8030-76c14b3b82f0",
+      "remoteName": "meet-your-memory-iphone-large-06-history-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-01-home",
+      "assetKey": "53e97a6f359e58bed11cdeb900ed109541dcfc77756e43b0f9c9458ec0631907",
+      "locale": "hi",
+      "profile": "ipad-screenshot",
+      "sha256": "44fb33730dd68815c03b6b7e6c58a48b188a4fab6206d8509b9eb688702e84a2",
+      "remoteAssetId": "33800019-519a-88ba-801b-d00c8d7f7ae9",
+      "remoteName": "meet-your-memory-ipad-01-home-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-02-visual-memory",
+      "assetKey": "8916da4fa7328b4e1d03293c8e7fcf8a327f9ee155b093de06e6f3a3df154351",
+      "locale": "hi",
+      "profile": "ipad-screenshot",
+      "sha256": "dc74467adc40de44cb835cf9c03fab714a1ada7565b97d603abfdccac174168c",
+      "remoteAssetId": "02800019-519a-88ba-8016-c6130f90455a",
+      "remoteName": "meet-your-memory-ipad-02-visual-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-03-spatial-memory",
+      "assetKey": "381ec1d9e864e226301448543491440b811b27441cd142258cfab1cd99be47a7",
+      "locale": "hi",
+      "profile": "ipad-screenshot",
+      "sha256": "fcbaff951e154de7fcf969cc6efc89e57ee0699991c7863384fd3015d286d67b",
+      "remoteAssetId": "c8000019-519a-88ba-8036-9e1c09ea8699",
+      "remoteName": "meet-your-memory-ipad-03-spatial-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-04-association-memory",
+      "assetKey": "2fcf07fcdb2600cce9ab1b0af171966b6fa8eb467baeb4e0753d0475546d6a25",
+      "locale": "hi",
+      "profile": "ipad-screenshot",
+      "sha256": "641bac82820040c5524351dcfb33ced8ae1bcecff09ea874e349d29deaa54ec1",
+      "remoteAssetId": "ec800019-519a-88ba-800a-1161aa2bee67",
+      "remoteName": "meet-your-memory-ipad-04-association-memory-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-05-memory-profile",
+      "assetKey": "7bae12c4cac891027a33bd234fe8e81109e2c5d657103cfbbabd12fa8758d01d",
+      "locale": "hi",
+      "profile": "ipad-screenshot",
+      "sha256": "2f3481fa57a92b50d5ae06ea30a0883f13b76aebbe0bbdd28390c605c22d15a8",
+      "remoteAssetId": "cb000019-519a-88ba-803b-cfd549bd1d3a",
+      "remoteName": "meet-your-memory-ipad-05-memory-profile-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "ipad-06-history",
+      "assetKey": "f6962c5a64976df0b41aa5eb935dbf18cca6cdccf613fec8a755f05580319218",
+      "locale": "hi",
+      "profile": "ipad-screenshot",
+      "sha256": "9488ee71e810431988cb7db78eda6482c9912a3822faf3d90bf953f25f02c761",
+      "remoteAssetId": "0bc00019-519a-88ba-802a-007cf2deba37",
+      "remoteName": "meet-your-memory-ipad-06-history-hi.jpg",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-home",
+      "assetKey": "8c39ff9da6a0a9d8c4ba7a4b8072dfdc58b1615cfd1bd7ac769a0eecdf23fd8a",
+      "locale": "hi",
+      "profile": "duo-outer",
+      "sha256": "9f87e27474aa9f460fe9267bf97d56cac98046f52507e33e2c5c722a75fb448c",
+      "remoteAssetId": "f0000019-519a-88ba-8008-ed100d57a657",
+      "remoteName": "meet-your-memory-duo-outer-home-hi.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-visual",
+      "assetKey": "3380f7039c14b2c23b710271f29b80551026eb7884374d93ce9a763f9b3518dd",
+      "locale": "hi",
+      "profile": "duo-outer",
+      "sha256": "437223130a7ca44ef9715fa1702a8ac6bebe729dc78bf13dcf843db6d94ccc49",
+      "remoteAssetId": "45c00019-519a-88ba-8012-1b158b861413",
+      "remoteName": "meet-your-memory-duo-outer-visual-hi.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-association",
+      "assetKey": "2f020614041b5c2e285e7d07b8e5450c57d009c2ce7b5bbf76b9de5b8965065e",
+      "locale": "hi",
+      "profile": "duo-outer",
+      "sha256": "01692a1a8e7b15d8094acb80fb905e70437901dc1245db6affadff42ed7909b5",
+      "remoteAssetId": "2ac00019-519a-88ba-802a-7921d789172f",
+      "remoteName": "meet-your-memory-duo-outer-association-hi.png",
+      "posterSecondsVerified": null
+    },
+    {
+      "id": "duo-outer-history",
+      "assetKey": "7cb70e523a60203cdeb03e630fcfdbc35e5780d32236d0efc61e46bd9a2f6e51",
+      "locale": "hi",
+      "profile": "duo-outer",
+      "sha256": "83568b83360010f4e81ebc906027a8d53cf7979a0d28f5363a5077f0906373d3",
+      "remoteAssetId": "60000019-519a-88ba-803c-c0dcdc99bd9c",
+      "remoteName": "meet-your-memory-duo-outer-history-hi.png",
+      "posterSecondsVerified": null
+    }
+  ]
+}

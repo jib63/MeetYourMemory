@@ -1,0 +1,737 @@
+{
+  "apiVersion": "4.5.1",
+  "openapiSHA256": "7518d3a94a8bd701ac25c1c601b95b8f53aad92091affb15a2a9d331713dac1a",
+  "checkedOn": "2026-10-08",
+  "source": "https://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip",
+  "schemas": {
+    "AppAssetLibraryImageCreateRequest": {
+      "type": "object",
+      "title": "AppAssetLibraryImageCreateRequest",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "appAssetLibraryImages"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "$ref": "#/components/schemas/AppAssetLibraryAssetCategory"
+                },
+                "fileName": {
+                  "type": "string"
+                },
+                "fileSize": {
+                  "type": "integer",
+                  "format": "int64",
+                  "maximum": 9007199254740991,
+                  "minimum": 1
+                },
+                "referenceName": {
+                  "type": "string",
+                  "nullable": true
+                }
+              },
+              "required": [
+                "fileName",
+                "fileSize",
+                "category"
+              ]
+            },
+            "relationships": {
+              "type": "object",
+              "properties": {
+                "assetLibrary": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appAssetLibraries"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ]
+                },
+                "placements": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "appAssetLibraryPlacements"
+                            ]
+                          },
+                          "id": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type"
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "required": [
+                "assetLibrary"
+              ]
+            }
+          },
+          "required": [
+            "relationships",
+            "attributes",
+            "type"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "AppAssetLibraryImageUpdateRequest": {
+      "type": "object",
+      "title": "AppAssetLibraryImageUpdateRequest",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "appAssetLibraryImages"
+              ]
+            },
+            "id": {
+              "type": "string"
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "archived": {
+                  "type": "boolean",
+                  "nullable": true
+                },
+                "referenceName": {
+                  "type": "string",
+                  "nullable": true
+                },
+                "uploaded": {
+                  "type": "boolean",
+                  "nullable": true
+                }
+              }
+            }
+          },
+          "required": [
+            "id",
+            "type"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "AppAssetLibraryPlacementCreateRequest": {
+      "type": "object",
+      "title": "AppAssetLibraryPlacementCreateRequest",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "appAssetLibraryPlacements"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "placementType": {
+                  "nullable": true,
+                  "$ref": "#/components/schemas/AppAssetLibraryPlacementType"
+                },
+                "placementGroup": {
+                  "type": "string",
+                  "nullable": true
+                }
+              }
+            },
+            "relationships": {
+              "type": "object",
+              "properties": {
+                "image": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appAssetLibraryImages"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "video": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appAssetLibraryVideos"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "appEventLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appEventLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "appStoreVersionLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appStoreVersionLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "appCustomProductPageLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appCustomProductPageLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "appStoreVersionExperimentTreatmentLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appStoreVersionExperimentTreatmentLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "image",
+                    "appEventLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "image",
+                    "appStoreVersionLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "image",
+                    "appCustomProductPageLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "image",
+                    "appStoreVersionExperimentTreatmentLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "appEventLocalization",
+                    "video"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "video",
+                    "appStoreVersionLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "appCustomProductPageLocalization",
+                    "video"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementType"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "appStoreVersionExperimentTreatmentLocalization",
+                    "video"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            }
+          ],
+          "required": [
+            "type"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    },
+    "AppAssetLibraryPlacementOrderingRequestCreateRequest": {
+      "type": "object",
+      "title": "AppAssetLibraryPlacementOrderingRequestCreateRequest",
+      "properties": {
+        "data": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "appAssetLibraryPlacementOrderingRequests"
+              ]
+            },
+            "attributes": {
+              "type": "object",
+              "properties": {
+                "placementGroup": {
+                  "type": "string",
+                  "nullable": true
+                }
+              }
+            },
+            "relationships": {
+              "type": "object",
+              "properties": {
+                "orderedPlacements": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "appAssetLibraryPlacements"
+                            ]
+                          },
+                          "id": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "type"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "appStoreVersionLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appStoreVersionLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "appCustomProductPageLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appCustomProductPageLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                },
+                "appStoreVersionExperimentTreatmentLocalization": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "appStoreVersionExperimentTreatmentLocalizations"
+                          ]
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "type"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementGroup"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "orderedPlacements",
+                    "appStoreVersionLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementGroup"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "orderedPlacements",
+                    "appCustomProductPageLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "required": [
+                    "placementGroup"
+                  ]
+                },
+                "relationships": {
+                  "type": "object",
+                  "required": [
+                    "orderedPlacements",
+                    "appStoreVersionExperimentTreatmentLocalization"
+                  ]
+                }
+              },
+              "required": [
+                "relationships",
+                "attributes"
+              ]
+            }
+          ],
+          "required": [
+            "type"
+          ]
+        }
+      },
+      "required": [
+        "data"
+      ]
+    }
+  },
+  "paths": [
+    "/v1/appAssetLibraryImages",
+    "/v1/appAssetLibraryImages/{id}",
+    "/v1/appAssetLibraryPlacementOrderingRequests",
+    "/v1/appAssetLibraryPlacements",
+    "/v1/appAssetLibraryPlacements/{id}",
+    "/v1/appAssetLibraryRefData",
+    "/v1/appAssetLibraryRefData/{id}",
+    "/v1/appAssetLibraryVideos",
+    "/v1/appAssetLibraryVideos/{id}",
+    "/v1/appAssetLibraryImages/{id}/relationships/placements",
+    "/v1/appAssetLibraryImages/{id}/placements",
+    "/v1/appAssetLibraryVideos/{id}/relationships/placements",
+    "/v1/appAssetLibraryVideos/{id}/placements",
+    "/v1/apps/{id}/relationships/assetLibrary",
+    "/v1/apps/{id}/assetLibrary"
+  ]
+}

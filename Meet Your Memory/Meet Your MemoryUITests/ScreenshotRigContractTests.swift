@@ -16,10 +16,13 @@ final class ScreenshotRigContractTests: XCTestCase {
         )
     }
 
-    func testOnlyRequiredAppStoreDisplaySizesAreAccepted() throws {
+    func testCurrentAppStoreDisplaySizesAreAccepted() throws {
         XCTAssertEqual(ScreenshotRig.displayClass(for: try imageData(width: 1320, height: 2868)), "6.9-inch")
         XCTAssertEqual(ScreenshotRig.displayClass(for: try imageData(width: 2064, height: 2752)), "ipad-13-inch")
-        XCTAssertNil(ScreenshotRig.displayClass(for: try imageData(width: 1179, height: 2556)))
+        XCTAssertEqual(ScreenshotRig.displayClass(for: try imageData(width: 1179, height: 2556)), "iphone-medium")
+        XCTAssertEqual(ScreenshotRig.displayClass(for: try imageData(width: 1398, height: 2034)), "iphone-duo-outer")
+        XCTAssertEqual(ScreenshotRig.displayClass(for: try imageData(width: 2853, height: 2007)), "iphone-duo-inner")
+        XCTAssertNil(ScreenshotRig.displayClass(for: try imageData(width: 750, height: 1334)))
     }
 
     private func imageData(width: Int, height: Int) throws -> Data {

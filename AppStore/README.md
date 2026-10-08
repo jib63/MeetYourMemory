@@ -1,31 +1,90 @@
-# App Store assets
+# App Store media — API 4.5.1
 
-The UI test suite writes exactly six localized JPEG screenshots per run to:
+Open `exports/delivery/index.html` to review the generated still images by
+language. The delivery manifest records dimensions, sources and SHA-256
+digests. The 176 generated screenshots have been uploaded to version **1.1.0**
+using the API 4.5.1 Asset Library, across all eight languages and 32 galleries.
+The 16 localized header/search assets are also uploaded and verified. No App
+Previews or review submissions were performed. Server receipts are saved in
+the delivery folder, separately for screenshots and creatives.
 
-```text
-Screenshots/6.9-inch/<language>/
-Screenshots/ipad-13-inch/<language>/
-```
+Eight locales: English, French, Italian, Spanish, Portuguese (Portugal),
+Japanese, Simplified Chinese and Hindi.
 
-In Xcode, select **iPhone 17 Pro Max**, run `ScreenshotTests`, then repeat with
-**iPad Pro 13-inch**. Each language has its own test method, so one locale can
-be regenerated independently. The accepted pixel sizes are intentionally
-restricted to Apple's required 6.9-inch iPhone and 13-inch iPad galleries.
+| Gallery / creative | Per locale | Pixels |
+| --- | ---: | --- |
+| iPhone medium | 6 | 1206 × 2622 |
+| iPhone large | 6 | 1320 × 2868 |
+| iPad 13-inch | 6 | 2064 × 2752 |
+| Duo outer | 4 | 1398 × 2034 |
+| Product-page header | 1 | 3840 × 1646 |
+| Search artwork | 1 | 3840 × 2560 |
 
-Validate all local galleries without contacting Apple:
+Current bundle: **192 images** (176 screenshots, 16 creatives). The standalone
+banner is `exports/banner/meet-your-memory-banner.png`. Header and banner use
+the same artwork. Built-in ImageGen sources and exact prompts are preserved
+in `media-artwork/`; localized typography uses native macOS font shaping.
+
+**Pending:** two native Duo inner screenshots per locale, Panorama Pairs and
+Orbit Map, at 2007 × 2853 or 2853 × 2007.
+The simulator remains physically folded. Device Hub automation timed out;
+`simctl` has no public fold/unfold command. Unfold simulator
+`96058282-9E19-4C38-9FFD-8B654E4D32D3` fully flat in portrait, then run:
 
 ```bash
+python3 Tools/capture_native_duo.py \
+  --udid 96058282-9E19-4C38-9FFD-8B654E4D32D3 \
+  --app '/private/tmp/memory-appstore-native/Build/Products/Debug-iphonesimulator/Meet Your Memory.app' \
+  --posture inner --scenes panoramaPairs,orbitMap
+python3 Tools/prepare_appstore_media.py --include-duo
+```
+
+That produces a **208-image** bundle, with six Duo screenshots per language.
+Duo outer and inner screenshots share
+one ten-image limit and stay in the dedicated Duo group. Native captures
+check real SDK posture, normalize orientation, reject black displays and
+save provenance. Existing Debug marketing fixtures are used.
+
+To regenerate ordinary screenshots, run `ScreenshotTests` on iPhone 17 Pro,
+iPhone 17 Pro Max and iPad Pro 13-inch. Then export and validate:
+
+```bash
+python3 Tools/prepare_appstore_media.py --render --include-duo-outer
+python3 Tools/prepare_appstore_media.py --validate
 python3 Tools/upload_appstore.py --check-assets
+python3 Tools/test_appstore_media.py
 ```
 
-The uploader is a dry run by default. After exporting `ASC_KEY_ID`,
-`ASC_ISSUER_ID`, and `ASC_KEY_PATH` (or `ASC_PRIVATE_KEY_BASE64`), upload all
-metadata and both screenshot families with:
+Screenshot-only delivery and read-only verification:
 
 ```bash
-python3 Tools/upload_appstore.py --apply
+python3 Tools/upload_appstore.py --apply --skip-text --screenshots-only
+python3 Tools/upload_appstore.py --verify-assets --screenshots-only
+python3 Tools/record_media_delivery.py
 ```
 
-Use `--locales en-US,fr-FR` for a subset, `--skip-text` to upload only
-screenshots, or `--skip-screenshots` to upload only metadata. App previews are
-not generated or uploaded.
+Reservations are persisted in `exports/.work/api/journal.json`. Re-running the
+same selection reuses its saved identities. The uploader independently checks
+processing, native dimensions, locales, display groups and gallery order.
+
+The Apple OpenAPI download was verified as **4.5.1** on 2026-10-08. Its SHA-256
+and inspected schemas are saved in `media/specs/api-4.5.1-contract.json`.
+The uploader discovers actual spec/group IDs and limits through
+`GET /v1/appAssetLibraryRefData`, reserves `appAssetLibraryImages`, transfers
+the returned byte ranges without JWT headers, commits with `uploaded: true`,
+waits for processing, creates placements and orders each placement type
+separately. It honors Retry-After, refreshes JWTs and journals reservations.
+It never falls back to legacy screenshot sets.
+
+`python3 Tools/upload_appstore.py` defaults to a read-only live plan after
+credentials are provided. `--apply` explicitly enables writes; `--skip-text`
+limits delivery to prepared screenshots and creatives. `--skip-screenshots`
+limits it to metadata. No review submission occurs. Live reference-data
+discovery was performed for screenshot and creative delivery. Apple's actual
+device crop previews remain unchecked; API placement and processing are verified. Local header
+safe-area checks and crop samples are planning aids; verify Apple's actual
+preview before a future submission.
+
+Validation: all 24 localized screenshot test runs passed; Debug and Release
+builds passed; prepared pixels, opacity and hashes checked. See
+`exports/delivery/validation-report.json` for the saved checks.

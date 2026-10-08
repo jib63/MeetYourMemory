@@ -1,0 +1,151 @@
+{
+  "language": "zh-Hans",
+  "locale": "zh-Hans",
+  "display": "LCD",
+  "posture": "physical fully folded portrait",
+  "appBuild": [
+    {
+      "path": "/private/tmp/memory-appstore-native/Build/Products/Debug-iphonesimulator/Meet Your Memory.app/Meet Your Memory",
+      "sha256": "88377a27eb65ebb27459c14b818238756aceb2c8559fd0a2eb128f5a52a73935",
+      "md5": "3378db61cd70ca9f335b725c840820c4",
+      "bytes": 72992
+    },
+    {
+      "path": "/private/tmp/memory-appstore-native/Build/Products/Debug-iphonesimulator/Meet Your Memory.app/Meet Your Memory.debug.dylib",
+      "sha256": "fcb154eabd18e88cf39fb905ca474c9b0606f3b59df62bc6ef0ffcead475cbdb",
+      "md5": "40ca5610366994ac1c25ee587587e623",
+      "bytes": 13408368
+    }
+  ],
+  "captures": [
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-outer/zh-Hans/01-home.png",
+      "sha256": "5c1fb7a74a9621896c7bbe8b563834c1c1155bf70f8bfa2e8e5b535d3a532960",
+      "md5": "17de024e97d944251d16333ed25bc26f",
+      "bytes": 1584180,
+      "scene": "01-home",
+      "locale": "zh-Hans",
+      "language": "zh-Hans",
+      "original": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/.native-work/outer/zh-Hans/01-home-native.png",
+        "sha256": "1442bbae850ea69d1ab15c41425f8e0cb9b9d03ab8bddce74236e936a5fc96af",
+        "md5": "aeb667024db9c2338334c369429008f8",
+        "bytes": 2367720
+      },
+      "display": "LCD",
+      "deviceUDID": "1735B7F8-0882-40FF-9507-DDC87D84979D",
+      "sdkContext": {
+        "expanded": false,
+        "mode": "compact",
+        "pose": "unavailable"
+      },
+      "launchArguments": [
+        "-AppleLanguages",
+        "(zh-Hans)",
+        "-AppleLocale",
+        "zh_Hans_CN",
+        "--marketing-native-capture",
+        "UI_TESTING",
+        "--marketing-screen",
+        "home"
+      ]
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-outer/zh-Hans/02-visual-memory.png",
+      "sha256": "31e225da589d564623e70f311a06f98b5ef76f31580777def4bb836b0147aa5e",
+      "md5": "9472a583aef2e445920db3c0c0d68a37",
+      "bytes": 1929351,
+      "scene": "02-visual-memory",
+      "locale": "zh-Hans",
+      "language": "zh-Hans",
+      "original": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/.native-work/outer/zh-Hans/02-visual-memory-native.png",
+        "sha256": "f3c4bc78cccecdec4cd64b210894f4430ef8cca106136f39f28192a6a075be33",
+        "md5": "3aec06a80492f1aab14288eb8acc22a8",
+        "bytes": 2814799
+      },
+      "display": "LCD",
+      "deviceUDID": "1735B7F8-0882-40FF-9507-DDC87D84979D",
+      "sdkContext": {
+        "expanded": false,
+        "mode": "compact",
+        "pose": "unavailable"
+      },
+      "launchArguments": [
+        "-AppleLanguages",
+        "(zh-Hans)",
+        "-AppleLocale",
+        "zh_Hans_CN",
+        "--marketing-native-capture",
+        "UI_TESTING",
+        "--marketing-screen",
+        "visual"
+      ]
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-outer/zh-Hans/04-association-memory.png",
+      "sha256": "bf5221941697cdfe9a0a0ba290237fef5ac04110c1d24a0a4e47caded937c2b3",
+      "md5": "6236046c980242e4ffddb7a42ce4f68e",
+      "bytes": 2184418,
+      "scene": "04-association-memory",
+      "locale": "zh-Hans",
+      "language": "zh-Hans",
+      "original": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/.native-work/outer/zh-Hans/04-association-memory-native.png",
+        "sha256": "3e3f459325b260d784ca2183ae2215b9f8a6cc7791ef7755c2981e01f5de2427",
+        "md5": "6570cf4ddb2dbf6262519bb1abc0e906",
+        "bytes": 3086233
+      },
+      "display": "LCD",
+      "deviceUDID": "1735B7F8-0882-40FF-9507-DDC87D84979D",
+      "sdkContext": {
+        "expanded": false,
+        "mode": "compact",
+        "pose": "unavailable"
+      },
+      "launchArguments": [
+        "-AppleLanguages",
+        "(zh-Hans)",
+        "-AppleLocale",
+        "zh_Hans_CN",
+        "--marketing-native-capture",
+        "UI_TESTING",
+        "--marketing-screen",
+        "association"
+      ]
+    },
+    {
+      "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/iphone-duo-outer/zh-Hans/06-history.png",
+      "sha256": "70aaa6942afb8756c2d388e2f741306ed66cbfbaef07ff98c08a0648e34abdd3",
+      "md5": "e7855d8e15446fc44a6de75cdb3c141c",
+      "bytes": 872761,
+      "scene": "06-history",
+      "locale": "zh-Hans",
+      "language": "zh-Hans",
+      "original": {
+        "path": "/Users/jbmeyer/Documents/DevSwift/Meet Your Memory/Screenshots/.native-work/outer/zh-Hans/06-history-native.png",
+        "sha256": "220754ed028924d2a5147d3e5a5d0fb9cbc9117e3808ff20472379e21d43c933",
+        "md5": "1dcf1b9e4311f0725f1bc4fe3dda1ccb",
+        "bytes": 1338440
+      },
+      "display": "LCD",
+      "deviceUDID": "1735B7F8-0882-40FF-9507-DDC87D84979D",
+      "sdkContext": {
+        "expanded": false,
+        "mode": "compact",
+        "pose": "unavailable"
+      },
+      "launchArguments": [
+        "-AppleLanguages",
+        "(zh-Hans)",
+        "-AppleLocale",
+        "zh_Hans_CN",
+        "--marketing-native-capture",
+        "UI_TESTING",
+        "--marketing-screen",
+        "history"
+      ]
+    }
+  ],
+  "complete": true
+}

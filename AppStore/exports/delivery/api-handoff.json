@@ -1,0 +1,3275 @@
+{
+  "apiVersion": "4.5.1",
+  "assets": [
+    {
+      "fileName": "meet-your-memory-header-en-US.png",
+      "locale": "en-US",
+      "sha256": "97f707e048ea430e018163d018692e8326418a86a99d55916652050f5a2acdec",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a2000019-519a-88ba-8020-9eee289c0d6c"
+    },
+    {
+      "fileName": "meet-your-memory-search-en-US.png",
+      "locale": "en-US",
+      "sha256": "b094fc07ec028bda180f7f8ec58e1a771de02884d2cd7fc1dcdbcf483eed6b47",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "74400019-519a-88ba-8012-11a862a48ca3"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "8e883306625ee3b168ec5c2f21d3aa1233b95c0ba6f4f0ce6345a066dbe29bc5",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c7400019-519a-88ba-8027-8b6560052b09"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "fd873e94a4d2719c9b243fc3299148e012f5c3a94c896d5cba657ee01fd87dab",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c3400019-519a-88ba-802e-471598557b0b"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "f4f2f1b972f2ff7d9b7d3d15028a31003bf7fa37b62b84f5bdf15fbc4b5e7a60",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "42000019-519a-88ba-803d-96bc4537a630"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "dbc47e40d8215281b0e22047f8f973b1c164c6c4e92a3cc5dd9ad1cc3e63f99e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "6b400019-519a-88ba-802d-ad8a8019bbaa"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "bcdcf82b8ad2c223816239386fc557d6ca8caa81ecb15a3aeaaf8bf88e86c20d",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "52400019-519a-88ba-8035-5196c2e6a5cc"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "afc8c7a959d3231d642d45500d4e4c80cb55321b79b72407dd77271121fde6a0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "43c00019-519a-88ba-8035-6b0ed119c907"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "a06f66cc9f85f71657af02a00de427199c62ac589bc630da1c3aa2fcb27c239b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "d3000019-519a-88ba-8033-e72ca4813341"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "348212a7053bc843bbdd3cf85bb49c3c2384d1a84363b51e7d983406a1238548",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "95800019-519a-88ba-8005-735a0d9358fa"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "0fe4ad1e685d749873a2ffb4c68a4ea09c0d72337690b6f3dea0218e3788f63b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f2c00019-519a-88ba-8007-8724ec907d22"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "fd4a503bb945a09f3b45f47b674030561c46daf875eb4b4925d96aee494eb2eb",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "9c400019-519a-88ba-803d-8f2d745d2efb"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "63123733e148e434a7f6739747aab0c0edeb2bcc8df5fd3180b40a84b2cd0913",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f8c00019-519a-88ba-803b-2adbc5985d7e"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "36d49d2f57371c337d9c2d52d9f695549ea1146dcf0275e5a005fbb3839ae71b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "70400019-519a-88ba-801e-db8e32f7b780"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "904f798ff9b905f75398980a9da613d09ebf0d940499ad35525092bb40d98729",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "0dc00019-519a-88ba-8003-f32f6e267c55"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "df71d2c177f5e88240f4a2cb0f0629c33451ee8b086bc64efe801545f706ab7a",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "9cc00019-519a-88ba-8011-8332e0b062f5"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "d10fe8c206bc099af1b7c64cf512aaf7a79a51b5a6673b427e26e20b5be7c483",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "eb000019-519a-88ba-803f-967b5c02406d"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "98c49952133c64ec067cf331b788ee8b8027c53cef72fda24fcbf64ac8e0a3ad",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "d3400019-519a-88ba-8002-5b0905fd2b53"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "e05ba7b522f4d12c46f059c430cb1163da32eb431e06441c944a43eeba6b5a10",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "90400019-519a-88ba-8028-2f44dbdd322b"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-en-US.jpg",
+      "locale": "en-US",
+      "sha256": "aa4ab9aebfee1c2e99addd791661879a35cf9ea7d8eea7f38d6365e8884bb30b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "66400019-519a-88ba-8033-ad877ce6fb79"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-en-US.png",
+      "locale": "en-US",
+      "sha256": "2295ddf070974edc3f5136c3b7c98562397d1669fc71728cc0589dff1ee33e2c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "5e400019-519a-88ba-8002-8b9fcaf18e6e"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-en-US.png",
+      "locale": "en-US",
+      "sha256": "9f80d81a610f2c3fe6c294417e81d884f3262cfea7b9c016b8eb36f41a4ade53",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "22400019-519a-88ba-8007-a09d2bad88f5"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-en-US.png",
+      "locale": "en-US",
+      "sha256": "2969926ec7eced0e85c1b2257742bc76a65761fc6f509be7bd0e6d19182b166e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "2ac00019-519a-88ba-8008-e52b74d5c3fb"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-en-US.png",
+      "locale": "en-US",
+      "sha256": "79012d27854eee7fb2d44d7f74b0aaa22a7d0bb801dab26d420bfc2a87609863",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "57800019-519a-88ba-802d-e76e2903ee4e"
+    },
+    {
+      "fileName": "meet-your-memory-header-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "2c78c9d63c56514fc93d0ed7620250d3b2217d487c0b40c3942747a75e2439de",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "56400019-519a-88ba-801d-b8252efc3cb2"
+    },
+    {
+      "fileName": "meet-your-memory-search-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "facd0f7e8eb6d03593f79c73911de63cce3827537a323e9e5864119fda2ffa54",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "6b800019-519a-88ba-8038-3450511b2013"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "d2944bc23982aefd7d4e48d25e0e856a3158a51362779795d19513a0d4781e06",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "9ec00019-519a-88ba-8019-c16601478970"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "8fb7072f0e5106ec075bfb365a51075b21d8528422856a592031927e076e6da9",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ee400019-519a-88ba-800e-f77e6761ae7d"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "14eac58ff87fe4a2a9032a25d2abac3f633f4558ed70876b781357e17735803a",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "de400019-519a-88ba-803b-b474a6ee0f11"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "61939cc406a63e2cbf2d7691b1e0439bd5f646a641d5388f17c0be5b439e4c7c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "49400019-519a-88ba-8037-b8c0c9336d5f"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "633b471e19a7fefd21574e7361569bd89826c6a8ba6a2fb05ef5b22f2555c4c9",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "1e800019-519a-88ba-803b-bf4c67ccdec6"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "7e41a8df9b3aba3b728bde93c83c7f125f356ac5f14d7c3c40ac828053aa2f8f",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "16c00019-519a-88ba-800e-4c7ef324e1c9"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "f1af80ac2615b3baa0f4a278c0f519b3a3a9e83090fc68f279be9eb6ad371d59",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "04000019-519a-88ba-802a-936eb2bf0316"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "b04268858089ecc8efb628a0ff5f822f9b70a780c44f7384be3f7e6b683588c6",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "00800019-519a-88ba-8014-ed238c7b5f8f"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "3dc75b08ff1b1170a7ce13291aac5ad594729f02314c397fc5e1c6682330357e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e7c00019-519a-88ba-800a-e59707519165"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "5b4a99d0c2f528427edbf9a98b1fb04cdf70ac837f5e0cc259c6eff90bb1e724",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c7400019-519a-88ba-802f-ae52c6ace903"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "0590a64b2b0789390ba1c43efcfcb9b8d7b8bc852c506e0f2f6dfa766f9d41bb",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "de000019-519a-88ba-8016-585a630f6058"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "e3d430a86a098140411e5a7b54842291c5b7e2ea15762f2a5498cb618118705b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "21c00019-519a-88ba-803d-f0d18ae71b34"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "69f0a2f5f87a0b9662044b226488e7d2a660d149385eeedcab91f59f324fcda1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bb000019-519a-88ba-800f-2cabb85629ca"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "d9021ad3bd95126724ef21c54d9a9178a4941d610239ae216c73146d2879432b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "45800019-519a-88ba-8016-5b351829f5b7"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "8473b922530c9e1fc5686132e430c405dac994496628c1fa1fe288c07a7f5c24",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e9800019-519a-88ba-803a-c1ae2bf4803c"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "f804ad0cd246edaec170de3999b65c190b4ef322b98741b090e8b199083614b2",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "0c800019-519a-88ba-8016-c632710fc841"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "805a6b1151a63d8c3cde53240bf281dca27698a1cfe9167bb6fc3d837a0370e7",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a5400019-519a-88ba-8039-bab8a7fdeed1"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-fr-FR.jpg",
+      "locale": "fr-FR",
+      "sha256": "7062ed19304877785f34942f8b9f232cc1476ce644cc0e3d5bf6e1282ba92e49",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "2d800019-519a-88ba-802e-e17740b875b1"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "2cc248a16676aaa940b2c5be8cd947adcc2ffd9947124f33d76041bcad4f2d4c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e5000019-519a-88ba-8021-08e8e2d58e30"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "df89992c31aa87133065b8708ec7bb31c191ec8cb6e842bb02c98284fec0970c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bf800019-519a-88ba-801e-8fb052649c39"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "c4f532e169b93fa366e1b804f1a4c822768d50b5ebd1204abf1d8d6e7b470164",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "65800019-519a-88ba-8031-c3d5f53c6144"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-fr-FR.png",
+      "locale": "fr-FR",
+      "sha256": "1789ee6eaa2678439bd2c6497a972ee793bb9dd80af85271c8752fe3097e1b9d",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "44400019-519a-88ba-8028-9dee7ef223cb"
+    },
+    {
+      "fileName": "meet-your-memory-header-it.png",
+      "locale": "it",
+      "sha256": "1760354379330061fffe1404d2d7c07a97729352b9a95942540c1afa93cee5c4",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "56c00019-519a-88ba-8015-846513fa22ff"
+    },
+    {
+      "fileName": "meet-your-memory-search-it.png",
+      "locale": "it",
+      "sha256": "d2416d954e0fcfdb9ce6b83cd9cc9278b1c65ec19d77bc4440060fd027ad1b50",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "95000019-519a-88ba-800a-38d0e3d12f38"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-it.jpg",
+      "locale": "it",
+      "sha256": "dc71997df64e90e76804682154c43f39b031bff0985ca3ca63c206874480e27b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "dcc00019-519a-88ba-802f-3175ba39fbb4"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-it.jpg",
+      "locale": "it",
+      "sha256": "fe31bfbefb0584cde48d6698879f3bf80c4b36ec172531addf9ff41b7b1c3a34",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a8400019-519a-88ba-803b-9e0366493108"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-it.jpg",
+      "locale": "it",
+      "sha256": "d1b6433165847c5d2594d9493a72f1bfb790fc66f3bd6ff584abdc96ee648e8b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "aec00019-519a-88ba-803e-f05ae94fee3e"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-it.jpg",
+      "locale": "it",
+      "sha256": "491787b9565fb27e66adef9827dbcb7bccbbef6407f96f507ca78f45f7fe0f4e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a9000019-519a-88ba-802e-1c01ec613f4c"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-it.jpg",
+      "locale": "it",
+      "sha256": "79ee7e44df5b9033b24ff73707b19db69894610125180967f7f29d02ef42032c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c9000019-519a-88ba-803b-98a5efd57136"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-it.jpg",
+      "locale": "it",
+      "sha256": "b5e4ffe858817ced674c4f8c443c5d714b8c2d452e36357df5e78cb30abf1c24",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "1dc00019-519a-88ba-803a-861ee4b60c2b"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-it.jpg",
+      "locale": "it",
+      "sha256": "c9b75e2462cb43a076fd9e5559e6ef213b40d5c1feaf1b93e1c810dacd9cc0f1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "32000019-519a-88ba-8031-a73b0cf0863d"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-it.jpg",
+      "locale": "it",
+      "sha256": "2a73feb9906948d6c05849185e3803b8df28601dcf0e83126439e01e9d02885b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "3ec00019-519a-88ba-800e-8ecfb8cd816a"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-it.jpg",
+      "locale": "it",
+      "sha256": "a4af6e11c2a580b2b954b69fa533d8ddac073fab5e282903119a6b79261cfbc7",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "cb400019-519a-88ba-8035-90fc40c029ff"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-it.jpg",
+      "locale": "it",
+      "sha256": "55a3b4ddc7450151879928d50ee3de24b621ed64ce279158cb5b85ec26ca1ad2",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "87800019-519a-88ba-8022-9ff21c3602ac"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-it.jpg",
+      "locale": "it",
+      "sha256": "9684c151f2f87dbbf6ed540927df4f063b65603142ec5e643959a1c907a6d74c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "48400019-519a-88ba-801a-4341fdca788d"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-it.jpg",
+      "locale": "it",
+      "sha256": "b1d86b60533223da723cb173f6f31d0326a7bbf452cc297f39f54e1aa47909fa",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "8c000019-519a-88ba-8008-72c11b3ebf1e"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-it.jpg",
+      "locale": "it",
+      "sha256": "9fa3fa3156d2fe54b1371dc101ce2ec26d7b86b545da570656541cd842807647",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a3400019-519a-88ba-803a-88a67bf47e7d"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-it.jpg",
+      "locale": "it",
+      "sha256": "bccef62fba027d157ca052e4f4db6a88000a5f2ded4635679243558746cf95dc",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ffc00019-519a-88ba-803c-f1cebc0c0dc7"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-it.jpg",
+      "locale": "it",
+      "sha256": "c5e9d6228322b35285dab1dbe3f3ddbdee9cd829a27442cff0ca6ba69baa6edf",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "d0400019-519a-88ba-8038-1e1848508a7d"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-it.jpg",
+      "locale": "it",
+      "sha256": "ee29f2c8e178c6596f070e99e0d466d24e7d1c67a4cce5b04606b789e8fc35cb",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "17000019-519a-88ba-8032-6859d694fa6c"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-it.jpg",
+      "locale": "it",
+      "sha256": "692c06f121488b22f7cd35570112d53f110a7895ad47828a2cd3665b6c947ab1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e8c00019-519a-88ba-802b-5705b8f90df9"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-it.jpg",
+      "locale": "it",
+      "sha256": "4184dbdd2c65312b1d42ac57ba52f59bb96fdfc487f3623052bb1d936a2d1c79",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "35000019-519a-88ba-8007-2855e0181fad"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-it.png",
+      "locale": "it",
+      "sha256": "b5e0f42b94b6d39ee58b75e42589a0732c6127309c21910767ed8e425021a07f",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bd800019-519a-88ba-8032-58ba585170da"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-it.png",
+      "locale": "it",
+      "sha256": "07f99ae8bb579f8260798ff8ea4a2dd4f4482bc09af867ee596231280e81127b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "b1800019-519a-88ba-8000-2194177f2805"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-it.png",
+      "locale": "it",
+      "sha256": "fddb726c2a1a54a59f269ab53932a4bb5d54ed10aed02e77e3ab1aa56d3f94d1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c4800019-519a-88ba-800b-efe802ee88a2"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-it.png",
+      "locale": "it",
+      "sha256": "364d9613a6230e7e6b7801e5ac66ccee9142c616f162d3103cfc910b29ee963b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "9e400019-519a-88ba-803d-01060179067a"
+    },
+    {
+      "fileName": "meet-your-memory-header-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "c2b23f25ea524f5c5a96258bfd4bde13fb7d89c46ae165f5fbd4a040f6cdcbea",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "dc400019-519a-88ba-800f-91fa64d55732"
+    },
+    {
+      "fileName": "meet-your-memory-search-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "7bfb5adf725f1a292bbd0aba9d4f92271f3d73d892a7c697e8fa9ef2bc6c230d",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "16c00019-519a-88ba-8005-1ae6e3ecc86c"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "c7a1d998d3e638c934152b777a0601f5b8a789faf93735f5747318c12d0be265",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "0b000019-519a-88ba-8021-b494c7fab8b9"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "7fdab2dd44ceeeea82e677db2c581ced013bbf47f774ba645b3a7be58239a97a",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f1000019-519a-88ba-8005-4d0586ff0962"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "882d771923a132d63e9a9b60f65422f84c2c2215a7d315514b1a4134ef664eef",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a7800019-519a-88ba-8020-27c5e018d8b4"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "017c5940c0e9df5aa889ab81719cfe949f1bce311c381e2a782261ed9fb3c74e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "dbc00019-519a-88ba-803a-6b683b20431d"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "4a3c90f45a04b0f783bd8d291ecdd4b0d3a697c09f7fb2593ddbb77a9a78a7fc",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "54c00019-519a-88ba-8037-709e590da0a1"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "71b6abb7d39995a7df9776da840dbb97015ed5c8ef28a4155e71928010ccdd86",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "89400019-519a-88ba-8031-2b5714401456"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "28dc072bed1f7e250adbb81b2d86026a941b87161b141087ff2624c2711e1b32",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "0ac00019-519a-88ba-8037-cbf2f565a8d9"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "e75cd2cb1b9559bd846acb7ba974ed6574650962bd23a806edb395c2723087d8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "02800019-519a-88ba-8008-21a86bb8d9f8"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "69ebf8ba56bfeccb82c71d2f66d469c7a41b9b67f158c1cd16c7328ea5fea2ef",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "4f400019-519a-88ba-8014-5794c670d471"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "ff34878c548a3fef0100f3b027864a3c402a86db5315c4eaa162090cf4128111",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ef400019-519a-88ba-800c-1a9a184f3d4b"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "6cb06c9098ba588c04e77704c59840e2711e48a6c900ac436de47e2bb8399c6e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bdc00019-519a-88ba-8005-fd0476b17086"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "7ab307d863c9e6f4f2395be4d5cdfeffcbfd6990aafb59fb7b77414301ccfd11",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "84800019-519a-88ba-800e-24d51613af30"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "a7c493eecbdc038c487796f993c8c2fb7393abcd4bec58cd5f9a140e1d515f20",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "aa400019-519a-88ba-8029-a231091e9801"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "44e655eb0aa3167fdb83fce0e9ce514cedfc9518142b18b89ac3f5b4d4a20df2",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f7c00019-519a-88ba-8007-39fe2b4832c6"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "16b3dca6c62b2632063aa4fdc125ca52c3f5010ecb127587e7bd2babffd9bb82",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "98800019-519a-88ba-8015-9cbbdaca76c8"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "f183e8a2176b226c6120fa001d20166bf90fe34ffbac66edb3aec730cba75d3c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "4a400019-519a-88ba-800e-65b601d05c86"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "9059e7e0f0a2fe15bd8c4cda1fe5a841f8b016023cfd7f7a36562eb77c44d3c0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "1a400019-519a-88ba-8011-8d05bd816012"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-es-ES.jpg",
+      "locale": "es-ES",
+      "sha256": "3dd4853b745a85d94b4d0df3a5c5e95f9547506c23c6f872bfb661d4b83efde5",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "84800019-519a-88ba-8025-a5607733645f"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "f4e5907f41ab609458716743033b8b7927f6056922515df67f0f290fe92318c7",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bc000019-519a-88ba-8002-f71b4b570bb2"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "9642801160a5f501027b84d476fe27ccf3411afeefac44049ab90bb7eaded11b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c6000019-519a-88ba-8028-1c3d73877d45"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "201416ad4c37d2220e7bfc58033a0d00f71ecae141ae2331728ec25f375d4f6c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "9c800019-519a-88ba-8028-e9b1608d170b"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-es-ES.png",
+      "locale": "es-ES",
+      "sha256": "47e24a7110da070f455b5618b0414b85ea037999f06f2600eda2dcd51e85116b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ae400019-519a-88ba-8007-f08dcf62ddef"
+    },
+    {
+      "fileName": "meet-your-memory-header-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "0c8e7470a6055efeffa848341feadd457ddcbc039aa4f435cd4fa30430aea723",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "3c000019-519a-88ba-8011-c2e709dd9787"
+    },
+    {
+      "fileName": "meet-your-memory-search-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "d91247f6c337f82ba915cdd5a7025cc2811855fe649a466a460f212e5fe96e07",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "9e000019-519a-88ba-801f-1b2d0106995c"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "e4a13321ec9abfb2f7acf65a94a041466874768f55e26557e87796d5207e01d1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f1800019-519a-88ba-802f-0bfc5e0a59a7"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "9e695e90025cd0220c1d34668b80b9587f6c1d408b809f5b00c9788cd92e14ef",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "5cc00019-519a-88ba-8033-83ebc3aa920e"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "7afa83be4fba0742501b2afbf10f2abd319b6622b336ef754b0005ea9ad00f4a",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "30400019-519a-88ba-801a-e609d18a0461"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "8d6b8e0f8ae4b015856fcf2d281976dda0edd2c41eee6eb3219c43335b67b9ca",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "5fc00019-519a-88ba-802c-a8ca192d7417"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "b4da1c1bc9d45f8297b014646e1b7b5a990979a80feae43c6c902defe713524c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "23c00019-519a-88ba-802c-e6b2525ca9b9"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "5f76d7a24eae6460a304ec315d59392b9b63bd2aaba226b95719d9cfbaf435c5",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "adc00019-519a-88ba-8026-97f4dd709bd8"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "013485658ed12996a068e648a39f73e1c72e39f90445d781e8fe6f26ff42604b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c6400019-519a-88ba-8002-b4cc437e90eb"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "e1d69aafe0fcf733fd87eb76cf159336e629f8f68d91d49393f82425f1cb99f5",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "63c00019-519a-88ba-8005-de797af9ef2f"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "310eef531573cab5e0494e00229df07590f21313714655c0243e53ee35b9688e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "b8c00019-519a-88ba-803a-125093690676"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "ec525fdbf9df60f383bf61de5330324f70e3f0ceaa7cae49d9fd350df736d3c5",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ba000019-519a-88ba-8021-8127ecc9f894"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "99c07357748b6463fc30706ec0822aaf73b31ab4337f8401004506ab0161e555",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "77400019-519a-88ba-8034-4bea5181266e"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "ceecde042dffc9ed7aa7295f3a297babeea5804680050aa9dc93fadd1cbb7de6",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "cec00019-519a-88ba-8010-3c2325e45903"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "7eb5eef25a15d3e02402ddf498dfc49775fbb76ddae5cc9750b5b8ec6a250d5d",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "00400019-519a-88ba-803c-87a846a5209e"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "8578b9ccf08808f695bfc545cbdaafa6fada42a8e09fc7eba43808c856890c77",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "17000019-519a-88ba-802a-446346e39137"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "966d8f68a56e1043632dc9499b30b7c3c4da1c6f7e4ba42365a49ff1e12cf092",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "86000019-519a-88ba-800b-73802756b4a1"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "17f82774c14a19a6b2c365b5f51af1e00b90d3153d306c9e23e5ce65c7ee0a8f",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bcc00019-519a-88ba-8020-0063acef93b5"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "e75ceaa46cec6de09f332f5d81c1b70690d3298fcc164b2bdde4e6840acfb618",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "6d000019-519a-88ba-8022-056f0afd9831"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-pt-PT.jpg",
+      "locale": "pt-PT",
+      "sha256": "2e133e5f2ab8bf91e395ecc74624f6ebec64aab9fef93c0829369c6c9c0c80c1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c6400019-519a-88ba-801e-f9b615bbfced"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "bf3cef198aa90a5aad95ee35635ef9e4ce8a7f29fb00852ab6830947aea83a9c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "08400019-519a-88ba-800a-a3dfc5475ea2"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "5e1a01b4c05745456ff755cf64e886896e2471127ff848cb922d6353152f27d4",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e1800019-519a-88ba-8007-6fc83103556e"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "5df50215fa449a47679a83de840f0380b3cd99edc9a43b80b1ee4625daf3be71",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "cc000019-519a-88ba-801a-07316ebd387b"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-pt-PT.png",
+      "locale": "pt-PT",
+      "sha256": "805559bca82b14a3a8c829c0e1ab565eb78663d5b63a2fa8c6e49df6cc65eae6",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "05400019-519a-88ba-8003-3a006df3d8a5"
+    },
+    {
+      "fileName": "meet-your-memory-header-ja.png",
+      "locale": "ja",
+      "sha256": "976ebb6a22aa8a5d11b73b0300b1ddb1ada84ccf10f20a8cb6093ab189772569",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "be800019-519a-88ba-8029-3c64f2ff979e"
+    },
+    {
+      "fileName": "meet-your-memory-search-ja.png",
+      "locale": "ja",
+      "sha256": "469b61a2e44ae2ba464c69ed58fbd8deac454192e8c1e4d64d0af2564d3067f4",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "96400019-519a-88ba-801e-49177894bd6d"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-ja.jpg",
+      "locale": "ja",
+      "sha256": "fc85bd9331f39cf09bc30611c3ab3b3362ecb4ce81f2ce22550dc44972763715",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "62000019-519a-88ba-8008-143921258d5a"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "41f12d56b814cfb1840c8077ed958080718bbd16409a07c85ffa27111e9b27a8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bcc00019-519a-88ba-8010-c596ed995ce5"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "af83b936e73889f92c9aca3f5ea0becea2c1e64d321a7f3da0ff5f0cc26d8524",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f5000019-519a-88ba-8015-6975c3b1ac8c"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "9fbae393accd5b4a266cd8d491b3cabcdf79ea5ef04f7fc3f6d52d8f86b3d208",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "86400019-519a-88ba-8022-1b9597fc3995"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-ja.jpg",
+      "locale": "ja",
+      "sha256": "ea717a0f7b86cd28651fa632ba7f86cea332b340182efb4a599a455363f06260",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "97c00019-519a-88ba-8022-a5cf960f3c77"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-ja.jpg",
+      "locale": "ja",
+      "sha256": "8bba265af0cf72ddb53832522d329d57deb3b5c236220f592220de4e6d618be4",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "07400019-519a-88ba-802e-bd99ebe88099"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-ja.jpg",
+      "locale": "ja",
+      "sha256": "f834fbf6771fbe7c599748db6699dad089291b77b333adc7c2921a340c515a4b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "32800019-519a-88ba-8032-911ad47133a5"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "8e907315f644d0b5d462494a6eff03876539c69cb0e3271fb995724f3042fc19",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f3000019-519a-88ba-800d-c6bd8ac9cb16"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "8afed00373d12342c2abbd9d219157f9931a28db247fbd067f6c460077cbba7c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "0d000019-519a-88ba-8018-af4b466163a0"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "4912b51539d9a042682ae6d0472013e38d7d2dc8d9dfd75926416037c13a79e0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "1a400019-519a-88ba-803b-a98a5f03e04e"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-ja.jpg",
+      "locale": "ja",
+      "sha256": "c81132f217afdb9da5b51c7d40ef3c5ae112f06facb84f0b285ff3156ebb5f14",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "d3800019-519a-88ba-8023-fbd531ac0043"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-ja.jpg",
+      "locale": "ja",
+      "sha256": "3970bc691e44fd22ee1396fea80eacf8562c0107ab7c660f79128571b8f115e8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "7ac00019-519a-88ba-802e-ceb8ff94064e"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-ja.jpg",
+      "locale": "ja",
+      "sha256": "11fd5d54d6da392e4dd1c2d0746c7c370b8d55fc6a7214cf0a74a8867117a72c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "6b400019-519a-88ba-8019-53b65f2ece81"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "512ecf25433f33b1fc88b200e1b46ed5e6ebf7951970005b073954766a3dbbf8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "b5000019-519a-88ba-803b-27152cf85aaa"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "d4152ce371ccc1ce842c5ccc8b83ac107e596872fda6884e44d1dab7fce2236c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "fec00019-519a-88ba-8038-3912f65fb357"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-ja.jpg",
+      "locale": "ja",
+      "sha256": "25db0e9728e6bdf82f8195b6ec78a51641675289ff3a780f75c0dce430b2ab9e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "a6800019-519a-88ba-8011-e1ba1b04ef9c"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-ja.jpg",
+      "locale": "ja",
+      "sha256": "22b3a7dfb715c00308c57c5231f900f663f75b51159b9b776f424edf02eec0f3",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "88800019-519a-88ba-8025-e8c94a7bcc75"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-ja.jpg",
+      "locale": "ja",
+      "sha256": "2059683885c14094266961348a511b9399faca5c4733d32fbf0bcedf3a27e67a",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "19400019-519a-88ba-803e-041c3f67ae13"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-ja.png",
+      "locale": "ja",
+      "sha256": "056009329c05232ad44f8514c9f7f15a61e97e117acbdbf3be58cc8bae221111",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "6bc00019-519a-88ba-8039-044438cf7291"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-ja.png",
+      "locale": "ja",
+      "sha256": "46278807c190595c64ca9e2b5c4724cc4202ab6a4daf9d2b940cf3a51c8dbb60",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ee800019-519a-88ba-8027-b37863c52ad5"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-ja.png",
+      "locale": "ja",
+      "sha256": "35d7dbc88ad9de1c57605389f55fcf128c21d3b47c8911eea563e1b8b7961fc1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "58c00019-519a-88ba-800d-f1fa7ac0b7b0"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-ja.png",
+      "locale": "ja",
+      "sha256": "42f440c27559373e68dad7189617e3ebe47a47c3a06e007779bf47725b266e61",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c0800019-519a-88ba-8035-e62fc66527c0"
+    },
+    {
+      "fileName": "meet-your-memory-header-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "192f83207925c57c954a58657c9a5e6c6d947755e89cfa8f720fc66177b21216",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "10000019-519a-88ba-8006-12285b8de1e5"
+    },
+    {
+      "fileName": "meet-your-memory-search-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "22f660c5aef776b5d7716e30c660065d525f743851300995cdc106e837329beb",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "36c00019-519a-88ba-8025-5f48492d0222"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "8995580514cae546f1b37ceece01f4b7e713260bf7f5260b53094cd4b924edb8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "81800019-519a-88ba-8021-bdb9a43300ab"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "6243f6ac0013b4122ca165a29472a2e9eb41f0be6c04a18645e2c9d6c3aaf342",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "13c00019-519a-88ba-8025-e217c36f76a3"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "139e1650f8d2f43d40d57d91d7e4daa75c6741c455c68cbacbe9da4b5b1a8dca",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ce000019-519a-88ba-8038-9b11bfb1412b"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "8f2cb57395f8e9431047e161441667957f215dd54bd2d2f662fea21a669a7d4b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "b2000019-519a-88ba-8024-3888cce291ec"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "f3579be8447736112ca3a8d22b34b31bcc83960335074e1b8f9711826e98b336",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "21000019-519a-88ba-802c-d9ac9013ce15"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "7c903941df37a6f28554b2f53f109bc65a99a53584c11cccdc66fd4d706c30f6",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "4c400019-519a-88ba-803e-0282bede7b62"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "cb5e6ba6adf78b7f28accb53cd59b27d9fc4b3444f4a0f9fe73edfd09346604b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "97800019-519a-88ba-800e-69e847f78a3e"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "2cb40ceb747d64ef860dd3d276eb36752dfba94622d72bd85b152098caa6a870",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bdc00019-519a-88ba-8020-e67a3e2d7587"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "d5f452b711f538dad6bc5e330a5df2e18abea12b178332c7ae20e15c405592f2",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "dd000019-519a-88ba-8021-287c99d50c06"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "7a346d80ad8f2649a833058498286e63b31c1fac5f27e86706c6db0388791c52",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "10800019-519a-88ba-800f-6fc9418dc39f"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "8319cfae98cdea9595f563a76191a70b6e0295deda23e80f61a06985edc6a389",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "bc400019-519a-88ba-8001-da21f4082161"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "0a63ee628b565be6d746150e3b06810d72db28d0280d39b3b6a35bf8bab70e3f",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "45400019-519a-88ba-8007-b8c88f9c4f88"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "58971217e398a7feb521307d78f772b490287624f8df981905618fab6802b89b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f1800019-519a-88ba-8031-ab347450b58c"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "786abc4e6982ceeefbff85c3482d29cc8d727aea11bb73e5135c7449e08bf130",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "68c00019-519a-88ba-800a-55ea13a783e5"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "31e002835edc906f1acfdf429beea1948c2694221c7e7ccfa5d35f56118b03f8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "7d800019-519a-88ba-8034-9e031eeefaf1"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "57304b405451d17b07f969ca6fdb6c24e22998cd934bc752184a59f664944ad9",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "06c00019-519a-88ba-8028-9889c63a8e3a"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "55c7634324ff3843ea01977b1fe1b6b667d1edd1f8197ac975b892df08e6a6a0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "d7400019-519a-88ba-8014-f32bc7191805"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-zh-Hans.jpg",
+      "locale": "zh-Hans",
+      "sha256": "a728444dd8a27b7461b19b12ab1480c3f6353fb5ba1863ed41579095d22ea390",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ce400019-519a-88ba-8019-f595f883d74c"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "5c1fb7a74a9621896c7bbe8b563834c1c1155bf70f8bfa2e8e5b535d3a532960",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "48800019-519a-88ba-801b-985d884569cb"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "31e225da589d564623e70f311a06f98b5ef76f31580777def4bb836b0147aa5e",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "30000019-519a-88ba-8002-efe9d9b6f2f6"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "bf5221941697cdfe9a0a0ba290237fef5ac04110c1d24a0a4e47caded937c2b3",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "6c400019-519a-88ba-800a-3061a6a61f2c"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-zh-Hans.png",
+      "locale": "zh-Hans",
+      "sha256": "70aaa6942afb8756c2d388e2f741306ed66cbfbaef07ff98c08a0648e34abdd3",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "01000019-519a-88ba-800a-2b98d3a3dfc4"
+    },
+    {
+      "fileName": "meet-your-memory-header-hi.png",
+      "locale": "hi",
+      "sha256": "a64e272ca6fdfe06d8c27a3e6722c73d6a5e1b25a1c183854eb0eaf9e8c325f0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "PRODUCT_PAGE_HEADER_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f3800019-519a-88ba-8018-653901e2bd16"
+    },
+    {
+      "fileName": "meet-your-memory-search-hi.png",
+      "locale": "hi",
+      "sha256": "7c8c24dba771c709e25a16ad9384eea41997f9fe26b6bf5ed95ad817b053a215",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_STORE_SEARCH_RESULTS_ASSET",
+          "displayClass": "DEFAULT",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f3400019-519a-88ba-8001-2cdeee04f551"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-01-home-hi.jpg",
+      "locale": "hi",
+      "sha256": "68560444d64523217662c15fc0f0a8eaa031799ae297d2e67e8fc3259ba9580b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "43c00019-519a-88ba-8024-8c8c5efc9fdc"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-02-visual-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "1427dc5bea04fb2b3c2cb7bd8ae10823f2a40e46e3254315ebea9f1a37701404",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "61800019-519a-88ba-803e-7a6663421c4a"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-03-spatial-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "a4ac0077f44b5217b01a802c60d8e083156a8e36347fdfb7a8b100f2f1b3c32a",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "1e400019-519a-88ba-8013-ff6e442ac23a"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-04-association-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "50758485ac5becef7030f80b53740e2934305eee5106b67082b75147e4a34998",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "80c00019-519a-88ba-8023-9eae0f457ca0"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-05-memory-profile-hi.jpg",
+      "locale": "hi",
+      "sha256": "2f1986b4c773061d9245becb60d02b1fbe99b443bc3e810d3c6b1124f43fba22",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "e9000019-519a-88ba-8018-ec8c1dd060e4"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-medium-06-history-hi.jpg",
+      "locale": "hi",
+      "sha256": "3c86e3dda6d0be3f1ecd30eb87c0473d97cb04f75d7389e2fbba7107f44ac629",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_MEDIUM_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "87000019-519a-88ba-8031-9887ff448ea7"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-01-home-hi.jpg",
+      "locale": "hi",
+      "sha256": "1d2b72dd3b0e236681ffbfd9455eefd70be5c510d63a7e34da8ac43ad459dbe2",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "d3c00019-519a-88ba-801d-8acee0e4fc58"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-02-visual-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "f256fce523bf60befa207bbfcaf0dfbb7197eceff0537a73fd6e7f2668db55a0",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "01c00019-519a-88ba-8031-6cb9acffcb94"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-03-spatial-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "0e0e969c62d3335427b3931aa5577a2ebc451efcbda2a770357e6721c2331449",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "09800019-519a-88ba-802e-17f9cb5cc5f5"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-04-association-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "3bcbd759aacb9252760ef64aedbe89aadc29adcded98f907c4d7e4f1433dbebf",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "90000019-519a-88ba-802d-3c7828b41e15"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-05-memory-profile-hi.jpg",
+      "locale": "hi",
+      "sha256": "b1863b823f322bce7da20c0887b26ec4fc29d83f442b0fa11d6996c40c70a714",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c5400019-519a-88ba-802d-8577d64a824b"
+    },
+    {
+      "fileName": "meet-your-memory-iphone-large-06-history-hi.jpg",
+      "locale": "hi",
+      "sha256": "5f59a70c4a8bfb305bdc7d81ce6c855bab55ae0f55991c3cf5895d05b4a9dcf6",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DYNAMIC_ISLAND_LARGE_DISPLAY",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c5800019-519a-88ba-8030-76c14b3b82f0"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-01-home-hi.jpg",
+      "locale": "hi",
+      "sha256": "44fb33730dd68815c03b6b7e6c58a48b188a4fab6206d8509b9eb688702e84a2",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "33800019-519a-88ba-801b-d00c8d7f7ae9"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-02-visual-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "dc74467adc40de44cb835cf9c03fab714a1ada7565b97d603abfdccac174168c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "02800019-519a-88ba-8016-c6130f90455a"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-03-spatial-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "fcbaff951e154de7fcf969cc6efc89e57ee0699991c7863384fd3015d286d67b",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "c8000019-519a-88ba-8036-9e1c09ea8699"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-04-association-memory-hi.jpg",
+      "locale": "hi",
+      "sha256": "641bac82820040c5524351dcfb33ced8ae1bcecff09ea874e349d29deaa54ec1",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "ec800019-519a-88ba-800a-1161aa2bee67"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-05-memory-profile-hi.jpg",
+      "locale": "hi",
+      "sha256": "2f3481fa57a92b50d5ae06ea30a0883f13b76aebbe0bbdd28390c605c22d15a8",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "cb000019-519a-88ba-803b-cfd549bd1d3a"
+    },
+    {
+      "fileName": "meet-your-memory-ipad-06-history-hi.jpg",
+      "locale": "hi",
+      "sha256": "9488ee71e810431988cb7db78eda6482c9912a3822faf3d90bf953f25f02c761",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPAD_13_DISPLAY",
+          "platform": "IPAD_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "0bc00019-519a-88ba-802a-007cf2deba37"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-home-hi.png",
+      "locale": "hi",
+      "sha256": "9f87e27474aa9f460fe9267bf97d56cac98046f52507e33e2c5c722a75fb448c",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "f0000019-519a-88ba-8008-ed100d57a657"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-visual-hi.png",
+      "locale": "hi",
+      "sha256": "437223130a7ca44ef9715fa1702a8ac6bebe729dc78bf13dcf843db6d94ccc49",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "45c00019-519a-88ba-8012-1b158b861413"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-association-hi.png",
+      "locale": "hi",
+      "sha256": "01692a1a8e7b15d8094acb80fb905e70437901dc1245db6affadff42ed7909b5",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "2ac00019-519a-88ba-802a-7921d789172f"
+    },
+    {
+      "fileName": "meet-your-memory-duo-outer-history-hi.png",
+      "locale": "hi",
+      "sha256": "83568b83360010f4e81ebc906027a8d53cf7979a0d28f5363a5077f0906373d3",
+      "apiVersion": "4.5.1",
+      "resource": "appAssetLibraryImages",
+      "targets": [
+        {
+          "placementType": "APP_SCREENSHOT",
+          "displayClass": "IPHONE_DUO",
+          "platform": "IPHONE_APP_STORE"
+        }
+      ],
+      "placementGroupDiscovery": "GET /v1/appAssetLibraryRefData",
+      "remoteState": "UPLOADED_VERIFIED",
+      "remoteAssetId": "60000019-519a-88ba-803c-c0dcdc99bd9c"
+    }
+  ],
+  "remoteState": "UPLOADED_VERIFIED",
+  "requiredDiscovery": "GET /v1/appAssetLibraryRefData",
+  "commit": {
+    "uploaded": true
+  },
+  "reviewSubmission": false
+}

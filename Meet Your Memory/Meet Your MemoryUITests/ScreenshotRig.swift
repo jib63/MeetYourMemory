@@ -59,6 +59,7 @@ enum ScreenshotRig {
 
     @MainActor
     static func runAllFrames(in language: Language, on testCase: XCTestCase) {
+        XCUIDevice.shared.orientation = .portrait
         for stage in Stage.allCases {
             let app = XCUIApplication()
             app.launchArguments = [
@@ -91,7 +92,7 @@ enum ScreenshotRig {
             return
         }
         guard let displayClass = displayClass(for: jpeg) else {
-            XCTFail("Unsupported screenshot dimensions for \(frame). Use iPhone 17 Pro Max or iPad Pro 13-inch.")
+            XCTFail("Unsupported native screenshot dimensions for \(frame).")
             return
         }
         let directory = URL(filePath: #filePath)
@@ -121,6 +122,9 @@ enum ScreenshotRig {
               let width = properties[kCGImagePropertyPixelWidth] as? Int,
               let height = properties[kCGImagePropertyPixelHeight] as? Int else { return nil }
         switch (min(width, height), max(width, height)) {
+        case (1206, 2622), (1179, 2556): return "iphone-medium"
+        case (1398, 2034): return "iphone-duo-outer"
+        case (2007, 2853): return "iphone-duo-inner"
         case (1320, 2868), (1290, 2796): return "6.9-inch"
         case (2064, 2752), (2048, 2732): return "ipad-13-inch"
         default: return nil

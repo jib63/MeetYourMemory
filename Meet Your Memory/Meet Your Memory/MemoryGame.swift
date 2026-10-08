@@ -73,6 +73,7 @@ struct MemoryChallenge: Identifiable, Equatable {
 enum MemoryChallengeBank {
     static let questionsPerCategory = 2
     static let focusedChallengeCount = 3
+    static let scanChallengeCount = MemoryCategory.allCases.count * questionsPerCategory
 
     static func makeScan(avoiding previous: Set<String> = []) -> [MemoryChallenge] {
         var selected: [MemoryChallenge] = []
@@ -310,6 +311,18 @@ enum MemoryChallengeBank {
     }
 }
 
+enum ScanStep: Equatable {
+    case regular(MemoryChallenge)
+    case adaptive(DuoGame)
+
+    var category: MemoryCategory {
+        switch self {
+        case let .regular(challenge): challenge.category
+        case let .adaptive(game): game.memoryCategory
+        }
+    }
+}
+
 struct MemoryCategoryResult: Identifiable, Equatable, Codable {
     let category: MemoryCategory
     let correct: Int
@@ -402,19 +415,41 @@ final class MemoryGame {
     var countdown = 0
     var selectedAnswer: Int?
     var lastAnswerWasCorrect = false
-    private(set) var challenges = MemoryChallengeBank.makeScan()
+    private(set) var challenges: [MemoryChallenge]
+    private(set) var currentStep: ScanStep
+    private(set) var adaptiveContext: AdaptiveDisplayContext = .compact
     private(set) var correctScores: [MemoryCategory: Int] = [:]
     private(set) var possibleScores: [MemoryCategory: Int] = [:]
     private(set) var sourceProfile: MemoryProfile?
     private(set) var focusedCategory: MemoryCategory?
     @ObservationIgnored private var previousSignatures = Set<String>()
     @ObservationIgnored private var transitionTask: Task<Void, Never>?
-    var currentChallenge: MemoryChallenge { challenges[currentIndex] }
-    var challengeCount: Int { challenges.count }
+    @ObservationIgnored private var remainingRegularChallenges: [MemoryChallenge] = []
+    @ObservationIgnored private var usedAdaptiveGames = Set<DuoGame>()
+    @ObservationIgnored private var presentedCategories: [MemoryCategory: Int] = [:]
+    @ObservationIgnored private var adaptiveStreak = 0
+
+    init() {
+        let initial = MemoryChallengeBank.makeScan()
+        challenges = initial
+        currentStep = .regular(initial[0])
+    }
+
+    var currentAdaptiveGame: DuoGame? {
+        guard case let .adaptive(game) = currentStep else { return nil }
+        return game
+    }
+    var challengeCount: Int { focusedCategory == nil ? MemoryChallengeBank.scanChallengeCount : challenges.count }
     var progress: Double { Double(currentIndex + 1) / Double(max(challenges.count, 1)) }
     var profile: MemoryProfile { MemoryProfile.build(correct: correctScores, total: possibleScores) }
     var scanProfile: MemoryProfile { sourceProfile ?? profile }
     var focusedCorrectCount: Int { focusedCategory.map { correctScores[$0, default: 0] } ?? 0 }
+
+    func updateAdaptiveContext(_ context: AdaptiveDisplayContext) {
+        adaptiveContext = context
+        // The active challenge never changes here. The new context is read only
+        // when the next scan step is selected.
+    }
 
     func startQuickScan() {
         transitionTask?.cancel()
@@ -422,10 +457,15 @@ final class MemoryGame {
         focusedCategory = nil
         challenges = MemoryChallengeBank.makeScan(avoiding: previousSignatures)
         previousSignatures = Set(challenges.map(\.signature))
+        remainingRegularChallenges = challenges
+        usedAdaptiveGames = []
+        presentedCategories = [:]
+        adaptiveStreak = 0
         currentIndex = 0; selectedAnswer = nil; lastAnswerWasCorrect = false; correctScores = [:]
-        possibleScores = Dictionary(grouping: challenges, by: \.category).mapValues(\.count)
+        possibleScores = [:]
         screen = .playing
-        beginStudy()
+        selectNextScanStep()
+        beginCurrentStep()
     }
 
     func startFocusedPractice() {
@@ -438,32 +478,86 @@ final class MemoryGame {
         previousSignatures = Set(challenges.map(\.signature))
         currentIndex = 0; selectedAnswer = nil; lastAnswerWasCorrect = false; correctScores = [:]
         possibleScores = [category: challenges.count]
+        currentStep = .regular(challenges[0])
         screen = .playing
         beginStudy()
     }
 
     func revealAnswers() {
-        guard screen == .playing, phase == .study else { return }
+        guard screen == .playing, phase == .study, case .regular = currentStep else { return }
         transitionTask?.cancel(); phase = .answer; countdown = 0
     }
 
     func answer(_ option: Int) {
-        guard screen == .playing, phase == .answer else { return }
-        selectedAnswer = option; lastAnswerWasCorrect = option == currentChallenge.correctOption
-        if lastAnswerWasCorrect { correctScores[currentChallenge.category, default: 0] += 1 }
+        guard screen == .playing, phase == .answer,
+              case let .regular(challenge) = currentStep else { return }
+        selectedAnswer = option; lastAnswerWasCorrect = option == challenge.correctOption
+        if lastAnswerWasCorrect { correctScores[challenge.category, default: 0] += 1 }
         phase = .feedback; transitionTask?.cancel()
         transitionTask = Task { [weak self] in
             try? await Task.sleep(for: .milliseconds(850))
             guard !Task.isCancelled, let self else { return }
-            if self.currentIndex == self.challenges.count - 1 { self.screen = self.focusedCategory == nil ? .results : .focusResults }
-            else { self.currentIndex += 1; self.selectedAnswer = nil; self.lastAnswerWasCorrect = false; self.beginStudy() }
+            self.advanceAfterCurrentStep()
         }
+    }
+
+    func completeAdaptiveStep(_ score: DuoRoundScore, for expectedGame: DuoGame? = nil) {
+        guard screen == .playing, case let .adaptive(activeGame) = currentStep,
+              expectedGame == nil || expectedGame == activeGame else { return }
+        correctScores[currentStep.category, default: 0] += score.correct
+        possibleScores[currentStep.category, default: 0] += score.total
+        advanceAfterCurrentStep()
+    }
+
+    /// An explicit recovery action replaces only the current slot. The abandoned
+    /// adaptive round has not contributed any score or possible points.
+    func replaceAdaptiveStep(for expectedGame: DuoGame) {
+        guard screen == .playing, currentStep == .adaptive(expectedGame) else { return }
+        transitionTask?.cancel()
+        let category = expectedGame.memoryCategory
+        presentedCategories[category, default: 0] = max(0, presentedCategories[category, default: 0] - 1)
+        // The recovery action must work even in a narrow window that cannot fit
+        // any two-pane game. The regular library supports every display; the
+        // next automatic pick can favor the adaptive library again.
+        let next = MemoryChallengeBank.makeFocusedPractice(for: category, avoiding: previousSignatures)[0]
+        previousSignatures.insert(next.signature)
+        currentStep = .regular(next)
+        possibleScores[category, default: 0] += 1
+        adaptiveStreak = 0
+        presentedCategories[category, default: 0] += 1
+        selectedAnswer = nil
+        lastAnswerWasCorrect = false
+        beginCurrentStep()
     }
 
     func goHome() { transitionTask?.cancel(); screen = .home }
     func returnToScanResults() { transitionTask?.cancel(); screen = .results }
 
     #if DEBUG
+    func startRegularThenExpandedUITest() {
+        adaptiveContext = .compact
+        startQuickScan()
+        // The fixture advances through the ready button, independently of
+        // simulator launch and automation attachment timing.
+        transitionTask?.cancel()
+        adaptiveContext = AdaptiveDisplayContext(mode: .expanded, pose: .flat, isExpanded: true)
+    }
+
+    func startAdaptiveUITest(_ adaptiveGame: DuoGame) {
+        adaptiveContext = AdaptiveDisplayContext(
+            mode: adaptiveGame.availability == .folded ? .folded : .expanded,
+            pose: adaptiveGame.availability == .folded ? .book : .flat,
+            isExpanded: adaptiveGame.availability == .expanded
+        )
+        startQuickScan()
+        currentStep = .adaptive(adaptiveGame)
+        presentedCategories = [adaptiveGame.memoryCategory: 1]
+        adaptiveStreak = 1
+        possibleScores = [:]
+        transitionTask?.cancel()
+        phase = .study
+    }
+
     func prepareMarketingScreen(_ name: String) {
         switch name {
         case "visual": prepareMarketingChallenge(.visual, phase: .study)
@@ -494,23 +588,84 @@ final class MemoryGame {
         transitionTask?.cancel()
         challenges = MemoryChallengeBank.makeScan()
         currentIndex = challenges.firstIndex { $0.category == category } ?? 0
+        currentStep = .regular(challenges[currentIndex])
         phase = targetPhase
-        countdown = targetPhase == .study ? currentChallenge.studySeconds : 0
+        countdown = targetPhase == .study ? challenges[currentIndex].studySeconds : 0
         selectedAnswer = nil
         screen = .playing
     }
     #endif
 
+    func advanceAfterCurrentStep() {
+        let lastIndex = challengeCount - 1
+        if currentIndex == lastIndex {
+            screen = focusedCategory == nil ? .results : .focusResults
+            return
+        }
+        currentIndex += 1
+        selectedAnswer = nil
+        lastAnswerWasCorrect = false
+        if focusedCategory != nil {
+            currentStep = .regular(challenges[currentIndex])
+        } else {
+            selectNextScanStep()
+        }
+        beginCurrentStep()
+    }
+
+    private func beginCurrentStep() {
+        switch currentStep {
+        case .regular: beginStudy()
+        case .adaptive:
+            transitionTask?.cancel()
+            phase = .study
+            countdown = 0
+        }
+    }
+
+    private func selectNextScanStep() {
+        let preferred = adaptiveContext.mode.preferredGames
+        if !preferred.isEmpty, adaptiveStreak < 2 {
+            if preferred.allSatisfy(usedAdaptiveGames.contains) {
+                usedAdaptiveGames.subtract(preferred)
+            }
+            let unused = preferred.filter { !usedAdaptiveGames.contains($0) }
+            let leastPresented = unused.map { presentedCategories[$0.memoryCategory, default: 0] }.min() ?? 0
+            let candidates = unused.filter { presentedCategories[$0.memoryCategory, default: 0] == leastPresented }
+            let next = candidates.randomElement() ?? unused[0]
+            usedAdaptiveGames.insert(next)
+            adaptiveStreak += 1
+            presentedCategories[next.memoryCategory, default: 0] += 1
+            currentStep = .adaptive(next)
+            return
+        }
+
+        if remainingRegularChallenges.isEmpty {
+            remainingRegularChallenges = MemoryChallengeBank.makeScan(avoiding: previousSignatures)
+        }
+        let leastPresented = remainingRegularChallenges.map { presentedCategories[$0.category, default: 0] }.min() ?? 0
+        let candidateIndices = remainingRegularChallenges.indices.filter {
+            presentedCategories[remainingRegularChallenges[$0].category, default: 0] == leastPresented
+        }
+        let index = candidateIndices.randomElement() ?? remainingRegularChallenges.startIndex
+        let next = remainingRegularChallenges.remove(at: index)
+        adaptiveStreak = 0
+        presentedCategories[next.category, default: 0] += 1
+        possibleScores[next.category, default: 0] += 1
+        currentStep = .regular(next)
+    }
+
     private func beginStudy() {
-        transitionTask?.cancel(); phase = .study; countdown = currentChallenge.studySeconds
+        guard case let .regular(challenge) = currentStep else { return }
+        transitionTask?.cancel(); phase = .study; countdown = challenge.studySeconds
         transitionTask = Task { [weak self] in
             guard let self else { return }
-            for remaining in stride(from: self.currentChallenge.studySeconds - 1, through: 0, by: -1) {
+            for remaining in stride(from: challenge.studySeconds - 1, through: 0, by: -1) {
                 try? await Task.sleep(for: .seconds(1))
-                guard !Task.isCancelled else { return }
+                guard !Task.isCancelled, self.currentStep == .regular(challenge) else { return }
                 self.countdown = remaining
             }
-            guard !Task.isCancelled else { return }
+            guard !Task.isCancelled, self.currentStep == .regular(challenge) else { return }
             self.phase = .answer
         }
     }

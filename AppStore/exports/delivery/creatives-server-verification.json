@@ -1,0 +1,52 @@
+{
+  "status": "verified",
+  "apiVersion": "4.5.1",
+  "selectionSHA256": "bee9503fb70ae25f9940a8733d2274cf0ae0d343d42a367c5c19619bfff97147",
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "locales": [
+    "en-US",
+    "es-ES",
+    "fr-FR",
+    "hi",
+    "it",
+    "ja",
+    "pt-PT",
+    "zh-Hans"
+  ],
+  "placements": {
+    "en-US/DEFAULT_PROFILE": [
+      "f1800019-519a-88ba-8f34-a08a1f07c9ff",
+      "30000019-519a-88ba-8f23-26eb6ee4bc8f"
+    ],
+    "fr-FR/DEFAULT_PROFILE": [
+      "cb400019-519a-88ba-8f3e-f83eab78e048",
+      "56800019-519a-88ba-8f1a-351ac700856c"
+    ],
+    "it/DEFAULT_PROFILE": [
+      "8a000019-519a-88ba-8f0b-f0614f70f616",
+      "f4400019-519a-88ba-8f11-9e1fc5bfb3e5"
+    ],
+    "es-ES/DEFAULT_PROFILE": [
+      "4e800019-519a-88ba-8f14-f67fb5784e6b",
+      "c6000019-519a-88ba-8f1b-741c410788b7"
+    ],
+    "pt-PT/DEFAULT_PROFILE": [
+      "e6800019-519a-88ba-8f00-1107748ffe44",
+      "87000019-519a-88ba-8f3e-e5f33c689d3e"
+    ],
+    "ja/DEFAULT_PROFILE": [
+      "74000019-519a-88ba-8f2a-f1549c635224",
+      "db000019-519a-88ba-8f27-af3938d532a5"
+    ],
+    "zh-Hans/DEFAULT_PROFILE": [
+      "d0800019-519a-88ba-8f3f-de1826b45a52",
+      "73c00019-519a-88ba-8f35-aa9d765d745c"
+    ],
+    "hi/DEFAULT_PROFILE": [
+      "f4000019-519a-88ba-8f15-5f1034db850d",
+      "6c400019-519a-88ba-8f2e-1ca41d904bdf"
+    ]
+  },
+  "reviewSubmitted": false
+}
