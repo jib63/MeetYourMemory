@@ -1,1 +1,7 @@
-Meet PixWorld, a new application to collect Pixel Arts in your city.
+New in 1.1.0: more room, more ways to play!
+
+• 14 new memory games: 10 for a partially folded iPhone Duo and 4 for a fully unfolded Duo or iPad, including Panorama Pairs, Orbit Map, Sound Board and Comet Field.
+• Games adapt to your screen. Start your usual scan and the next challenge is chosen from the games available for your current display.
+• Play across both sides: drag objects, trace routes, flick comets and tap rhythms.
+• Smoother folding and rotation. Compatible games rearrange; rounds that need their original layout pause and keep your answers. Resume when you're ready, or continue with a new challenge without a penalty.
+• Fixes for crashes and layout issues when unfolding or rotating during a scan.

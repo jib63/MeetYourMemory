@@ -1,1 +1,7 @@
-Te presentamos PixWorld, una nueva aplicación para coleccionar Pixel Arts en tu ciudad.
+Novedades de la versión 1.1.0: ¡más espacio y más formas de jugar!
+
+• 14 nuevos juegos de memoria: 10 para iPhone Duo parcialmente plegado y 4 para Duo completamente desplegado o iPad, entre ellos Parejas panorámicas, Mapa orbital, Tablero sonoro y Campo de cometas.
+• Los juegos se adaptan a tu pantalla. Inicia tu escaneo habitual: el siguiente reto se elige entre los juegos disponibles para la configuración actual.
+• Juega entre ambos lados: arrastra objetos, traza recorridos, lanza cometas y marca ritmos con los dedos.
+• Plegado y rotación más fluidos. Los juegos compatibles se reorganizan; las rondas que necesitan su disposición original se pausan y conservan tus respuestas. Reanuda cuando quieras o continúa con un nuevo reto sin penalización.
+• Correcciones de cierres inesperados y problemas de visualización al desplegar o girar el dispositivo durante un escaneo.

@@ -1,0 +1,66 @@
+{
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "version": "1.1.0",
+  "field": "whatsNew",
+  "reviewSubmitted": false,
+  "locales": [
+    {
+      "locale": "en-US",
+      "localizationId": "3c4ca99f-0fd6-4f7b-ad72-044e2ccd8e28",
+      "characters": 717,
+      "sha256": "23dade80543824ec68165d0e0bfc6f6f56cc6e36a2a0114e9111c2859f658091",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "fr-FR",
+      "localizationId": "dd9bb583-da80-468a-941d-1be985fceb3c",
+      "characters": 898,
+      "sha256": "0b0fbf9b081d4eea590307e1e10c0fe73d878af2741a1565b976e120abb20e21",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "it",
+      "localizationId": "06372350-55f9-46e3-8d3d-a9025d1752ae",
+      "characters": 865,
+      "sha256": "e66cde4498e1cc1b896dd8b5f65ac76c43b8aa728dfd4d072e0a276269d77b72",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "es-ES",
+      "localizationId": "0bce863b-c668-4d62-9988-eeb822a6090e",
+      "characters": 879,
+      "sha256": "0be0f483422492e61f59c03d7d3fccc50613e1be130f9c5a04cdd8ea05f27725",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "pt-PT",
+      "localizationId": "e4e24098-7458-4055-b17f-f56ecd006916",
+      "characters": 840,
+      "sha256": "17cb3a98bd2fdf74d5d248bc211b9c7f537579be6357e62c846fd0100e3cce8c",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "ja",
+      "localizationId": "f2cbf3af-df30-49c5-9204-0e5094aefa50",
+      "characters": 393,
+      "sha256": "9f0bd19add56582b1a97e09ee24a0457b2ee01f4084fe69fbfaaf8746b7a09a2",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "zh-Hans",
+      "localizationId": "13ebb035-c640-42e8-831b-17e916220e5f",
+      "characters": 269,
+      "sha256": "aad1dc6f965e91f6372e1b2022e9a6132d602158aaa5a6b9bebc4b1515ed36fd",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "hi",
+      "localizationId": "d2b5ce5f-9402-4422-a55f-d7f091fb4f3f",
+      "characters": 850,
+      "sha256": "58f19f15b0872040cad64c03f8fa6a22dbee39472a313649703f0c83b932839f",
+      "status": "VERIFIED"
+    }
+  ],
+  "verifiedAt": "2026-10-08T19:43:46.688943+00:00"
+}
