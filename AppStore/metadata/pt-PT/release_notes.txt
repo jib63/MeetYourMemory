@@ -1,1 +1,3 @@
-Conheça o PixWorld, uma nova aplicação para colecionar Pixel Arts na sua cidade.
+Versão 1.1.1
+
+Pequenas correções e melhorias de estabilidade.

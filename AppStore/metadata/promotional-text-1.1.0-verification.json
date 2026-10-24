@@ -1,0 +1,67 @@
+{
+  "appId": "6796454074",
+  "versionId": "1037ece1-f94a-493b-9c26-8951337ba754",
+  "version": "1.1.0",
+  "field": "promotionalText",
+  "submissionStateBefore": "WAITING_FOR_REVIEW",
+  "locales": [
+    {
+      "locale": "en-US",
+      "localizationId": "3c4ca99f-0fd6-4f7b-ad72-044e2ccd8e28",
+      "characters": 150,
+      "sha256": "415bc739c64c3aacb2af301553c254a769584bd028e9534d48cfba084eb54e9f",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "fr-FR",
+      "localizationId": "dd9bb583-da80-468a-941d-1be985fceb3c",
+      "characters": 151,
+      "sha256": "6af7ea06118501a4b5414f1f42674c5d69e4dd12d9754753f43868c0c561500f",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "it",
+      "localizationId": "06372350-55f9-46e3-8d3d-a9025d1752ae",
+      "characters": 150,
+      "sha256": "05462f649fb5ee7cdbffbcd21c130bf6c66b58f793c588d177212c74167de3c7",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "es-ES",
+      "localizationId": "0bce863b-c668-4d62-9988-eeb822a6090e",
+      "characters": 147,
+      "sha256": "6965f6b8e32d4514a5fc36739ef558b81d91ee1c234370070994245c440d12bb",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "pt-PT",
+      "localizationId": "e4e24098-7458-4055-b17f-f56ecd006916",
+      "characters": 149,
+      "sha256": "4dae93fad901d10162edac64ba0df5a6142917664ca1b101b351ba7ea6d4c2e3",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "ja",
+      "localizationId": "f2cbf3af-df30-49c5-9204-0e5094aefa50",
+      "characters": 87,
+      "sha256": "d634df49273ee9a2418f1c8275ef80fab5594cf819fe4a4b66f7c67807c78f23",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "zh-Hans",
+      "localizationId": "13ebb035-c640-42e8-831b-17e916220e5f",
+      "characters": 74,
+      "sha256": "44343abc3b305c58d1f3ec8dcfc9efcbd37752caa112a289d834584ca347863f",
+      "status": "VERIFIED"
+    },
+    {
+      "locale": "hi",
+      "localizationId": "d2b5ce5f-9402-4422-a55f-d7f091fb4f3f",
+      "characters": 149,
+      "sha256": "226b1d6359f1f1d11dfed2602d05713c24e4e26ba645721fc270d4893a12a2c0",
+      "status": "VERIFIED"
+    }
+  ],
+  "submissionStateAfter": "WAITING_FOR_REVIEW",
+  "verifiedAt": "2026-10-08T19:51:01.220535+00:00"
+}

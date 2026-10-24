@@ -27,6 +27,7 @@ from email.utils import parsedate_to_datetime
 from urllib.parse import urlsplit
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -315,6 +316,41 @@ def read_metadata(store_locale: str) -> dict[str, str]:
     return out
 
 
+METADATA_LIMITS = {
+    "name": 30,
+    "subtitle": 30,
+    "promotional_text": 170,
+    "description": 4_000,
+    "keywords": 100,
+    "release_notes": 4_000,
+    "support_url": 255,
+    "marketing_url": 255,
+    "privacy_url": 255,
+}
+
+
+def check_local_metadata(locales: list[str], expected_version: str | None = None) -> bool:
+    """Check every selected storefront before making any remote changes."""
+    valid = True
+    for locale in locales or LOCALES:
+        metadata = read_metadata(locale)
+        missing = [field for field in (*METADATA_LIMITS, "copyright")
+                   if not metadata.get(field)]
+        oversized = [field for field, limit in METADATA_LIMITS.items()
+                     if len(metadata.get(field, "")) > limit]
+        heading = metadata.get("release_notes", "").splitlines()[:1]
+        heading_version = re.search(r"\d+(?:\.\d+)+", heading[0]) if heading else None
+        wrong_version = (expected_version and
+                         (not heading_version or heading_version.group() != expected_version))
+        if missing or oversized or wrong_version:
+            valid = False
+            print(f"  ✗ {locale}: missing={missing}, over limit={oversized}, "
+                  f"release note version mismatch={bool(wrong_version)}")
+        else:
+            print(f"  ✓ {locale}: metadata ready")
+    return valid
+
+
 # ─────────────────────────────────────────────────────────────────────────
 # Text-field uploads
 # ─────────────────────────────────────────────────────────────────────────
@@ -331,7 +367,8 @@ def find_app(client: Client) -> str:
     return app_id
 
 
-def find_editable_version(client: Client, app_id: str) -> str:
+def find_editable_version(client: Client, app_id: str,
+                          expected_version: str | None = None) -> str:
     print("→ Finding editable App Store version (PREPARE_FOR_SUBMISSION)")
     resp = client.get(
         f"/apps/{app_id}/appStoreVersions",
@@ -350,14 +387,46 @@ def find_editable_version(client: Client, app_id: str) -> str:
             "   App Store Connect → My Apps → Meet Your Memory → "
             "iOS App → ⊕ Version or Platform."
         )
+    if expected_version:
+        editable = [version for version in editable
+                    if version["attributes"]["versionString"] == expected_version]
+        if not editable:
+            sys.exit(f"❌ No editable iOS App Store version {expected_version} found")
     v = editable[0]
     print(f"   version={v['attributes']['versionString']}  "
           f"state={v['attributes']['appStoreState']}  id={v['id']}")
     return v["id"]
 
 
+def verify_text_localizations(client: Client, path: str,
+                              expected: dict[str, dict[str, str]]) -> None:
+    """Read back saved metadata, including every localized release note."""
+    records = []
+    seen = set()
+    params = {"limit": 200}
+    while path:
+        if path in seen:
+            raise RuntimeError("App Store localization pagination contains a cycle")
+        seen.add(path)
+        response = client.get(path, **params)
+        records.extend(response.get("data", []))
+        path = response.get("links", {}).get("next")
+        params = {}
+    by_locale = {item["attributes"]["locale"]: item["id"] for item in records}
+    by_id = {item["id"]: item["attributes"] for item in records}
+    mismatches = []
+    for locale, fields in expected.items():
+        actual = by_id.get(resolve_locale_id(by_locale, locale), {})
+        mismatches.extend(f"{locale}: {field}" for field, value in fields.items()
+                          if actual.get(field) != value)
+    if mismatches:
+        raise RuntimeError("App Store text verification failed: " +
+                           ", ".join(mismatches))
+    print(f"   ✓ Saved text verified for {len(expected)} locale(s)")
+
+
 def update_appinfo_localizations(client: Client, app_id: str,
-                                 locales: list[str]) -> None:
+                                 locales: list[str], strict: bool = False) -> None:
     print("→ Updating appInfo localizations (name, subtitle, privacy URL)")
     # The current editable appInfo
     appinfos = client.get(f"/apps/{app_id}/appInfos").get("data", [])
@@ -370,10 +439,10 @@ def update_appinfo_localizations(client: Client, app_id: str,
     # Copyright is set on appStoreVersions (not appInfos) via
     # update_version_copyright() — called from main(), not here.
 
-    existing = client.get(
-        f"/appInfos/{appinfo_id}/appInfoLocalizations"
-    ).get("data", [])
+    path = f"/appInfos/{appinfo_id}/appInfoLocalizations"
+    existing = client.get(path).get("data", [])
     by_locale = {loc["attributes"]["locale"]: loc["id"] for loc in existing}
+    expected = {}
 
     for store_locale, folder in LOCALES.items():
         if locales and store_locale not in locales:
@@ -393,6 +462,7 @@ def update_appinfo_localizations(client: Client, app_id: str,
         attrs = {k: v for k, v in attrs.items() if v}
         if not attrs:
             continue
+        expected[store_locale] = attrs
         existing_id = resolve_locale_id(by_locale, store_locale)
         print(f"   [{store_locale}] {sorted(attrs)}"
               + (f"  (existing as alias)" if existing_id and store_locale not in by_locale else ""))
@@ -417,13 +487,18 @@ def update_appinfo_localizations(client: Client, app_id: str,
                     }
                 })
         except requests.HTTPError as e:
+            if strict:
+                raise
             body = e.response.text if e.response is not None else ""
             sys.stderr.write(
                 f"   ⚠️  {store_locale} skipped — {e}\n{body[:400]}\n"
             )
+    if strict and not client.dry_run:
+        verify_text_localizations(client, path, expected)
 
 
-def update_version_copyright(client: Client, version_id: str) -> None:
+def update_version_copyright(client: Client, version_id: str,
+                             strict: bool = False) -> None:
     """Copyright is a top-level appStoreVersions attribute (not per-locale).
     Read it from the English metadata folder and PATCH it onto the
     version. Safe to call any time — Apple allows editing this field in
@@ -441,18 +516,24 @@ def update_version_copyright(client: Client, version_id: str) -> None:
             }
         })
     except requests.HTTPError as e:
+        if strict:
+            raise
         body = e.response.text if e.response is not None else ""
         sys.stderr.write(f"   ⚠️  copyright PATCH skipped — {e}\n{body[:400]}\n")
+    if strict and not client.dry_run:
+        actual = client.get(f"/appStoreVersions/{version_id}")["data"]["attributes"].get("copyright")
+        if actual != copyright_text:
+            raise RuntimeError("App Store copyright verification failed")
 
 
 def update_version_localizations(client: Client, version_id: str,
-                                 locales: list[str]) -> None:
+                                 locales: list[str], strict: bool = False) -> None:
     print("→ Updating version localizations (description, keywords, URLs, "
           "what's new, promo text)")
-    existing = client.get(
-        f"/appStoreVersions/{version_id}/appStoreVersionLocalizations"
-    ).get("data", [])
+    path = f"/appStoreVersions/{version_id}/appStoreVersionLocalizations"
+    existing = client.get(path).get("data", [])
     by_locale = {loc["attributes"]["locale"]: loc["id"] for loc in existing}
+    expected = {}
 
     # whatsNew is only editable on updates (1.1+). On the very first app
     # version (1.0) Apple returns:
@@ -482,6 +563,7 @@ def update_version_localizations(client: Client, version_id: str,
         attrs = {k: v for k, v in attrs.items() if v}
         if whats_new_blocked:
             attrs.pop("whatsNew", None)
+        expected[store_locale] = attrs
 
         existing_id = resolve_locale_id(by_locale, store_locale)
         print(f"   [{store_locale}] {sorted(attrs)}"
@@ -508,6 +590,8 @@ def update_version_localizations(client: Client, version_id: str,
                     }
                 })
         except requests.HTTPError as e:
+            if strict:
+                raise
             body = e.response.text if e.response is not None else ""
             # Detect the whatsNew lockout and retry once without it.
             if "whatsNew" in body and "cannot be edited" in body and "whatsNew" in attrs:
@@ -540,6 +624,8 @@ def update_version_localizations(client: Client, version_id: str,
                 sys.stderr.write(
                     f"   ⚠️  {store_locale} skipped — {e}\n{body[:400]}\n"
                 )
+    if strict and not client.dry_run:
+        verify_text_localizations(client, path, expected)
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -607,6 +693,11 @@ def probe_locales(client: Client, app_id: str, version_id: str) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    parser.add_argument("--version", help="Require this editable App Store version and matching release notes.")
+    parser.add_argument("--strict", action="store_true",
+                        help="Fail if any metadata update is rejected or cannot be verified.")
+    parser.add_argument("--check-metadata", action="store_true",
+                        help="Validate local metadata without credentials or network access.")
     parser.add_argument("--apply", action="store_true",
                         help="Actually write to App Store Connect "
                              "(default is dry-run).")
@@ -649,6 +740,11 @@ def main() -> int:
         sys.exit(f"❌ Unknown locale(s): {sorted(unknown)}. "
                  f"Valid: {sorted(LOCALES.keys())}")
 
+    if args.check_metadata:
+        return 0 if check_local_metadata(locales, args.version) else 1
+    if args.apply and not args.skip_text and not check_local_metadata(locales, args.version):
+        return 1
+
     should_check_assets = not args.skip_screenshots
     if args.check_assets or (args.apply and should_check_assets):
         assets_valid = check_local_assets(locales, args.screenshots_only, placements)
@@ -666,7 +762,7 @@ def main() -> int:
     print()
 
     app_id = find_app(client)
-    version_id = find_editable_version(client, app_id)
+    version_id = find_editable_version(client, app_id, args.version)
     print()
 
     if args.probe:
@@ -674,11 +770,11 @@ def main() -> int:
         return 0
 
     if not args.skip_text:
-        update_appinfo_localizations(client, app_id, locales)
+        update_appinfo_localizations(client, app_id, locales, args.strict)
         print()
-        update_version_copyright(client, version_id)
+        update_version_copyright(client, version_id, args.strict)
         print()
-        update_version_localizations(client, version_id, locales)
+        update_version_localizations(client, version_id, locales, args.strict)
         print()
 
     if not args.skip_screenshots:
